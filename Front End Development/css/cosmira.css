@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Hkreg';
     src: url('../fonts/HankenGrotesk-Regular.ttf') format('truetype');
+    src: url('../fonts/HankenGrotesk-Bold.ttf') format('bold');
+    src: url('../fonts/HankenGrotesk-SemiBoldItalic.ttf') format('bolditalic');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,12 +34,15 @@ body{
 
 /* Search Bar */
 .search input {
-    padding: 6px 12px;
+    padding: 10px 80px;
     border-radius: 15px;
+    margin-right: 20px;
     border: none;
     outline: none;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    background: rgba(132, 139, 198, 0.555);
+    font-family: 'Hkreg' format('truetype');
+    font-size: 15px;
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -48,7 +53,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
-    font-family: 'Hkreg';
+    font-family: 'Hkreg' format('bold');
 }
 
 
@@ -65,7 +70,7 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 25px;
     transition: color 0.3s;
 }
 
@@ -82,7 +87,8 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Hkreg';
+    font-family: 'Hkreg'format('bolditalic');
+    color: #F8E2EF;
 }
 
 .overlay {
