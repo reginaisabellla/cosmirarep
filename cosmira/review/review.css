@@ -1,0 +1,352 @@
+/* HEADER START */
+@font-face {
+  font-family: "Hkreg";
+  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
+  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
+  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading {
+  background-image: url("/cosmira/assests/img/glitter.gif");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 87px;
+  z-index: 1000;
+  position: relative;
+}
+
+.logo img {
+  height: 90px;
+  width: 300px;
+}
+
+/* Search Bar */
+.search input {
+  padding: 10px 80px;
+  border-radius: 15px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  background: rgba(132, 139, 198, 0.555);
+  font-family: "Hkreg" format("truetype");
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  background-color: #8076af;
+  height: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: "Hkreg" format("bold");
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e5d0ff;
+}
+
+/* HEADER END */
+
+body {
+  background-image: radial-gradient(#7e573c, #280e31);
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0213;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.reviews-container {
+  background: #a495b8;
+  border-radius: 20px;
+  padding: 30px;
+  width: 95%;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 40px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Align filters to the left */
+.filters-container {
+  text-align: left;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.filters-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filters-list {
+  list-style: none;
+  padding: 0;
+}
+
+#filter-item1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background: #b7c3ff;
+  color: #402e56;
+  font-weight: bold;
+}
+
+#filter-item2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background: #b7dbff;
+  color: #402e56;
+  font-weight: bold;
+}
+
+#filter-item3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background: #defdc7;
+  color: #402e56;
+  font-weight: bold;
+}
+
+#filter-item4 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background: #f3b7ff;
+  color: #402e56;
+  font-weight: bold;
+}
+
+#filter-item5 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  color: #402e56;
+  font-weight: bold;
+}
+
+/* Adjust background for plus sign only */
+.add-filter {
+  background: #6d4b77;
+  padding: 5px 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Make the input field longer */
+.review-text-input {
+  width: 100%;
+  max-width: 800px;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: #6d4b77;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+/* Reviews List */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-top: 0; /* Moves the reviews up to align with the filters */
+}
+
+.review-card {
+  background: #6b4780;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.badge {
+  background: #8ec2f0;
+  color: #1a3555;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.skin-tone1 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #3a2415;
+  border: 2px solid #fff;
+}
+
+.skin-tone2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #bc8d6a;
+  border: 2px solid #fff;
+}
+
+.skin-tone3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #674226;
+  border: 2px solid #fff;
+}
+
+.rating {
+  margin-left: auto;
+  font-size: 1.1rem;
+  display: flex;
+  gap: 3px;
+}
+
+.rating span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Input Section */
+.review-input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative; /* Make the container relative */
+}
+
+.review-input input {
+  width: 100%;
+  max-width: 100%; /* Expands input to the full width of the container */
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: #cec6da;
+  color: #3e3e3e;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.review-input input::placeholder {
+  color: #3e3e3e;
+}
+
+.review-input .write-review {
+  position: absolute;
+  right: 0; /* Align to the right side */
+  top: 50%; /* Vertically center it */
+  transform: translateY(-50%); /* Adjust vertical centering */
+  font-size: 1.2rem; /* Optional: adjust font size */
+  padding-right: 10px; /* Optional: add padding for spacing */
+}
