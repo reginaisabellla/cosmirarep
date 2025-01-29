@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Hkreg';
+    src: url('../fonts/HankenGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     background-image: radial-gradient(#7E573C, #280E31);
     background-attachment: fixed;
@@ -5,22 +12,22 @@ body{
     font-family: Arial, sans-serif;
     background-color: #0a0213;
     color: white;
-    /* fixed attachment to stop it from repeating */
 }
 .heading{
-    background-image:url("../img/Shining-Stars-Landing-Header.png");
+    background-image:url("../img/glitter.gif");
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.8);
     position: sticky;
     top: 0;
+    height: 87px;
 }
 
 .logo img {
-    height: 80px; /* Adjust based on your design */
-    width: 200px;  /* Maintains aspect ratio */
+    height: 90px;
+    width: 300px; 
 }
 
 /* Search Bar */
@@ -41,6 +48,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
+    font-family: 'Hkreg';
 }
 
 
@@ -65,7 +73,7 @@ nav {
     color: #e5d0ff;
 }
 
-/* Hero Section */
+/* picture section */
 .homegirls {
     position: relative;
     height: 80vh;
@@ -74,6 +82,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Hkreg';
 }
 
 .overlay {
@@ -91,19 +100,20 @@ nav {
 }
 
 .content h1 {
-    font-size: 36px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    text-shadow: 5px 8px 4px rgba(10, 19, 79, 0.847);
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 20px 30px;
     background: #2e1b50;
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s;
+    font-size: 30px;
 }
 
 .btn:hover {
