@@ -1,0 +1,26 @@
+h1 {
+    color: #FBE2EF;
+}
+
+h3 {
+    color: #FBE2EF;
+}
+
+p {
+    color: #FBE2EF;
+}
+
+body{
+    background-image: radial-gradient(#7E573C, #280E31);
+    background-attachment: fixed;
+    /* fixed attachment to stop it from repeating */
+}
+
+nav{
+    background-image:url("../img/Shining-Stars-Landing-Header.png");
+    height: 75px;
+}
+
+#navBar{
+    background-color: #8076AF;
+}
