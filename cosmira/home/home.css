@@ -9,7 +9,7 @@
 }
 
 .heading {
-  background-image: url("../img/glitter.gif");
+  background-image: url("/cosmira/assests/img/glitter.gif");
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,7 @@ body {
 .homegirls {
   position: relative;
   height: 80vh;
-  background: url('../img/homepg.jpg') no-repeat center center/cover;
+  background: url('/cosmira/assests/img/homepg.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
