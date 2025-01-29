@@ -1,26 +1,132 @@
-h1 {
-    color: #FBE2EF;
-}
-
-h3 {
-    color: #FBE2EF;
-}
-
-p {
-    color: #FBE2EF;
-}
-
 body{
     background-image: radial-gradient(#7E573C, #280E31);
     background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0213;
+    color: white;
     /* fixed attachment to stop it from repeating */
 }
-
-nav{
+.heading{
     background-image:url("../img/Shining-Stars-Landing-Header.png");
-    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
 }
 
-#navBar{
+.logo img {
+    height: 80px; /* Adjust based on your design */
+    width: 200px;  /* Maintains aspect ratio */
+}
+
+/* Search Bar */
+.search input {
+    padding: 6px 12px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
     background-color: #8076AF;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e5d0ff;
+}
+
+/* Hero Section */
+.homegirls {
+    position: relative;
+    height: 80vh;
+    background: url('../img/homepg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 2, 19, 0.5);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #2e1b50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e5d0ff;
+    color: #2e1b50;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.dot.active {
+    background: white;
 }
