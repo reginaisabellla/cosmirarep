@@ -1,5 +1,5 @@
 <!-- need to add the basic doctype info -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,25 +7,89 @@
     <title>Cosmira</title>
     <!-- need to link js and css pages -->
     <script src="js/cosmira.js"></script>
-    <link rel="stylesheet" href="css/cosmira.css" />
+    <link rel="stylesheet" href="/cosmira/community/community.css" />
   </head>
   <body>
-    <nav>
-      <!-- <img
-        src="img/Shining-Stars-Landing-Header.png"
-        alt="black and blue space image"
-      /> -->
-      <!-- replace the cosmira text with the logo -->
-      <a href="home.html">Cosmira</a>
-      <!-- may needd another seperate div for search bar and icon -->
-      <a href="search.html">Search</a>
-      <br />
-      <a href="about.html">About</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="discover.html">Discover</a>
-      <a href="community.html">Community</a>
-      <a href="profile.html">Profile</a>
-    </nav>
-    <!-- majority of content for this page will be added with databases, we just need the basics for now, maybe a sample -->
+    <header>
+      <div class="heading">
+        <div class="logo">
+          <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo" />
+        </div>
+        <div class="search">
+          <input type="text" placeholder="S E A R C H" />
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="/cosmira/about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="/cosmira/quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="/cosmira/discover/discover.html"
+              >DISCOVER</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="/cosmira/community/community.html"
+              >COMMUNITY</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="/cosmira/profile/profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="section discussions">
+        <h2>Discussions</h2>
+        <div class="discussion-item">
+          <img src="/cosmira/assests/img/sephoraimg.jpg" alt="Sephora logo" />
+          <div>
+            <p>Sephora Savings Sale</p>
+            <span>584 replies, open</span>
+          </div>
+        </div>
+        <div class="discussion-item">
+          <img src="/cosmira/assests/img/ultaimg.jpg" alt="Ulta logo" />
+          <div>
+            <p>Ulta Black Friday Sale</p>
+            <span>439 replies, open</span>
+          </div>
+        </div>
+        <div class="discussion-item">
+          <img src="/cosmira/assests/img/makeupimg.jpg" alt="Pro MUA kit" />
+          <div>
+            <p>Pro MUA Must Haves</p>
+            <span>264 replies, open</span>
+          </div>
+        </div>
+        <div class="discussion-item">
+          <img
+            src="/cosmira/assests/img/chorlottetillburyimg.jpg"
+            alt="Charlotte Tillbury Starter Pack"
+          />
+          <div>
+            <p>Beginner Starter Pack</p>
+            <span>618 replies, open</span>
+          </div>
+        </div>
+      </div>
+      <div class="section reviews">
+        <h2>Reviews</h2>
+        <div class="content">
+          <img src="review-icon.png" alt="Review icon" />
+          <p>View & write product reviews</p>
+        </div>
+      </div>
+      <div class="section tutorials">
+        <h2>Tutorials</h2>
+        <div class="content">
+          <img src="tutorial-icon.png" alt="Tutorial icon" />
+          <p>Learn different techniques to achieve your personal style</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

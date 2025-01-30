@@ -1,5 +1,5 @@
 <!-- need to add the basic doctype info -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
     <header>
       <div class="heading">
         <div class="logo">
-          <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+          <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo" />
         </div>
         <div class="search">
           <input type="text" placeholder="S E A R C H" />
@@ -21,13 +21,68 @@
       </div>
       <nav>
         <ul class="nav-links">
-          <li><a class="nav-link" href="about.html">ABOUT</a></li>
-          <li><a class="nav-link" href="quiz.html">QUIZ</a></li>
-          <li><a class="nav-link" href="discover.html">DISCOVER</a></li>
-          <li><a class="nav-link" href="community.html">COMMUNITY</a></li>
-          <li><a class="nav-link" href="profile.html">PROFILE</a></li>
+          <li>
+            <a class="nav-link" href="/cosmira/about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="/cosmira/quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="/cosmira/discover/discover.html"
+              >DISCOVER</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="/cosmira/community/community.html"
+              >COMMUNITY</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="/cosmira/profile/profile.html">PROFILE</a>
+          </li>
         </ul>
       </nav>
     </header>
+    <!-- create product img area -->
+    <div class="fullPage">
+      <div class="stack">
+        <div class="productImg">
+          <figure>
+            <img
+              src="../assests/img/rec3.png"
+              alt="MAKEUP BY MARIO Surreal foundation"
+            />
+            <figcaption>
+              Suggested Shade: 1C, Fair with cool undertones
+            </figcaption>
+            <p id="viewOther" title="coming soon!">view other shades...</p>
+          </figure>
+        </div>
+      </div>
+      <!-- create product description -->
+      <div class="stack">
+        <h3>MAKEUP BY MARIO</h3>
+        <h2>SurrealSkin™ Luminous Hydrating Foundation</h2>
+        <div class="productDesc">
+          <h1>Community Reviews</h1>
+          <div class="buttonDisp">
+            <!-- unsure how to incorporate stars, will skip for now -->
+            <button id="longW">Long-wear</button>
+            <button id="medCov">Medium Coverage</button>
+            <button id="natFin">Natural Finish</button>
+            <button id="veg">Vegan</button>
+          </div>
+          <div class="communityRev">
+            <h2>COMMUNITY SAYS</h2>
+            <p>
+              Most agree that this foundation matches their natural skin tone.
+              However the longevity varies on users depending on occasion or
+              type of day.
+            </p>
+            <button id="seeAll" title="coming soon!">
+              SEE ALL REVIEWS & DISCUSSIONS...
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
