@@ -6,12 +6,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmira</title>
-    <!-- need to link js and css pages -->
+<!-- need to link js and css pages -->
     <script src="js/cosmira.js"></script>
     <link rel="stylesheet" href="/cosmira/profile/profile.css" />
   </head>
 
   <body>
+<!-- COSMIRA HEADER START -->
     <header>
       <div class="heading">
         <div class="logo">
@@ -43,29 +44,28 @@
         </ul>
       </nav>
     </header>
+<!-- COSMIRA HEADER END -->
+
     <div class="profile-container">
       <div class="profile-sidebar">
-        <img
-          src="/cosmira/assests/img/profilepicoption.png"
-          alt="Profile Picture"
-          class="profile-pic"
-        />
+        <img src="/cosmira/assests/img/lolaslickk.png" alt="user profile picture" class="profile-pic"/>
         <h2 class="username">@LOLASLICKK</h2>
         <div class="stats">
           <p>67 Reviews</p>
           <p>54 Discussions</p>
         </div>
-        <button class="edit-button">Edit Profile</button>
-        <button class="shade-match">Shade Match Results →</button>
-        <div class="menu">
-          <button>Create A Review</button>
-          <button>Notifications</button>
-          <button>Your Likes</button>
-          <button>Settings</button>
+  <!-- go back and redo this with javascript later -->
+        <!-- <a class="side-bar-internal-link" href="/cosmira/profile/editprofile.html">review</a> -->
+        <!-- <button class="side-bar-button">Edit Profile</button>
+        <button class="side-bar-button">Shade Match Results →</button> -->
+        <div class="sidebar-button-group">
+          <button class="sidebar-button">Edit Profile</button>
+          <button class="sidebar-button">Account Settings</button>
+          <button class="sidebar-button">Display Settings</button>
         </div>
       </div>
-      <div class="profile-content">
-        <div class="section">
+      <div class="profile-content-container">
+        <div class="content-section">
           <h3>Your Discussions</h3>
           <div class="items">
             <img src="product1.png" />
@@ -75,7 +75,7 @@
             <img src="product5.png" />
           </div>
         </div>
-        <div class="section">
+        <div class="content-section">
           <h3>Your Communities</h3>
           <div class="items">
             <img src="community1.png" />
@@ -85,9 +85,17 @@
             <img src="community5.png" />
           </div>
         </div>
-        <div class="section">
+        <div class="content-section">
           <h3>Your Reviews</h3>
-          <div class="review-buttons">
+          <div class="content-buttons">
+            <button>By Brand</button>
+            <button>By Product</button>
+            <button>By Date</button>
+          </div>
+        </div>
+        <div class="content-section">
+          <h3>Your Likes</h3>
+          <div class="content-buttons">
             <button>By Brand</button>
             <button>By Product</button>
             <button>By Date</button>
