@@ -73,7 +73,10 @@
   
   /*HEADER END*/
 
-  
+  .nav-link.active {
+    color:#e5d0ff; /* active page link color */
+}
+
 body {
     background-image: radial-gradient(#7E573C, #280E31);
     background-attachment: fixed;
@@ -81,21 +84,42 @@ body {
     font-family: Arial, sans-serif;
     background-color: #0a0213;
     color: white;
+    overflow: hidden;
   }
+
+  /*purple background box*/
     .container {
         text-align: center;
-        background: radial-gradient(rgb(202, 176, 176), #402E56); /* Gradient background */
+        background: radial-gradient(#cab0b0, #402E56); /* Gradient background */
         border-radius: 10px;
         padding: 40px;
         margin: 20px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        overflow: hidden; /* glitter box stays within box*/
+        position: relative;
     }
-    h1 {
-        margin-bottom: 10px;
+   
+    
+    .glitter-block h1{
+        top:0;
+        left: 0px;
+        position: absolute;
+        transform: translate(50%, 0%);
+        z-index: 2;
+        font-size:40px;
+    
     }
     p {
         margin-bottom: 30px;
     }
+
+    .glitter-block img { 
+        margin-left:-40px;
+        margin-top: -40px;
+        width:150%;
+        height: 100px;
+     }
+
     .button-group {
         display: flex;
         flex-direction: column;
@@ -110,8 +134,9 @@ body {
         padding: 15px;
         font-size: 16px;
         cursor: pointer;
+        text-decoration: none; /* removes underline*/
         transition: background 0.3s;
-        box-shadow: 0 1px 15px #30133A; /* Drop shadow */
+        box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
     }
     .button1:hover {
         background: linear-gradient(250deg, #57406f, #c4c4c4); /* Inverted gradient on hover */
@@ -126,7 +151,7 @@ body {
         font-size: 16px;
         cursor: pointer;
         transition: background 0.3s;
-        box-shadow: 0 1px 15px #30133A; /* Drop shadow */
+        box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
     }
     .button2:hover {
         background: linear-gradient(250deg, #57406f, #c4c4c4); /* Inverted gradient on hover */
@@ -141,10 +166,17 @@ body {
         font-size: 16px;
         cursor: pointer;
         transition: background 0.3s;
-        box-shadow: 0 1px 15px #30133A; /* Drop shadow */
+        box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
     }
     .button3:hover {
         background: linear-gradient(250deg, #57406f, #c4c4c4); /* Inverted gradient on hover */
+    }
+  
+    .button-single{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
     }
     .skip-button {
         margin-top: 20px;
@@ -153,11 +185,69 @@ body {
         border-radius: 15px;
         color: white;
         padding: 15px;
+        width: 100px;
         font-size: 16px;
         cursor: pointer;
+        text-decoration: none; /*removes underline*/
         transition: background 0.3s;
-        box-shadow: 0 1px 15px #30133A; /* Drop shadow */
+        box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
     }
     .skip-button:hover {
         background: #39273f; /* Darker purp on hover */
     }
+
+/*Quiz-Beginner Survey Start*/
+.bq-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 30px;
+  color: #30133A;
+}
+
+.quiz-text{
+  color:#30133A;
+}
+.bq-question {
+  margin-bottom: 20px;
+}
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.color-options label {
+  background-color: #e0b0e4;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+.submitbutton {
+  margin-top: 20px;
+  background: #6D4B77; /* purp button */
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px;
+  width: 100px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /*removes underline*/
+  transition: background 0.3s;
+  box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
+}
+.submitbutton:hover {
+  background-color: #39273f;
+}
+/*Quiz-Beginner Survey End*/

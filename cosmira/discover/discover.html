@@ -10,27 +10,25 @@
     <link rel="stylesheet" href="discover.css" />
   </head>
   <body>
-    <nav>
+    <header>
       <div class="heading">
-        <!-- replace the cosmira text with the logo -->
-        <a class="topLinks" href="home.html">
-          Cosmira
-          <!-- <img
-            src="/Front End Development/img/cos-removebg.png"
-            alt="cosmira logo"
-        /> -->
-        </a>
-        <!-- may needd another seperate div for search bar and icon -->
-        <a class="topLinks" href="search.html">Search</a>
+        <div class="logo">
+          <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+        </div>
+        <div class="search">
+          <input type="text" placeholder="S E A R C H" />
+        </div>
       </div>
-      <div class="fullNav">
-        <a class="navLinks" href="about.html">About</a>
-        <a class="navLinks" href="quiz.html">Quiz</a>
-        <a class="navLinks" href="discover.html">Discover</a>
-        <a class="navLinks" href="community.html">Community</a>
-        <a class="navLinks" href="profile.html">Profile</a>
-      </div>
-    </nav>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li><a class="nav-link" href="quiz.html">QUIZ</a></li>
+          <li><a class="nav-link" href="discover.html">DISCOVER</a></li>
+          <li><a class="nav-link" href="community.html">COMMUNITY</a></li>
+          <li><a class="nav-link" href="profile.html">PROFILE</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- majority of content for this page will be added with databases, we just need the basics for now, maybe a sample -->
     <!-- creating list for trending topics -->
     <div class="container">
@@ -62,6 +60,7 @@
                 How to create the perfect base.
               </figcaption>
               <img
+                class="pagePic"
                 src="../assests/img/discussion1.png"
                 alt="picture of woman with eyes closed, displaying her makeup"
               />
@@ -72,6 +71,7 @@
                 Best long lasting foundation?
               </figcaption>
               <img
+                class="pagePic"
                 src="../assests/img/discussion2.png"
                 alt="picture of a woman winking at the camera with a coffee cup in hand"
               />
@@ -82,6 +82,7 @@
                 THIS BLUSH IS LITERALLY THE BEST! HEAR ME OUT!
               </figcaption>
               <img
+                class="pagePic"
                 src="../assests/img/discussion3.png"
                 alt="picture of woman posing for the camera"
               />
@@ -94,6 +95,7 @@
             <figure>
               <figcaption>ONE/SIZE by Patrick Starr</figcaption>
               <img
+                class="pagePic"
                 src="../assests/img/rec1.png"
                 alt="foundation branded ONE/SIZE by Patrick Starr"
               />
@@ -101,6 +103,7 @@
             <figure>
               <figcaption>Estée Lauder</figcaption>
               <img
+                class="pagePic"
                 src="../assests/img/rec2.png"
                 alt="foundation branded Estée Lauder"
               />
@@ -108,6 +111,7 @@
             <figure>
               <figcaption>MAKEUP BY MARIO</figcaption>
               <img
+                class="pagePic"
                 src="../assests/img/rec3.png"
                 alt="foundation branded MAKEUP BY MARIO"
               />
