@@ -1,19 +1,18 @@
-<!-- need to add the basic doctype info -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmira</title>
-    <!-- need to link js and css pages -->
     <script src="review.js"></script>
     <link rel="stylesheet" href="review.css" />
   </head>
   <body>
+    <!-- Header Section -->
     <header>
       <div class="heading">
         <div class="logo">
-          <img src="../img/cos-removebg.png" alt="Cosmira Logo" />
+          <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo" />
         </div>
         <div class="search">
           <input type="text" placeholder="S E A R C H" />
@@ -30,18 +29,108 @@
       </nav>
     </header>
 
-    <section class="homegirls">
-      <div class="overlay"></div>
-      <div class="content">
-        <h1>MATCH MADE IN THE COSMOS</h1>
-        <a href="#" class="btn">DISCOVER NOW</a>
+    <!-- Reviews Container -->
+    <div class="reviews-container">
+      <!-- Glitter Gradient Title -->
+      <header class="reviews-header">
+        <h1>Reviews</h1>
+      </header>
+
+      <!-- Content Section with Filters & Reviews Side by Side -->
+      <div class="reviews-content">
+        <!-- Filters Section -->
+        <aside class="filters-container">
+          <h2 class="filters-title">Filters</h2>
+          <ul class="filters-list">
+            <li id="filter-item1">
+              <span class="star">⭐</span
+              ><span class="filter-name">Long-wear</span>
+            </li>
+            <li id="filter-item2">
+              <span class="star">⭐</span
+              ><span class="filter-name">Medium Coverage</span>
+            </li>
+            <li id="filter-item3">
+              <span class="star">⭐</span
+              ><span class="filter-name">Natural Finish</span>
+            </li>
+            <li id="filter-item4">
+              <span class="star">⭐</span><span class="filter-name">Vegan</span>
+            </li>
+            <li id="filter-item5"><button class="add-filter">+</button></li>
+          </ul>
+          <div class="total-reviews">(158)</div>
+        </aside>
+
+        <!-- Reviews Section -->
+        <main class="reviews-list">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="profile-pic"
+                src="/cosmira/assests/img/profilepicture1.jpg"
+                alt="Profile picture of jordan_8"
+              />
+              <span class="username">jordan_8</span>
+              <span class="badge">Medium Coverage</span>
+              <span class="skin-tone1"></span>
+              <span class="rating">4.5⭐</span>
+            </div>
+            <p class="review-text">
+              Great coverage!! I was able to build onto the product for more
+              coverage and blur out some dark spots.
+            </p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="profile-pic"
+                src="/cosmira/assests/img/profilepicture2.jpg"
+                alt="Profile picture of kimswim"
+              />
+              <span class="username">kimswim</span>
+              <span class="badge">Natural Finish</span>
+              <span class="skin-tone2"></span>
+              <span class="rating">4.0⭐</span>
+            </div>
+            <p class="review-text">
+              Buildable coverage and very nice finish! I like the formula but
+              the shelf life is so short before it starts separating...
+            </p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="profile-pic"
+                src="/cosmira/assests/img/profilepicture3.jpg"
+                alt="Profile picture of motzerella"
+              />
+              <span class="username">motzerella</span>
+              <span class="badge">Long-wear</span>
+              <span class="skin-tone3"></span>
+              <span class="rating">3.5⭐</span>
+            </div>
+            <p class="review-text">
+              This foundation looks lovely immediately after application but if
+              you have oily skin, this will not last all day...
+            </p>
+          </div>
+        </main>
       </div>
-      <div class="carousel-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </section>
+
+      <!-- Input Section (Stays at the Bottom) -->
+      <footer class="review-input">
+        <input
+          type="text"
+          class="review-text-input"
+          placeholder="Write a review..."
+        />
+      </footer>
+    </div>
   </body>
 </html>
