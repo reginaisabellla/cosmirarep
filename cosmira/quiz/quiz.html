@@ -1,42 +1,48 @@
 <!-- need to add the basic doctype info -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cosmira</title>
-    <!-- need to link js and css pages -->
-    <script src="js/cosmira.js"></script>
-    <link rel="stylesheet" href="css/cosmira.css" />
-  </head>
-  <body>
-    <nav>
-      <!-- <img
-        src="img/Shining-Stars-Landing-Header.png"
-        alt="black and blue space image"
-      /> -->
-      <!-- replace the cosmira text with the logo -->
-      <a href="home.html">Cosmira</a>
-      <!-- may needd another seperate div for search bar and icon -->
-      <a href="search.html">Search</a>
-      <br />
-      <a href="about.html">About</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="discover.html">Discover</a>
-      <a href="community.html">Community</a>
-      <a href="profile.html">Profile</a>
-    </nav>
-    <div id="quizSelect">
-      <h3>Welcome to Cosmira</h3>
-      <p>
-        To get shade-matched,
-        <br />
-        select your experience level with makeup:
-      </p>
-      <button id="beginner">Beginner User?</button>
-      <button id="casual">Casual/Intermediate User?</button>
-      <button id="advanced">Advanced/Professional User?</button>
-      <button id="skipQuiz">Skip the Quiz!</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <!-- need to link js and css pages -->
+  <link rel="stylesheet" href="/cosmira/quiz/quiz.css" />
+</head>
+<body>
+  <header>
+    <div class="heading">
+        <div class="logo">
+            <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo">
+        </div>
+        <div class="search">
+          <input type="text" placeholder="S E A R C H">
+        </div>
     </div>
-  </body>
+    <nav>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li><a class="nav-link" href="quiz.html">QUIZ</a></li>
+        <li><a class="nav-link" href="discover.html">DISCOVER</a></li>
+        <li><a class="nav-link" href="community.html">COMMUNITY</a></li>
+        <li><a class="nav-link" href="profile.html">PROFILE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Welcome to Cosmira</h1>
+    <p>To get shade-matched, select your experience level with makeup:</p>
+    <form id="experienceForm">
+        <div class="button-group">
+            <button type="button" class="button1">Beginner</button>
+            <button type="button" class="button2">Casual | Intermediate</button>
+            <button type="button" class="button3">Advanced | Professional</button>
+        </div>
+        <button type="button" class="skip-button">Skip</button>
+    </form>
+</div>
+  
+
+</div>
+</body>
 </html>
