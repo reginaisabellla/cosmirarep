@@ -144,8 +144,8 @@
   margin-bottom: 4px;
   color: #F8E2EF;
   background-color: #280E31;
-  border: solid #280E31 1px;
   font-size: 17px;
+  height: 40px;
 }
 
 #submitUser{
@@ -153,11 +153,13 @@
   margin-bottom: 4px;
   color: #F8E2EF;
   background-color: #280E31;
-  border: solid #280E31 1px;
   font-size: 17px;
+  height: 40px;
 }
 
 p{
   text-decoration: underline;
   text-align: center;
+  cursor: default;
 }
+

@@ -78,3 +78,17 @@
   }
   
     /* finish with nav */
+
+    /* starting with product page */
+
+.fullPage {
+    display: flex;
+}
+
+img{
+    width: 450px;
+}
+
+#viewOther{
+    cursor: pointer;
+}

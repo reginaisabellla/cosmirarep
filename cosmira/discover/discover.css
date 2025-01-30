@@ -105,6 +105,7 @@ figure {
     color: #F8E2EF;
     backdrop-filter: blur(14px) brightness(75%);
     margin-bottom: 5px;
+    cursor: pointer;
   }
 h2{
     text-align: center;
@@ -120,6 +121,12 @@ ol{
 }
 li{
     padding: 5px;
+    cursor: pointer;
+}
+
+a{
+  text-decoration:underline;
+  color: white;
 }
 
 .stack{
