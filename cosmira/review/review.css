@@ -267,6 +267,13 @@ body {
   font-weight: bold;
 }
 
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
 .badge {
   background: #8ec2f0;
   color: #1a3555;
