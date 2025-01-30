@@ -12,19 +12,22 @@
   <header>
     <div class="heading">
         <div class="logo">
+          <!-- logo image links to home/index-->
+          <a href="/index.html">
             <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo">
-        </div>
+          </a>
+          </div>
         <div class="search">
           <input type="text" placeholder="S E A R C H">
         </div>
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a class="nav-link" href="about.html">ABOUT</a></li>
-        <li><a class="nav-link" href="quiz.html">QUIZ</a></li>
-        <li><a class="nav-link" href="discover.html">DISCOVER</a></li>
-        <li><a class="nav-link" href="community.html">COMMUNITY</a></li>
-        <li><a class="nav-link" href="profile.html">PROFILE</a></li>
+        <li><a class="nav-link" href="../about/about.html">ABOUT</a></li>
+        <li><a class="nav-link active" href="../quiz/quiz.html">QUIZ</a></li>
+        <li><a class="nav-link" href="../discover/discover.html">DISCOVER</a></li>
+        <li><a class="nav-link" href="../community/community.html">COMMUNITY</a></li>
+        <li><a class="nav-link" href="../profile/profile.html">PROFILE</a></li>
       </ul>
     </nav>
   </header>
@@ -38,11 +41,15 @@
     <p>To get shade-matched, select your experience level with makeup:</p>
     <form id="experienceForm">
         <div class="button-group">
-            <button type="button" class="button1">Beginner</button>
-            <button type="button" class="button2">Casual | Intermediate</button>
-            <button type="button" class="button3">Advanced | Professional</button>
+          <a href="../quiz/beginnersurvey.html" class="button1">Beginner</a>
+          <button type="button" class="button2">Casual | Intermediate</button>
+          <button type="button" class="button3">Advanced | Professional</button>    
         </div>
-        <button type="button" class="skip-button">Skip</button>
+        <div class="button-single">
+          <!--links to the next page-->
+          <a href="../discover/discover.html" class="skip-button">Skip</a>
+        </div>
+        
     </form>
 </div>
   
