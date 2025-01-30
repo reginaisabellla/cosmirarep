@@ -107,7 +107,12 @@
           background: #805aa2;
           padding: 20px;
           border-radius: 10px;
-          width: 250px;
+          width: 270px;
+      }
+
+      .profile-sidebar img {
+          padding-left: 30%;
+          padding-right: 30%;
       }
 
       .profile-pic {
