@@ -1,14 +1,18 @@
 /* COSMIRA DIG4172C JAN 2025 */
-
-/* HEADER STYLING START */
-
+/*HEADER START*/
 @font-face {
-  font-family: 'Hkreg';
-  src: url('../fonts/HankenGrotesk-Regular.ttf') format('truetype');
-  src: url('../fonts/HankenGrotesk-Bold.ttf') format('bold');
-  src: url('../fonts/HankenGrotesk-SemiBoldItalic.ttf') format('bolditalic');
+  font-family: "Hkreg";
+  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
+  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
+  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .heading {
@@ -28,140 +32,136 @@
   width: 300px;
 }
 
-  /* SEARCH BAR STYLING START */
+/* Search Bar */
+.search input {
+  padding: 10px 80px;
+  border-radius: 15px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  background: rgba(132, 139, 198, 0.555);
+  font-family: "Hkreg" format("truetype");
+  font-size: 15px;
+  text-align: center;
+}
 
-      .search input {
-        padding: 10px 80px;
-        border-radius: 15px;
-        margin-right: 20px;
-        border: none;
-        outline: none;
-        background: rgba(132, 139, 198, 0.555);
-        font-family: 'Hkreg' format('truetype');
-        font-size: 15px;
-        text-align: center;
-      }
+/* Navigation Bar */
+nav {
+  display: flex;
+  background-color: #8076af;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: "Hkreg" format("bold");
+}
 
-  /* SEARCH BAR STYLING END*/
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
-  /* NAV BAR STYLING START */
+.nav-links li {
+  display: inline;
+}
 
-      nav {
-        display: flex;
-        background-color: #8076AF;
-        height: 10px;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 30px;
-        font-family: 'Hkreg' format('bold');
-      }
-      
-      .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-      }
-      
-      .nav-links li {
-        display: inline;
-      }
-      
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        font-size: 25px;
-        transition: color 0.3s;
-      }
-      
-      .nav-links a:hover {
-        color: #e5d0ff;
-      }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s;
+}
 
-  /* NAV BAR STYLING END */
+.nav-links a:hover {
+  color: #e5d0ff;
+}
 
-/* HEADER STYLING END */
+/*HEADER END*/
 
 /* BODY STYLING START */
 
-  body {
-  background-image: radial-gradient(#7E573C, #280E31);
+body {
+  background-image: radial-gradient(#7e573c, #280e31);
   background-attachment: fixed;
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #0a0213;
   color: white;
-  }
+}
 
 /* BODY STYLING END */
 
 /* PROFILE PAGE SPECIFIC STYLING START*/
 
-  .profile-container {
-    display: flex;
-    margin: 20px;
-  }
+.profile-container {
+  display: flex;
+  margin: 20px;
+}
 
-  /* SIDEBAR STYLING (LEFT) START */
+/* SIDEBAR STYLING (LEFT) START */
 
-      .profile-sidebar {
-          background: #805aa2;
-          padding: 20px;
-          border-radius: 10px;
-          width: 270px;
-      }
+.profile-sidebar {
+  background: #805aa2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 270px;
+}
 
-      .profile-sidebar img {
-          padding-left: 30%;
-          padding-right: 30%;
-      }
+.profile-sidebar img {
+  padding-left: 30%;
+  padding-right: 30%;
+}
 
-      .profile-pic {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-      }
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
 
-      .username {
-          text-align: center;
-      }
+.username {
+  text-align: center;
+}
 
-      .stats {
-          text-align: center;
-      }
+.stats {
+  text-align: center;
+}
 
-      .edit-button, .shade-match, .menu button, .review-buttons button {
-          display: block;
-          width: 100%;
-          margin: 10px 0;
-          padding: 10px;
-          background: #4b2875;
-          border: none;
-          color: white;
-          border-radius: 5px;
-      }
+.edit-button,
+.shade-match,
+.menu button,
+.review-buttons button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #4b2875;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
 
-  /* SIDEBAR STYLING (LEFT) END */
+/* SIDEBAR STYLING (LEFT) END */
 
-  /* RIGHT SIDE OF SCREEN STYLING START */
+/* RIGHT SIDE OF SCREEN STYLING START */
 
-      .profile-content {
-          flex-grow: 1;
-          margin-left: 20px;
-      }
+.profile-content {
+  flex-grow: 1;
+  margin-left: 20px;
+}
 
-      .section {
-          background: #3a245e;
-          padding: 15px;
-          margin-bottom: 20px;
-          border-radius: 10px;
-      }
+.section {
+  background: #3a245e;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
-      .items img {
-          width: 50px;
-          margin-right: 10px;
-      }
+.items img {
+  width: 50px;
+  margin-right: 10px;
+}
 
-  /* RIGHT SIDE OF SCREEN STYLING END */
+/* RIGHT SIDE OF SCREEN STYLING END */
 
 /* PROFILE PAGE SPECIFIC STYLING END */
-

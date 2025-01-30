@@ -1,165 +1,161 @@
+/*HEADER START*/
 @font-face {
-    font-family: 'Hkreg';
-    src: url('../fonts/HankenGrotesk-Regular.ttf') format('truetype');
-    src: url('../fonts/HankenGrotesk-Bold.ttf') format('bold');
-    src: url('../fonts/HankenGrotesk-SemiBoldItalic.ttf') format('bolditalic');
-    font-weight: normal;
-    font-style: normal;
-  }
-  body {
-    background-image: radial-gradient(#7E573C, #280E31);
-    background-attachment: fixed;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0a0213;
-    color: white;
-  }
+  font-family: "Hkreg";
+  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
+  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
+  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .heading {
-    background-image: url("../assests/img/glitter.gif");
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: sticky;
-    top: 0;
-    height: 87px;
-  }
-  
-  .logo img {
-    height: 90px;
-    width: 300px;
-  }
-  
-  /* Search Bar */
-  .search input {
-    padding: 10px 80px;
-    border-radius: 15px;
-    margin-right: 20px;
-    border: none;
-    outline: none;
-    background: rgba(132, 139, 198, 0.555);
-    font-family: 'Hkreg' format('truetype');
-    font-size: 15px;
-    text-align: center;
-  }
-  
-  /* Navigation Bar */
-  nav {
-    display: flex;
-    background-color: #8076AF;
-    height: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    font-family: 'Hkreg' format('bold');
-  }
-  
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #e5d0ff;
-  }
-  
-  /* finish with nav */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* begin form styling */
+.heading {
+  background-image: url("/cosmira/assests/img/glitter.gif");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  height: 87px;
+}
 
-  .bothSides{
-    display: grid;
-    grid-template-areas: "login option createAccounts";
-    grid-template-columns: 10fr 1fr 10fr;
-  }
+.logo img {
+  height: 90px;
+  width: 300px;
+}
 
-  fieldset{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    background-color: #8076AF;
-    font-size: 25px;
-    border-radius: 5px;
-    border: #8076AF solid 3px;
-    height: 325px;
-    
-  }
+/* Search Bar */
+.search input {
+  padding: 10px 80px;
+  border-radius: 15px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  background: rgba(132, 139, 198, 0.555);
+  font-family: "Hkreg" format("truetype");
+  font-size: 15px;
+  text-align: center;
+}
 
-  legend{
-    background-color: #280E31;
-    border-radius: 5px;
-    padding: 5px;
-    text-align: center;
-    
-  }
+/* Navigation Bar */
+nav {
+  display: flex;
+  background-color: #8076af;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: "Hkreg" format("bold");
+}
 
-  label{
-    background-color: #280e3143;
-    width:auto;
-    padding: 3px;
-    border-radius: 5px;
-    margin-top: 12px;
-    text-align: center;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
-  }
+.nav-links li {
+  display: inline;
+}
 
-  input{
-    background-color: #F8E2EF;
-    height: 28px;
-    border-radius: 5px;
-  }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s;
+}
 
-  h2{
-    padding: 15px;
-    text-align: center;
-    justify-content: center;
-    background-color: #280E31;
-    border-radius: 10px;
-    /* needed help from w3schools admittedly */
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+.nav-links a:hover {
+  color: #e5d0ff;
+}
 
-#submitLogin{
+/*HEADER END*/
+
+/* finish with nav */
+
+/* begin form styling */
+
+.bothSides {
+  display: grid;
+  grid-template-areas: "login option createAccounts";
+  grid-template-columns: 10fr 1fr 10fr;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: #8076af;
+  font-size: 25px;
+  border-radius: 5px;
+  border: #8076af solid 3px;
+  height: 325px;
+}
+
+legend {
+  background-color: #280e31;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+label {
+  background-color: #280e3143;
+  width: auto;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+input {
+  background-color: #f8e2ef;
+  height: 28px;
+  border-radius: 5px;
+}
+
+h2 {
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  background-color: #280e31;
+  border-radius: 10px;
+  /* needed help from w3schools admittedly */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#submitLogin {
   margin-top: 10px;
   margin-bottom: 4px;
-  color: #F8E2EF;
-  background-color: #280E31;
+  color: #f8e2ef;
+  background-color: #280e31;
   font-size: 17px;
   height: 40px;
 }
 
-#submitUser{
+#submitUser {
   margin-top: 10px;
   margin-bottom: 4px;
-  color: #F8E2EF;
-  background-color: #280E31;
+  color: #f8e2ef;
+  background-color: #280e31;
   font-size: 17px;
   height: 40px;
 }
 
-p{
+p {
   text-decoration: underline;
   text-align: center;
   cursor: default;
 }
-

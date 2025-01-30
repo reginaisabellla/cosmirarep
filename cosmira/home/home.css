@@ -1,11 +1,17 @@
 /*HEADER START*/
 @font-face {
-  font-family: 'Hkreg';
-  src: url('../fonts/HankenGrotesk-Regular.ttf') format('truetype');
-  src: url('../fonts/HankenGrotesk-Bold.ttf') format('bold');
-  src: url('../fonts/HankenGrotesk-SemiBoldItalic.ttf') format('bolditalic');
+  font-family: "Hkreg";
+  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
+  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
+  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .heading {
@@ -33,7 +39,7 @@
   border: none;
   outline: none;
   background: rgba(132, 139, 198, 0.555);
-  font-family: 'Hkreg' format('truetype');
+  font-family: "Hkreg" format("truetype");
   font-size: 15px;
   text-align: center;
 }
@@ -41,14 +47,13 @@
 /* Navigation Bar */
 nav {
   display: flex;
-  background-color: #8076AF;
-  height: 10px;
+  background-color: #8076af;
+  height: 40px;
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  font-family: 'Hkreg' format('bold');
+  font-family: "Hkreg" format("bold");
 }
-
 
 .nav-links {
   list-style: none;
@@ -74,7 +79,7 @@ nav {
 /*HEADER END*/
 
 body {
-  background-image: radial-gradient(#7E573C, #280E31);
+  background-image: radial-gradient(#7e573c, #280e31);
   background-attachment: fixed;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -86,13 +91,14 @@ body {
 .homegirls {
   position: relative;
   height: 80vh;
-  background: url('/cosmira/assests/img/homepg.jpg') no-repeat center center/cover;
+  background: url("/cosmira/assests/img/homepg.jpg") no-repeat center
+    center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Hkreg' format('bolditalic');
-  color: #F8E2EF;
+  font-family: "Hkreg" format("bolditalic");
+  color: #f8e2ef;
 }
 
 .overlay {
@@ -153,7 +159,7 @@ body {
 
 /* Container for Vision, Mission, and Values */
 .container {
-  font-family: 'Hkreg' format('bolditalic');
+  font-family: "Hkreg" format("bolditalic");
   margin: 40px auto;
 }
 
@@ -212,7 +218,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
   .vision,
   .mission-values {
     flex-direction: column;

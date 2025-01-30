@@ -1,75 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz-BeginnerSurvey</title>
-  <!-- need to link js and css pages -->
-  <link rel="stylesheet" href="/cosmira/quiz/quiz.css" />
-</head>
-<body>
-  <header>
-    <div class="heading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-BeginnerSurvey</title>
+    <!-- need to link js and css pages -->
+    <link rel="stylesheet" href="/cosmira/quiz/quiz.css" />
+  </head>
+  <body>
+    <header>
+      <div class="heading">
         <div class="logo">
-          <a href="/index.html">
-            <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo">
-          </a>
-          </div>
-        <div class="search">
-          <input type="text" placeholder="S E A R C H">
+          <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo" />
         </div>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="../about/about.html">ABOUT</a></li>
-        <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
-        <li><a class="nav-link" href="../discover/discover.html">DISCOVER</a></li>
-        <li><a class="nav-link" href="../community/community.html">COMMUNITY</a></li>
-        <li><a class="nav-link" href="../profile/profile.html">PROFILE</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+        <div class="search">
+          <input type="text" placeholder="S E A R C H" />
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="/cosmira/about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="/cosmira/quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="/cosmira/discover/discover.html"
+              >DISCOVER</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="/cosmira/community/community.html"
+              >COMMUNITY</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="/cosmira/profile/profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="container">
       <div class="glitter-block">
-        <img src="/cosmira/assests/img/header.png" alt="Glitter">
+        <img src="/cosmira/assests/img/header.png" alt="Glitter" />
         <h1>BEGINNER QUIZ</h1>
       </div>
-    
-    <form>
+
+      <form>
         <div class="bq-question">
-            <h2>Question 1.</h2>
-            <div class="quiz-text">
-              <p>Select the skin color range MOST accurate to yours:</p>
-            </div>
-            <div class="color-options">
-                <label><input type="radio" name="skinColor" value="1"> 1</label>
-                <label><input type="radio" name="skinColor" value="2"> 2</label>
-                <label><input type="radio" name="skinColor" value="3"> 3</label>
-                <label><input type="radio" name="skinColor" value="4"> 4</label>
-                <label><input type="radio" name="skinColor" value="5"> 5</label>
-                <label><input type="radio" name="skinColor" value="6"> 6</label>
-                <label><input type="radio" name="skinColor" value="7"> 7</label>
-                <label><input type="radio" name="skinColor" value="8"> 8</label>
-                <label><input type="radio" name="skinColor" value="9"> 9</label>
-                <label><input type="radio" name="skinColor" value="10"> 10</label>
-            </div>
+          <h2>Question 1.</h2>
+          <div class="quiz-text">
+            <p>Select the skin color range MOST accurate to yours:</p>
+          </div>
+          <div class="color-options">
+            <label><input type="radio" name="skinColor" value="1" /> 1</label>
+            <label><input type="radio" name="skinColor" value="2" /> 2</label>
+            <label><input type="radio" name="skinColor" value="3" /> 3</label>
+            <label><input type="radio" name="skinColor" value="4" /> 4</label>
+            <label><input type="radio" name="skinColor" value="5" /> 5</label>
+            <label><input type="radio" name="skinColor" value="6" /> 6</label>
+            <label><input type="radio" name="skinColor" value="7" /> 7</label>
+            <label><input type="radio" name="skinColor" value="8" /> 8</label>
+            <label><input type="radio" name="skinColor" value="9" /> 9</label>
+            <label><input type="radio" name="skinColor" value="10" /> 10</label>
+          </div>
         </div>
         <div class="bq-question">
-            <h2>Question 2.</h2>
-            <div class="quiz-text">
-              <p>What color are your veins?</p>
-            </div>
-            <label><input type="radio" name="veinColor" value="blue"> Blue</label>
-            <label><input type="radio" name="veinColor" value="blush-green"> Blush-Green</label>
-            <label><input type="radio" name="veinColor" value="green"> Green</label>
-            <label><input type="radio" name="veinColor" value="purple"> Purple</label>
+          <h2>Question 2.</h2>
+          <div class="quiz-text">
+            <p>What color are your veins?</p>
+          </div>
+          <label
+            ><input type="radio" name="veinColor" value="blue" /> Blue</label
+          >
+          <label
+            ><input type="radio" name="veinColor" value="blush-green" />
+            Blush-Green</label
+          >
+          <label
+            ><input type="radio" name="veinColor" value="green" /> Green</label
+          >
+          <label
+            ><input type="radio" name="veinColor" value="purple" />
+            Purple</label
+          >
         </div>
         <button class="submitbutton" Stype="submit">Submit</button>
-    </form>
-</div>
-
-
-
-</body>
+      </form>
+    </div>
+  </body>
 </html>

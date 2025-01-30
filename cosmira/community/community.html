@@ -1,5 +1,5 @@
 <!-- need to add the basic doctype info -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,25 +7,40 @@
     <title>Cosmira</title>
     <!-- need to link js and css pages -->
     <script src="js/cosmira.js"></script>
-    <link rel="stylesheet" href="css/cosmira.css" />
+    <link rel="stylesheet" href="/cosmira/community/community.css" />
   </head>
   <body>
-    <nav>
-      <!-- <img
-        src="img/Shining-Stars-Landing-Header.png"
-        alt="black and blue space image"
-      /> -->
-      <!-- replace the cosmira text with the logo -->
-      <a href="home.html">Cosmira</a>
-      <!-- may needd another seperate div for search bar and icon -->
-      <a href="search.html">Search</a>
-      <br />
-      <a href="about.html">About</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="discover.html">Discover</a>
-      <a href="community.html">Community</a>
-      <a href="profile.html">Profile</a>
-    </nav>
+    <header>
+      <div class="heading">
+        <div class="logo">
+          <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo" />
+        </div>
+        <div class="search">
+          <input type="text" placeholder="S E A R C H" />
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="/cosmira/about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="/cosmira/quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="/cosmira/discover/discover.html"
+              >DISCOVER</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="/cosmira/community/community.html"
+              >COMMUNITY</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="/cosmira/profile/profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- majority of content for this page will be added with databases, we just need the basics for now, maybe a sample -->
   </body>
 </html>
