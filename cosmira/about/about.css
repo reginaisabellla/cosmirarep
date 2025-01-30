@@ -189,3 +189,19 @@ img {
   margin: 0; /* Remove any section margin */
   padding: 0;
 }
+
+.contact-text {
+  display: row;
+  align-items: center; /* Align top edges */
+  gap: 20px;
+  margin: 0; /* Remove any section margin */
+  padding: 0;
+}
+
+.socials-text {
+  display: row;
+  align-items: center; /* Align top edges */
+  gap: 20px;
+  margin: 0; /* Remove any section margin */
+  padding: 0;
+}
