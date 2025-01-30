@@ -180,3 +180,12 @@ img {
   line-height: 1.2;
   margin-bottom: 10px;
 }
+
+/* Socials Section */
+.socials-section {
+  display: flex;
+  align-items: center; /* Align top edges */
+  gap: 20px;
+  margin: 0; /* Remove any section margin */
+  padding: 0;
+}
