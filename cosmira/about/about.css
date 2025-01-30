@@ -8,6 +8,12 @@
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .heading {
   background-image: url("/cosmira/assests/img/glitter.gif");
   display: flex;
@@ -42,7 +48,7 @@
 nav {
   display: flex;
   background-color: #8076AF;
-  height: 10px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
@@ -76,17 +82,8 @@ nav {
 body {
   background-image: radial-gradient(#7E573C, #280E31);
   background-attachment: fixed;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0a0213;
-  font-family: 'Hkreg'format('truetype');
+  font-family: 'Hkreg', Arial, sans-serif;
   color: white;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* Vision Section */
@@ -94,89 +91,81 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin: 0;
-  padding: 0;
+  padding: 0; /* Removed vertical padding */
 }
 
 .vision-image img {
-  width: 120%;
-  height: 100%;
-  object-fit: contain;
-  margin: 0; /* Removes any default margin around the image */
-  padding: 0;
+  width: 55vw; /* Take 50% of the viewport width */
+  height: auto;
+  object-fit: cover;
+  margin-bottom: -4px; /* Negative margin to remove gaps caused by rendering */
 }
 
 .vision-text {
-  width: 50%;
-  margin-left: auto;
-  margin-right: 20px;
-  padding-left: 70px;
-  padding-right: 70px;
+  width: 50%; /* Text takes the remaining 50% */
+  padding: 0 80px; /* Adds spacing between text and the image */
 }
 
 .vision-text h2 {
-  margin-bottom: 10px;
-  font-style: italic;
-  font-size: 35px;
-  color: #F8E2EF;
-  padding-left: 90px;
+  padding-left: 10px;
   margin-bottom: 25px;
+  font-size: 35px;
+  font-style: italic;
+  color: #F8E2EF;
 }
 
 .vision-text p {
-  font-size: 26px;
-  padding-left: 40px;
-  padding-left: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 22px;
   line-height: 1.8;
+  margin-bottom: 10px;
 }
 
-/* Mission Section */
+/* Mission and Values Section */
 .mission-values-section {
   display: flex;
-  align-items: center; /* Align top edges */
+  align-items: center;
   gap: 20px;
-  margin: 0; /* Remove any section margin */
-  padding: 0;
+  padding: 0; /* Removed vertical padding */
+
+}
+
+.mission-values-image img {
+  width: 55vw; /* Increased width to extend left */
+  height: auto;
+  object-fit: cover;
+  margin-bottom: -4px; /* Keep images touching vertically */
+  margin-left: -5vw; /* Shift image to the left */
+  position: relative; /* Enable positioning for overlap */
+  z-index: 2; /* Ensure pic2 appears above pic1 and pic3 */
+  margin-top: -20px; /* Slightly overlap pic1 */
+  margin-bottom: -20px; /* Slightly overlap pic3 */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Optional drop shadow */
 }
 
 .mission-values-text {
-  width: 50%; /* Text occupies half the section */
+  width: 50%; /* Text takes the remaining 50% */
   display: flex;
-  flex-direction: column; /* Stack "Mission" and "Values" vertically */
-  gap: 30px; /* Add spacing between "Mission" and "Values" */
-  padding-left: 50px
-}
-
-.mission-values-image img{
-  width: 110%;
-  height: auto;
-  object-fit: contain;
-  margin-left: -10%; /* Removes any default margin around the image */
-  padding: 0;
-}
-
-img {
-  margin: 0;
-  padding: 0;
-  display: block; /* Removes inline gaps caused by `img` being inline by default */
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 50px; /* Adds spacing between text and the image */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .mission-text h2,
 .values-text h2 {
   margin-bottom: 30px;
-  font-style: italic;
   font-size: 35px;
+  font-style: italic;
   color: #F8E2EF;
-  
 }
 
 .mission-text p,
 .values-text p {
-  font-size: 14px;
-  margin-bottom: 5px;
-  padding-left: 40px;
-  padding-right: 180px;
-  font-size: 24px;
+  padding: 0 180px 0 40px;
+  font-size: 22px;
   line-height: 1.2;
   margin-bottom: 10px;
 }
@@ -184,24 +173,62 @@ img {
 /* Socials Section */
 .socials-section {
   display: flex;
-  align-items: center; /* Align top edges */
+  align-items: center;
   gap: 20px;
-  margin: 0; /* Remove any section margin */
-  padding: 0;
+  padding: 0; /* Removed vertical padding */
 }
 
-.contact-text {
-  display: row;
-  align-items: center; /* Align top edges */
-  gap: 20px;
-  margin: 0; /* Remove any section margin */
-  padding: 0;
+.socials-image img {
+  width: 50vw; /* Take 50% of the viewport width */
+  height: auto;
+  object-fit: cover;
+  margin-bottom: -4px; /* Negative margin to remove gaps caused by rendering */
+}
+
+.socials-content {
+  width: 50%; /* Content takes the remaining 50% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.contact-text h2,
+.socials-text h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #F8E2EF;
+}
+
+.contact-text p,
+.socials-text p {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 .socials-text {
-  display: row;
-  align-items: center; /* Align top edges */
-  gap: 20px;
-  margin: 0; /* Remove any section margin */
-  padding: 0;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack icons and text vertically */
+  align-items: center; /* Center-align the content */
+  gap: 1px; /* Space between each row (icon + text) */
+  text-align: left; /* Text stays aligned to the left of icons */
+}
+
+
+.socials-text p {
+  display: flex; /* Use flexbox for horizontal alignment of icon + text */
+  align-items: left; /* Vertically align icons and text */
+  font-size: 26px; /* Font size for text */
+  gap: 15px; /* Space between the icon and the text */
+  justify-content: flex-start; /* Align icons and text to the left within each row */
+}
+
+.socials-text p i {
+  flex-shrink: 0; /* Prevent icons from resizing */
+  width: 30px; /* Ensure all icons occupy the same width */
+  font-size: 28px; /* Consistent size for icons */
+  color: white; /* Icon color */
+  text-align: center; /* Center the icon within its column */
 }
