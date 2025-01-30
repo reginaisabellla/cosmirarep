@@ -95,64 +95,71 @@ body {
 
 /* PROFILE PAGE SPECIFIC STYLING START*/
 
-.profile-container {
-  display: flex;
-  margin: 20px;
-}
+  .profile-container {
+    display: flex;
+    margin: 20px;
+  }
 
 /* SIDEBAR STYLING (LEFT) START */
 
-.profile-sidebar {
-  background: #805aa2;
-  padding: 20px;
-  border-radius: 10px;
-  width: 270px;
-}
+  .profile-sidebar {
+    background: radial-gradient(#402e56c0, #cab0b0c5); /* Gradient background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 270px;
+  }
 
-.profile-sidebar img {
-  padding-left: 30%;
-  padding-right: 30%;
-}
+  .profile-sidebar img {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
 
-.profile-pic {
-  border-radius: 50%;
-}
+  .profile-pic {
+    border-radius: 50%;
+  }
 
-.username {
-  text-align: center;
-}
+  .username {
+    text-align: center;
+  }
 
-.stats {
-  text-align: center;
-}
+  .stats {
+    text-align: center;
+  }
 
-.edit-button,
-.shade-match,
-.menu button,
-.review-buttons button {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  background: #4b2875;
-  border: none;
-  color: white;
-  border-radius: 5px;
-}
+  .sidebar-button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #4b2875;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
 
 /* SIDEBAR STYLING (LEFT) END */
 
 /* RIGHT SIDE OF SCREEN STYLING START */
 
-.profile-content {
+.profile-content-container {
   flex-grow: 1;
   margin-left: 20px;
+  /* background: radial-gradient(#402e56, #cab0b0); Gradient background */
+  background: radial-gradient(#cab0b099, #402e56ee); /* Gradient background */
+  border-radius: 10px;
+  /* background-color: #34185620; */
+
+
 }
 
-.section {
-  background: #3a245e;
+.content-section {
+
+  background-color: #d8c2d04d;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 10px;
 }
 
