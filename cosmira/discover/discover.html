@@ -13,7 +13,7 @@
     <nav>
       <div class="heading">
         <!-- replace the cosmira text with the logo -->
-        <a href="home.html">
+        <a class="topLinks" href="home.html">
           Cosmira
           <!-- <img
             src="/Front End Development/img/cos-removebg.png"
@@ -21,44 +21,100 @@
         /> -->
         </a>
         <!-- may needd another seperate div for search bar and icon -->
-        <a href="search.html">Search</a>
+        <a class="topLinks" href="search.html">Search</a>
       </div>
-      <a href="about.html">About</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="discover.html">Discover</a>
-      <a href="community.html">Community</a>
-      <a href="profile.html">Profile</a>
+      <div class="fullNav">
+        <a class="navLinks" href="about.html">About</a>
+        <a class="navLinks" href="quiz.html">Quiz</a>
+        <a class="navLinks" href="discover.html">Discover</a>
+        <a class="navLinks" href="community.html">Community</a>
+        <a class="navLinks" href="profile.html">Profile</a>
+      </div>
     </nav>
     <!-- majority of content for this page will be added with databases, we just need the basics for now, maybe a sample -->
-    <div class="trending">
-      <h3>Trending Products</h3>
-      <ol>
-        <li>NARS Creamy Concealer</li>
-        <li>FENTY Pro Filt'r</li>
-        <li>Too Faced Born This Way</li>
-        <li>Benefit Liquid Lip Blush</li>
-        <li>Tarte Shape Tape</li>
-        <li>Dior Forever Skin</li>
-        <li>Maybelline Fit Me</li>
-        <li>Makeup By Mario Surreal</li>
-        <li>MAC Studio Fix</li>
-        <li>Hourglass Airbrush</li>
-      </ol>
-    </div>
-    <div class="whatsNew">
-      <h3>What's New</h3>
-      <img
-        src="../img/discussion1.png"
-        alt="picture of woman with eyes closed, displaying her makeup"
-      />
-      <img
-        src="../img/discussion2.png"
-        alt="picture of a woman winking at the camera with a coffee cup in hand"
-      />
-      <img
-        src="../img/discussion3.png"
-        alt="picture of woman posing for the camera"
-      />
+    <!-- creating list for trending topics -->
+    <div class="container">
+      <div class="stack">
+        <h2>Trending Products</h2>
+        <div class="trending">
+          <ol>
+            <li>NARS Creamy Concealer</li>
+            <li>FENTY Pro Filt'r</li>
+            <li>Too Faced Born This Way</li>
+            <li>Benefit Liquid Lip Blush</li>
+            <li>Tarte Shape Tape</li>
+            <li>Dior Forever Skin</li>
+            <li>Maybelline Fit Me</li>
+            <li>Makeup By Mario Surreal</li>
+            <li>MAC Studio Fix</li>
+            <li>Hourglass Airbrush</li>
+          </ol>
+        </div>
+      </div>
+      <!-- creating images for the whats new area, with captions included -->
+      <div class="newRec">
+        <div class="stack">
+          <h2>What's New</h2>
+          <div class="whatsNew">
+            <figure>
+              <figcaption>
+                by: vanessa_gyimah <br />
+                How to create the perfect base.
+              </figcaption>
+              <img
+                src="../assests/img/discussion1.png"
+                alt="picture of woman with eyes closed, displaying her makeup"
+              />
+            </figure>
+            <figure>
+              <figcaption>
+                by: liaMUA <br />
+                Best long lasting foundation?
+              </figcaption>
+              <img
+                src="../assests/img/discussion2.png"
+                alt="picture of a woman winking at the camera with a coffee cup in hand"
+              />
+            </figure>
+            <figure>
+              <figcaption>
+                by: HannahDIY <br />
+                THIS BLUSH IS LITERALLY THE BEST! HEAR ME OUT!
+              </figcaption>
+              <img
+                src="../assests/img/discussion3.png"
+                alt="picture of woman posing for the camera"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="stack">
+          <h2>Recommendations</h2>
+          <div class="recommendations">
+            <figure>
+              <figcaption>ONE/SIZE by Patrick Starr</figcaption>
+              <img
+                src="../assests/img/rec1.png"
+                alt="foundation branded ONE/SIZE by Patrick Starr"
+              />
+            </figure>
+            <figure>
+              <figcaption>Estée Lauder</figcaption>
+              <img
+                src="../assests/img/rec2.png"
+                alt="foundation branded Estée Lauder"
+              />
+            </figure>
+            <figure>
+              <figcaption>MAKEUP BY MARIO</figcaption>
+              <img
+                src="../assests/img/rec3.png"
+                alt="foundation branded MAKEUP BY MARIO"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
