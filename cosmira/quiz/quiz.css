@@ -1,200 +1,211 @@
 /*HEADER START*/
 @font-face {
-    font-family: 'Hkreg';
-    src: url('../fonts/HankenGrotesk-Regular.ttf') format('truetype');
-    src: url('../fonts/HankenGrotesk-Bold.ttf') format('bold');
-    src: url('../fonts/HankenGrotesk-SemiBoldItalic.ttf') format('bolditalic');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .heading {
-    background-image: url("/cosmira/assests/img/glitter.gif");
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: sticky;
-    top: 0;
-    height: 87px;
-  }
-  
-  .logo img {
-    height: 90px;
-    width: 300px;
-  }
-  
-  /* Search Bar */
-  .search input {
-    padding: 10px 80px;
-    border-radius: 15px;
-    margin-right: 20px;
-    border: none;
-    outline: none;
-    background: rgba(132, 139, 198, 0.555);
-    font-family: 'Hkreg' format('truetype');
-    font-size: 15px;
-    text-align: center;
-  }
-  
-  /* Navigation Bar */
-  nav {
-    display: flex;
-    background-color: #8076AF;
-    height: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    font-family: 'Hkreg' format('bold');
-  }
-  
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #e5d0ff;
-  }
-  
-  /*HEADER END*/
-
-  .nav-link.active {
-    color:#e5d0ff; /* active page link color */
+  font-family: "Hkreg";
+  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
+  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
+  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
+  font-weight: normal;
+  font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  background-image: url("/cosmira/assests/img/glitter.gif");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  height: 87px;
+}
+
+.logo img {
+  height: 90px;
+  width: 300px;
+}
+
+/* Search Bar */
+.search input {
+  padding: 10px 80px;
+  border-radius: 15px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  background: rgba(132, 139, 198, 0.555);
+  font-family: "Hkreg" format("truetype");
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  background-color: #8076af;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: "Hkreg" format("bold");
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e5d0ff;
+}
+
+/*HEADER END*/
+
 body {
-    background-image: radial-gradient(#7E573C, #280E31);
-    background-attachment: fixed;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0a0213;
-    color: white;
-    overflow: hidden;
-  }
+  background-image: radial-gradient(#7e573c, #280e31);
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0213;
+  color: white;
+  overflow: hidden;
+}
 
-  /*purple background box*/
-    .container {
-        text-align: center;
-        background: radial-gradient(#cab0b0, #402E56); /* Gradient background */
-        border-radius: 10px;
-        padding: 40px;
-        margin: 20px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        overflow: hidden; /* glitter box stays within box*/
-        position: relative;
-    }
-   
-    
-    .glitter-block h1{
-        top:0;
-        left: 0px;
-        position: absolute;
-        transform: translate(50%, 0%);
-        z-index: 2;
-        font-size:40px;
-    
-    }
-    p {
-        margin-bottom: 30px;
-    }
+/*purple background box*/
+.container {
+  text-align: center;
+  background: radial-gradient(#cab0b0, #402e56); /* Gradient background */
+  border-radius: 10px;
+  padding: 40px;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* glitter box stays within box*/
+  position: relative;
+}
 
-    .glitter-block img { 
-        margin-left:-40px;
-        margin-top: -40px;
-        width:150%;
-        height: 100px;
-     }
+.glitter-block h1 {
+  top: 0;
+  left: 0px;
+  position: absolute;
+  transform: translate(50%, 0%);
+  z-index: 2;
+  font-size: 40px;
+}
+p {
+  margin-bottom: 30px;
+}
 
-    .button-group {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .button1{
-        background: linear-gradient(135deg,#F8E2EF, #DEFDC7); /* Gradient button */
-        border: none;
-        border-radius: 15px;
-        color: #402E56;
-        font-weight: bold;
-        padding: 15px;
-        font-size: 16px;
-        cursor: pointer;
-        text-decoration: none; /* removes underline*/
-        transition: background 0.3s;
-        box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
-    }
-    .button1:hover {
-        background: linear-gradient(250deg, #57406f, #c4c4c4); /* Inverted gradient on hover */
-    }
-    .button2{
-        background: linear-gradient(135deg,#F8E2EF, #B7DBFF); /* Gradient button */
-        border: none;
-        border-radius: 15px;
-        color: #402E56;
-        font-weight: bold;
-        padding: 15px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background 0.3s;
-        box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
-    }
-    .button2:hover {
-        background: linear-gradient(250deg, #57406f, #c4c4c4); /* Inverted gradient on hover */
-    }
-    .button3{
-        background: linear-gradient(135deg,#F8E2EF, #F3B7FF); /* Gradient button */
-        border: none;
-        border-radius: 15px;
-        color: #402E56;
-        font-weight: bold;
-        padding: 15px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background 0.3s;
-        box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
-    }
-    .button3:hover {
-        background: linear-gradient(250deg, #57406f, #c4c4c4); /* Inverted gradient on hover */
-    }
-  
-    .button-single{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-    }
-    .skip-button {
-        margin-top: 20px;
-        background: #6D4B77; /* purp button */
-        border: none;
-        border-radius: 15px;
-        color: white;
-        padding: 15px;
-        width: 100px;
-        font-size: 16px;
-        cursor: pointer;
-        text-decoration: none; /*removes underline*/
-        transition: background 0.3s;
-        box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
-    }
-    .skip-button:hover {
-        background: #39273f; /* Darker purp on hover */
-    }
+.glitter-block img {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 150%;
+  height: 100px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.button1 {
+  background: linear-gradient(135deg, #f8e2ef, #defdc7); /* Gradient button */
+  border: none;
+  border-radius: 15px;
+  color: #402e56;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /* removes underline*/
+  transition: background 0.3s;
+  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+}
+.button1:hover {
+  background: linear-gradient(
+    250deg,
+    #57406f,
+    #c4c4c4
+  ); /* Inverted gradient on hover */
+}
+.button2 {
+  background: linear-gradient(135deg, #f8e2ef, #b7dbff); /* Gradient button */
+  border: none;
+  border-radius: 15px;
+  color: #402e56;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+}
+.button2:hover {
+  background: linear-gradient(
+    250deg,
+    #57406f,
+    #c4c4c4
+  ); /* Inverted gradient on hover */
+}
+.button3 {
+  background: linear-gradient(135deg, #f8e2ef, #f3b7ff); /* Gradient button */
+  border: none;
+  border-radius: 15px;
+  color: #402e56;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+}
+.button3:hover {
+  background: linear-gradient(
+    250deg,
+    #57406f,
+    #c4c4c4
+  ); /* Inverted gradient on hover */
+}
+
+.button-single {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.skip-button {
+  margin-top: 20px;
+  background: #6d4b77; /* purp button */
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px;
+  width: 100px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /*removes underline*/
+  transition: background 0.3s;
+  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+}
+.skip-button:hover {
+  background: #39273f; /* Darker purp on hover */
+}
 
 /*Quiz-Beginner Survey Start*/
 .bq-container {
@@ -208,11 +219,11 @@ body {
 
 h2 {
   margin-top: 30px;
-  color: #30133A;
+  color: #30133a;
 }
 
-.quiz-text{
-  color:#30133A;
+.quiz-text {
+  color: #30133a;
 }
 .bq-question {
   margin-bottom: 20px;
@@ -235,7 +246,7 @@ input[type="radio"] {
 }
 .submitbutton {
   margin-top: 20px;
-  background: #6D4B77; /* purp button */
+  background: #6d4b77; /* purp button */
   border: none;
   border-radius: 15px;
   color: white;
@@ -245,7 +256,7 @@ input[type="radio"] {
   cursor: pointer;
   text-decoration: none; /*removes underline*/
   transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133A; /* Drop shadow */
+  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
 }
 .submitbutton:hover {
   background-color: #39273f;
