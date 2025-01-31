@@ -11,8 +11,8 @@
     }
 
     * {
-      margin: 0;
-      padding: 0;
+      margin: 0px;
+      padding: 0px;
       box-sizing: border-box;
     }
 
@@ -95,65 +95,97 @@ body {
 
 /* PROFILE PAGE SPECIFIC STYLING START*/
 
-.profile-container {
-  display: flex;
-  margin: 20px;
-}
+  .big-profile-container {
+    display: flex;
+    margin: 20px;
+  }
 
 /* SIDEBAR STYLING (LEFT) START */
 
-.profile-sidebar {
-  background: #805aa2;
-  padding: 20px;
-  border-radius: 10px;
-  width: 270px;
-}
+  .profile-sidebar {
+    background: radial-gradient(#402e56db, #cab0b0c5);
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
 
-.profile-sidebar img {
-  padding-left: 30%;
-  padding-right: 30%;
-}
+  .profile-sidebar img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
 
-.profile-pic {
-  border-radius: 50%;
-}
+  .profile-pic {
+    border-radius: 50%;
+  }
 
-.username {
-  text-align: center;
-}
+  .username {
+    text-align: center;
+  }
 
-.stats {
-  text-align: center;
-}
+  .profile-stats {
+    text-align: center;
+    padding: 10px;
+  }
 
-.edit-button,
-.shade-match,
-.menu button,
-.review-buttons button {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  background: #4b2875;
-  border: none;
-  color: white;
-  border-radius: 5px;
-}
+  .sidebar-button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #c1b1d5ef;
+    border: none;
+    color: #281e34ff;
+    border-radius: 5px;
+  }
+
+  .emphasized {
+    background: #281e34ae;
+    color: white;
+  }
+
+  .review-link {
+    color: white;
+    text-align: center;
+  }
 
 /* SIDEBAR STYLING (LEFT) END */
 
 /* RIGHT SIDE OF SCREEN STYLING START */
 
-.profile-content {
+.profile-content-container {
   flex-grow: 1;
   margin-left: 20px;
+  background: radial-gradient(#cab0b090, #281e34ee); 
+  border-radius: 10px;
 }
 
-.section {
-  background: #3a245e;
+.content-section {
+  background-color: #c1b1d55e;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 10px;
+}
+
+.content-button {
+  width: fit-content;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
 }
 
 .items img {

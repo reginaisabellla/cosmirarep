@@ -46,35 +46,42 @@
     </header>
 <!-- COSMIRA HEADER END -->
 
-    <div class="profile-container">
+    <div class="big-profile-container">
+
+<!-- SIDEBAR SPECIFIC STYLING START (left side screen)-->
       <div class="profile-sidebar">
-        <img src="/cosmira/assests/img/lolaslickk.png" alt="user profile picture" class="profile-pic"/>
-        <h2 class="username">@LOLASLICKK</h2>
-        <div class="stats">
-          <p>67 Reviews</p>
-          <p>54 Discussions</p>
-        </div>
-        <button class="edit-button">Edit Profile</button>
-        <button class="shade-match">Shade Match Results →</button>
-        <div class="menu">
-          <button>Create A Review</button>
-          <button>Notifications</button>
-          <button>Your Likes</button>
-          <button>Settings</button>
-        </div>
+        <!-- user specific things -->
+          <img src="/cosmira/assests/img/lolaslickk.png" alt="user profile picture" class="profile-pic"/>
+          <h2 class="username">@LOLASLICKK</h2>
+          <div class="profile-stats">
+            <p class="review-amount">67 Reviews</p>
+            <p class="discussion-amount">54 Discussions</p>
+          </div>
+  <!-- go back and redo this with javascript later *** -->
+          <div class="sidebar-button-group">
+            <button class="sidebar-button">Edit Profile</button>
+            <button class="sidebar-button">Account Settings</button>
+            <button class="sidebar-button emphasized">See Shade Match Results</button>
+          </div>
+          <div class="review-link">
+            <a href="/cosmira/review/review.html" class="review-link">+ Write a New Review</a>
+          </div>
       </div>
-      <div class="profile-content">
-        <div class="section">
+<!-- SIDEBAR SPECIFIC STYLING END -->
+
+<!-- CONTENT SECTION SPECIFIC STYLING START (right side screen) -->
+      <div class="profile-content-container">
+        <div class="content-section">
           <h3>Your Discussions</h3>
           <div class="items">
-            <img src="/cosmira/assests/img/lolaslickk.png" />
+            <img src="product1.png" />
             <img src="product2.png" />
             <img src="product3.png" />
             <img src="product4.png" />
             <img src="product5.png" />
           </div>
         </div>
-        <div class="section">
+        <div class="content-section">
           <h3>Your Communities</h3>
           <div class="items">
             <img src="community1.png" />
@@ -84,15 +91,26 @@
             <img src="community5.png" />
           </div>
         </div>
-        <div class="section">
+        <div class="content-section">
           <h3>Your Reviews</h3>
-          <div class="review-buttons">
-            <button>By Brand</button>
-            <button>By Product</button>
-            <button>By Date</button>
+        <!-- need to add javascript functionality here -->
+          <div class="content-button-container">
+            <button class="content-button">By Brand</button>
+            <button class="content-button">By Product</button>
+            <button class="content-button">By Date</button>
+          </div>
+        </div>
+        <div class="content-section">
+          <h3>Your Likes</h3>
+        <!-- need to add javascript functionality here -->
+          <div class="content-button-container">
+            <button class="content-button">By Brand</button>
+            <button class="content-button">By Product</button>
+            <button class="content-button">By Date</button>
           </div>
         </div>
       </div>
+<!-- CONTENT SECTION SPECIFIC STYLING END -->
     </div>
   </body>
 </html>

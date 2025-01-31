@@ -1,83 +1,83 @@
-/*HEADER START*/
 @font-face {
-  font-family: "Hkreg";
-  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
-  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
-  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
-  font-weight: normal;
-  font-style: normal;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.heading {
-  background-image: url("/cosmira/assests/img/glitter.gif");
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: sticky;
-  top: 0;
-  height: 87px;
-}
-
-.logo img {
-  height: 90px;
-  width: 300px;
-}
-
-/* Search Bar */
-.search input {
-  padding: 10px 80px;
-  border-radius: 15px;
-  margin-right: 20px;
-  border: none;
-  outline: none;
-  background: rgba(132, 139, 198, 0.555);
-  font-family: "Hkreg" format("truetype");
-  font-size: 15px;
-  text-align: center;
-}
-
-/* Navigation Bar */
-nav {
-  display: flex;
-  background-color: #8076af;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  font-family: "Hkreg" format("bold");
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #e5d0ff;
-}
-
-/*HEADER END*/
-/* finish with nav */
+    font-family: "Hkreg";
+    src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
+    src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
+    src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    background-image: radial-gradient(#7e573c, #280e31);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0213;
+    color: white;
+  }
+  
+  .heading {
+    background-image: url("../assests/img/glitter.gif");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    height: 87px;
+  }
+  
+  .logo img {
+    height: 90px;
+    width: 300px;
+  }
+  
+  /* Search Bar */
+  .search input {
+    padding: 10px 80px;
+    border-radius: 15px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    background: rgba(132, 139, 198, 0.555);
+    font-family: "Hkreg" format("truetype");
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    background-color: #8076af;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    font-family: "Hkreg" format("bold");
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #e5d0ff;
+  }
+  
 
 /* starting with product page */
 
@@ -89,6 +89,116 @@ img {
   width: 450px;
 }
 
-#viewOther {
-  cursor: pointer;
+figcaption{
+    font-size: 20px;
+}
+
+#viewOther{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button{
+    font-size: 25px;
+    margin: 3px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* code credited to https://css-shape.com/star/ , will redo stars to correlate with actual ratings system */
+.star {
+    width: 50px;  
+    height: 50px;
+    aspect-ratio: 1;
+    background: #F7E8E1;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    
+  }
+
+  .emptyStar {
+    width: 50px;  
+    height: 50px;
+    aspect-ratio: 1;
+    background: #7D708D;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    
+  }
+
+  .ratings{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+
+.buttonDisp{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-right: #60376C solid 2px;   
+}
+.communityRev{
+    padding-left: 10px;
+    width: 600px;
+    
+}
+
+.productDesc{
+    color: #280E31;
+    background-color: #A495B8 ;
+    display: flex;
+    height: 308px;
+    font-size: 25px;
+    
+}
+
+.productName{
+   
+   margin-top: 0px;
+   padding-left: 8px;
+}
+
+h1{
+    background-image: url("../assests/img/header.png");
+    color: #F8E2EF;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+#longW{
+    background-color: #B7C3FF;
+    width: fit-content;
+}
+
+#medCov{
+    background-color: #B7DBFF;
+    width: fit-content;
+}
+
+#natFin{
+    background-color: #DEFDC7;
+    width: fit-content;
+}
+
+#veg{
+    background-color: #F3B7FF;
+    width: fit-content;
+}
+
+#seeAll{
+    color: #FFFFFF;
+    background-color: #60376C;
+    padding: 2px;
 }
