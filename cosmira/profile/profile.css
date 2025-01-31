@@ -125,6 +125,7 @@ body {
 
   .username {
     text-align: center;
+    padding-top: 10px;
   }
 
   .profile-stats {
@@ -189,9 +190,29 @@ body {
   border-radius: 5px;
 }
 
-.items img {
-  width: 50px;
-  margin-right: 10px;
+.profile-discussions img {
+  width: 280px;
+  height: 200px;
+  margin: 7px;
+  border-radius: 5px;
+}
+
+.image-container {
+  position: relative;
+  color: white;
+}
+
+.discussion-preview-text {
+  position: absolute;
+  bottom: 30px;
+  left: 16px;
+}
+
+.profile-communities img {
+  width: 230px;
+  height: 250px;
+  margin: 7px;
+  border-radius: 5px;
 }
 
 /* RIGHT SIDE OF SCREEN STYLING END */
