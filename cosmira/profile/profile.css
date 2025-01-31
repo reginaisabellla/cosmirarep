@@ -17,7 +17,7 @@
     }
 
     .heading {
-      background-image: url("/cosmira/assests/img/glitter.gif");
+      background-image: url("../assests/img/glitter.gif");
       display: flex;
       justify-content: space-between;
       align-items: center;

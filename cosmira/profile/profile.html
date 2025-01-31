@@ -1,22 +1,21 @@
 <!-- cosmira january 2025 -->
 <!-- need to add the basic doctype info -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmira</title>
-<!-- need to link js and css pages -->
-    <script src="js/cosmira.js"></script>
-    <link rel="stylesheet" href="/cosmira/profile/profile.css" />
+    <!-- need to link css page -->
+    <link rel="stylesheet" href="../profile/profile.css" />
   </head>
 
   <body>
-<!-- COSMIRA HEADER START -->
+    <!-- COSMIRA HEADER START -->
     <header>
       <div class="heading">
         <div class="logo">
-          <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo" />
+          <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
         </div>
         <div class="search">
           <input type="text" placeholder="S E A R C H" />
@@ -25,51 +24,54 @@
       <nav>
         <ul class="nav-links">
           <li>
-            <a class="nav-link" href="/cosmira/about/about.html">ABOUT</a>
+            <a class="nav-link" href="../about/about.html">ABOUT</a>
           </li>
-          <li><a class="nav-link" href="/cosmira/quiz/quiz.html">QUIZ</a></li>
+          <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
           <li>
-            <a class="nav-link" href="/cosmira/discover/discover.html"
-              >DISCOVER</a
-            >
+            <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
           </li>
           <li>
-            <a class="nav-link" href="/cosmira/community/community.html"
-              >COMMUNITY</a
-            >
+            <a class="nav-link" href="../community/community.html">COMMUNITY</a>
           </li>
           <li>
-            <a class="nav-link" href="/cosmira/profile/profile.html">PROFILE</a>
+            <a class="nav-link" href="../profile/profile.html">PROFILE</a>
           </li>
         </ul>
       </nav>
     </header>
-<!-- COSMIRA HEADER END -->
+    <!-- COSMIRA HEADER END -->
 
     <div class="big-profile-container">
-
-<!-- SIDEBAR SPECIFIC STYLING START (left side screen)-->
+      <!-- SIDEBAR SPECIFIC STYLING START (left side screen)-->
       <div class="profile-sidebar">
         <!-- user specific things -->
-          <img src="/cosmira/assests/img/lolaslickk.png" alt="user profile picture" class="profile-pic"/>
-          <h2 class="username">@LOLASLICKK</h2>
-          <div class="profile-stats">
-            <p class="review-amount">67 Reviews</p>
-            <p class="discussion-amount">54 Discussions</p>
-          </div>
-  <!-- go back and redo this with javascript later *** -->
-          <div class="sidebar-button-group">
-            <button class="sidebar-button">Edit Profile</button>
-            <button class="sidebar-button">Account Settings</button>
-            <button class="sidebar-button emphasized">See Shade Match Results</button>
-          </div>
-          <div class="review-link">
-            <a href="/cosmira/review/review.html" class="review-link">+ Write a New Review</a>
-          </div>
+        <img
+          src="../assests/img/lolaslickk.png"
+          alt="user profile picture"
+          class="profile-pic"
+        />
+        <h2 class="username">@LOLASLICKK</h2>
+        <div class="profile-stats">
+          <p class="review-amount">67 Reviews</p>
+          <p class="discussion-amount">54 Discussions</p>
+        </div>
+        <!-- go back and redo this with javascript later *** -->
+        <div class="sidebar-button-group">
+          <button class="sidebar-button">Edit Profile</button>
+          <button class="sidebar-button">Account Settings</button>
+          <button class="sidebar-button emphasized">
+            See Shade Match Results
+          </button>
+        </div>
+        <div class="review-link">
+          <a href="../review/review.html" class="review-link"
+            >+ Write a New Review</a
+          >
+        </div>
       </div>
-<!-- SIDEBAR SPECIFIC STYLING END -->
+      <!-- SIDEBAR SPECIFIC STYLING END -->
 
-<!-- CONTENT SECTION SPECIFIC STYLING START (right side screen) -->
+      <!-- CONTENT SECTION SPECIFIC STYLING START (right side screen) -->
       <div class="profile-content-container">
         <div class="content-section">
           <h3>Your Discussions</h3>
@@ -93,7 +95,7 @@
         </div>
         <div class="content-section">
           <h3>Your Reviews</h3>
-        <!-- need to add javascript functionality here -->
+          <!-- need to add javascript functionality here -->
           <div class="content-button-container">
             <button class="content-button">By Brand</button>
             <button class="content-button">By Product</button>
@@ -102,7 +104,7 @@
         </div>
         <div class="content-section">
           <h3>Your Likes</h3>
-        <!-- need to add javascript functionality here -->
+          <!-- need to add javascript functionality here -->
           <div class="content-button-container">
             <button class="content-button">By Brand</button>
             <button class="content-button">By Product</button>
@@ -110,7 +112,7 @@
           </div>
         </div>
       </div>
-<!-- CONTENT SECTION SPECIFIC STYLING END -->
+      <!-- CONTENT SECTION SPECIFIC STYLING END -->
     </div>
   </body>
 </html>
