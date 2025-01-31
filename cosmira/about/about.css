@@ -31,7 +31,7 @@
   width: 300px;
 }
 
-/* Search Bar */
+/* search bar */
 .search input {
   padding: 10px 80px;
   border-radius: 15px;
@@ -44,7 +44,7 @@
   text-align: center;
 }
 
-/* Navigation Bar */
+/* navigation bar */
 nav {
   display: flex;
   background-color: #8076AF;
@@ -86,24 +86,24 @@ body {
   color: white;
 }
 
-/* Vision Section */
+/* vision section */
 .vision-section {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 0; /* Removed vertical padding */
+  padding: 0;
 }
 
 .vision-image img {
-  width: 55vw; /* Take 50% of the viewport width */
+  width: 55vw;
   height: auto;
   object-fit: cover;
-  margin-bottom: -4px; /* Negative margin to remove gaps caused by rendering */
+  margin-bottom: -4px;
 }
 
 .vision-text {
-  width: 50%; /* Text takes the remaining 50% */
-  padding: 0 80px; /* Adds spacing between text and the image */
+  width: 50%;
+  padding: 0 80px; 
 }
 
 .vision-text h2 {
@@ -122,34 +122,34 @@ body {
   margin-bottom: 10px;
 }
 
-/* Mission and Values Section */
+/* mission and values section */
 .mission-values-section {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 0; /* Removed vertical padding */
+  padding: 0;
 
 }
 
 .mission-values-image img {
-  width: 55vw; /* Increased width to extend left */
+  width: 55vw;
   height: auto;
   object-fit: cover;
-  margin-bottom: -4px; /* Keep images touching vertically */
-  margin-left: -5vw; /* Shift image to the left */
-  position: relative; /* Enable positioning for overlap */
-  z-index: 2; /* Ensure pic2 appears above pic1 and pic3 */
-  margin-top: -20px; /* Slightly overlap pic1 */
-  margin-bottom: -20px; /* Slightly overlap pic3 */
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Optional drop shadow */
+  margin-bottom: -4px; 
+  margin-left: -5vw; 
+  position: relative; 
+  z-index: 2;
+  margin-top: -20px; 
+  margin-bottom: -20px; 
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
 .mission-values-text {
-  width: 50%; /* Text takes the remaining 50% */
+  width: 50%; 
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 0 50px; /* Adds spacing between text and the image */
+  padding: 0 50px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
