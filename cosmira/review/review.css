@@ -244,7 +244,7 @@ body {
   width: 70%;
   align-self: flex-start;
   margin-left: auto;
-  margin-top: 0; /* Moves the reviews up to align with the filters */
+  margin-top: 0; 
 }
 
 /* individual review cards within reviews section */

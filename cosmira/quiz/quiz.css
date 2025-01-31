@@ -81,17 +81,16 @@ nav {
 body {
   background-image: radial-gradient(#7e573c, #280e31);
   background-attachment: fixed;
-  margin: 0;
+  margin:0;
   font-family: Arial, sans-serif;
   background-color: #0a0213;
   color: white;
-  overflow: hidden;
 }
 
 /*purple background box*/
 .container {
   text-align: center;
-  background: radial-gradient(#cab0b0, #402e56); /* Gradient background */
+  background: radial-gradient(#cab0b0, #402e56);
   border-radius: 10px;
   padding: 40px;
   margin: 20px;
@@ -109,6 +108,7 @@ body {
   font-size: 40px;
 }
 p {
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -125,7 +125,7 @@ p {
   gap: 10px;
 }
 .button1 {
-  background: linear-gradient(135deg, #f8e2ef, #defdc7); /* Gradient button */
+  background: linear-gradient(135deg, #f8e2ef, #defdc7); 
   border: none;
   border-radius: 15px;
   color: #402e56;
@@ -133,19 +133,19 @@ p {
   padding: 15px;
   font-size: 16px;
   cursor: pointer;
-  text-decoration: none; /* removes underline*/
+  text-decoration: none; 
   transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+  box-shadow: 0 0 15px 5px #30133a; 
 }
 .button1:hover {
   background: linear-gradient(
     250deg,
     #57406f,
     #c4c4c4
-  ); /* Inverted gradient on hover */
+  ); 
 }
 .button2 {
-  background: linear-gradient(135deg, #f8e2ef, #b7dbff); /* Gradient button */
+  background: linear-gradient(135deg, #f8e2ef, #b7dbff); 
   border: none;
   border-radius: 15px;
   color: #402e56;
@@ -154,17 +154,17 @@ p {
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+  box-shadow: 0 0 15px 5px #30133a;
 }
 .button2:hover {
   background: linear-gradient(
     250deg,
     #57406f,
     #c4c4c4
-  ); /* Inverted gradient on hover */
+  ); 
 }
 .button3 {
-  background: linear-gradient(135deg, #f8e2ef, #f3b7ff); /* Gradient button */
+  background: linear-gradient(135deg, #f8e2ef, #f3b7ff);
   border: none;
   border-radius: 15px;
   color: #402e56;
@@ -173,14 +173,14 @@ p {
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+  box-shadow: 0 0 15px 5px #30133a; 
 }
 .button3:hover {
   background: linear-gradient(
     250deg,
     #57406f,
     #c4c4c4
-  ); /* Inverted gradient on hover */
+  ); 
 }
 
 .button-single {
@@ -191,7 +191,7 @@ p {
 }
 .skip-button {
   margin-top: 20px;
-  background: #6d4b77; /* purp button */
+  background: #6d4b77; 
   border: none;
   border-radius: 15px;
   color: white;
@@ -199,66 +199,158 @@ p {
   width: 100px;
   font-size: 16px;
   cursor: pointer;
-  text-decoration: none; /*removes underline*/
+  text-decoration: none; 
   transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+  box-shadow: 0 0 15px 5px #30133a; 
 }
 .skip-button:hover {
-  background: #39273f; /* Darker purp on hover */
+  background: #39273f; 
 }
 
 /*Quiz-Beginner Survey Start*/
-.bq-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 h2 {
   margin-top: 30px;
-  color: #30133a;
+  color: #ffffff;
 }
 
 .quiz-text {
-  color: #30133a;
+  color: #ffffff;
 }
 .bq-question {
   margin-bottom: 20px;
 }
-.color-options {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  margin-top: 10px;
-}
-.color-options label {
-  background-color: #e0b0e4;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-}
+
 input[type="radio"] {
   margin-right: 5px;
 }
-.submitbutton {
+
+.value{
+  color: #f4ded4;
+
+}
+.matchbutton {
   margin-top: 20px;
-  background: #6d4b77; /* purp button */
+  background: #6d4b77;
   border: none;
   border-radius: 15px;
   color: white;
   padding: 15px;
-  width: 100px;
+  width: 150px;
   font-size: 16px;
   cursor: pointer;
-  text-decoration: none; /*removes underline*/
+  text-decoration: none;
   transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133a; /* Drop shadow */
+  box-shadow: 0 0 15px 5px #30133a; 
 }
-.submitbutton:hover {
+.matchbutton:hover {
   background-color: #39273f;
 }
+
+/*buttons*/
+.color-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+.color-buttons label {
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.color-buttons, .vein-buttons{
+  /*display: flex;*/
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skin-color {
+  width: 100%; /* Ensure buttons take full width of grid cells */
+  padding: 10px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  background-color: white;
+}
+
+
+.skin-color, .vein-button{
+    padding: 20px 150px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    color:#280E31;
+    font-weight: bold;
+    
+}
+
+#color1{ background-color: #f4ded4;}
+#color2{ background-color: #ebc2af; }
+#color3{ background-color: #d2a28b; }
+#color4{ background-color: #c18b6f; }
+#color5{ background-color: #a56c50; }
+#color6{ background-color: #86543b; }
+#color7{ background-color: #633a26; }
+#color8{ background-color: #4d2a1d; }
+#color9{ background-color: #331f19; }
+#color10{ background-color:#1f120e; }
+
+.blue { background-color: #6989e7; }
+.bluish-green { background-color: #4ff1bb; }
+.green { background-color: #5ba155; }
+.purple { background-color: #663399; }
+
+.vein-buttons {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Adjust gap between buttons as needed */
+}
+
+.vein-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  text-align: center;
+}
+
+.vein-button input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.vein-button.blue {
+  background-color: #6989e7;
+}
+
+.vein-button.bluish-green {
+  background-color: #4ff1bb;
+}
+
+.vein-button.green {
+  background-color: #5ba155;
+}
+
+.vein-button.purple {
+  background-color: #663399;
+}
+
+.vein-button input[type="radio"]:checked + label {
+  background-color: #333; /* Change to desired color when selected */
+}
+
 /*Quiz-Beginner Survey End*/

@@ -31,7 +31,7 @@
   width: 300px;
 }
 
-/* Search Bar */
+/* search bar */
 .search input {
   padding: 10px 80px;
   border-radius: 15px;
@@ -44,7 +44,7 @@
   text-align: center;
 }
 
-/* Navigation Bar */
+/* navigation bar */
 nav {
   display: flex;
   background-color: #8076af;
@@ -137,7 +137,7 @@ body {
   color: #2e1b50;
 }
 
-/* Carousel Dots */
+/* gallery dots */
 .carousel-dots {
   position: absolute;
   bottom: 20px;
@@ -155,91 +155,4 @@ body {
 
 .dot.active {
   background: white;
-}
-
-/* Container for Vision, Mission, and Values */
-.container {
-  font-family: "Hkreg" format("bolditalic");
-  margin: 40px auto;
-}
-
-/* Vision Section */
-.vision {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 60px;
-}
-
-.vision .text {
-  flex: 1;
-  text-align: left;
-}
-
-.vision .image {
-  flex: 1;
-}
-
-.vision .image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Mission and Values Section */
-.mission-values {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.mission,
-.values {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-}
-
-.mission .image,
-.values .image {
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.mission .image img,
-.values .image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .vision,
-  .mission-values {
-    flex-direction: column;
-  }
-
-  .vision {
-    text-align: center;
-  }
-
-  .vision .text,
-  .vision .image {
-    width: 100%;
-  }
-
-  .mission,
-  .values {
-    text-align: center;
-    width: 100%;
-  }
-
-  .mission .image img,
-  .values .image img {
-    width: 100%;
-  }
 }

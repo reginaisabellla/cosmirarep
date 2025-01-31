@@ -96,7 +96,6 @@ body {
 /* PROFILE PAGE SPECIFIC STYLING START*/
 
   .big-profile-container {
-    /* this makes it so content lines up next to sidebar instead of under */
     display: flex;
     margin: 20px;
   }
@@ -104,7 +103,7 @@ body {
 /* SIDEBAR STYLING (LEFT) START */
 
   .profile-sidebar {
-    background: radial-gradient(#402e56db, #cab0b0c5); /* Gradient background */
+    background: radial-gradient(#402e56db, #cab0b0c5);
     padding-left: 20px;
     padding-right:20px;
     padding-top: 20px;
@@ -162,7 +161,7 @@ body {
 .profile-content-container {
   flex-grow: 1;
   margin-left: 20px;
-  background: radial-gradient(#cab0b090, #281e34ee); /* Gradient background */
+  background: radial-gradient(#cab0b090, #281e34ee); 
   border-radius: 10px;
 }
 
@@ -190,29 +189,9 @@ body {
   border-radius: 5px;
 }
 
-.profile-discussions img {
-  width: 280px;
-  height: 200px;
-  margin: 7px;
-  border-radius: 5px;
-}
-
-.image-container {
-  position: relative;
-  color: white;
-}
-
-.discussion-preview-text {
-  position: absolute;
-  bottom: 30px;
-  left: 16px;
-}
-
-.profile-communities img {
-  width: 230px;
-  height: 250px;
-  margin: 7px;
-  border-radius: 5px;
+.items img {
+  width: 50px;
+  margin-right: 10px;
 }
 
 /* RIGHT SIDE OF SCREEN STYLING END */
