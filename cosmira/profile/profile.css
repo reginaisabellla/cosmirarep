@@ -190,6 +190,10 @@ color: #281e34ff;
 border-radius: 5px;
 }
 
+.profile-discussions{
+  display: flex;
+}
+
 .profile-discussions img {
 width: 280px;
 height: 200px;
