@@ -89,6 +89,116 @@ img {
   width: 450px;
 }
 
-#viewOther {
-  cursor: pointer;
+figcaption{
+    font-size: 20px;
+}
+
+#viewOther{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button{
+    font-size: 25px;
+    margin: 3px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* code credited to https://css-shape.com/star/ , will redo stars to correlate with actual ratings system */
+.star {
+    width: 50px;  
+    height: 50px;
+    aspect-ratio: 1;
+    background: #F7E8E1;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    
+  }
+
+  .emptyStar {
+    width: 50px;  
+    height: 50px;
+    aspect-ratio: 1;
+    background: #7D708D;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    
+  }
+
+  .ratings{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+
+.buttonDisp{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-right: #60376C solid 2px;   
+}
+.communityRev{
+    padding-left: 10px;
+    width: 600px;
+    
+}
+
+.productDesc{
+    color: #280E31;
+    background-color: #A495B8 ;
+    display: flex;
+    height: 308px;
+    font-size: 25px;
+    
+}
+
+.productName{
+   
+   margin-top: 0px;
+   padding-left: 8px;
+}
+
+h1{
+    background-image: url("../assests/img/header.png");
+    color: #F8E2EF;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+#longW{
+    background-color: #B7C3FF;
+    width: fit-content;
+}
+
+#medCov{
+    background-color: #B7DBFF;
+    width: fit-content;
+}
+
+#natFin{
+    background-color: #DEFDC7;
+    width: fit-content;
+}
+
+#veg{
+    background-color: #F3B7FF;
+    width: fit-content;
+}
+
+#seeAll{
+    color: #FFFFFF;
+    background-color: #60376C;
+    padding: 2px;
 }
