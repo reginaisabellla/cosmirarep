@@ -1,70 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-BeginnerSurvey</title>
     <!-- need to link js and css pages -->
-    <link rel="stylesheet" href="/cosmira/quiz/quiz.css" />
+    <link rel="stylesheet" href="../quiz/quiz.css" />
   </head>
-<body>
-  <header>
-    <div class="heading">
-      <div class="logo">
-        <img src="/cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo" />
+  <body>
+    <header>
+      <div class="heading">
+        <div class="logo">
+          <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+        </div>
+        <div class="search">
+          <input type="text" placeholder="S E A R C H" />
+        </div>
       </div>
-      <div class="search">
-        <input type="text" placeholder="S E A R C H" />
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="../about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../community/community.html">COMMUNITY</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../profile/profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="glitter-block">
+        <img src="../assests/img/header.png" alt="Glitter" />
+        <h1>BEGINNER QUIZ</h1>
       </div>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="/cosmira/about/about.html">ABOUT</a></li>
-        <li><a class="nav-link" href="/cosmira/quiz/quiz.html">QUIZ</a></li>
-        <li><a class="nav-link" href="/cosmira/discover/discover.html">DISCOVER</a></li>
-        <li><a class="nav-link" href="/cosmira/community/community.html">COMMUNITY</a></li>
-        <li><a class="nav-link" href="/cosmira/profile/profile.html">PROFILE</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <div class="glitter-block">
-      <img src="/cosmira/assests/img/header.png" alt="Glitter" />
-      <h1>BEGINNER QUIZ</h1>
-    </div>
-    <form>
-    <div class="bq-question">
-      <h2>Question 1.</h2>
-      <div class="quiz-text">
-        <p>Select the skin color range MOST accurate to yours:</p>
-      </div>
-      <div class="color-buttons">
-        <label><input type="button" class="skin-color" name="skin-color" id="color1" value="1"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color6" value="6"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color2" value="2"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color7" value="7"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color3" value="3"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color8" value="8"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color4" value="4"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color9" value="9"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color5" value="5"></label>
-        <label><input type="button" class="skin-color" name="skin-color" id="color10" value="10"></label>
-      </div>
-    </div>
-    <div class="bq-question">
-      <h2>Question 2.</h2>
-      <div class="quiz-text">
-        <p>What color are your veins?</p>
-      </div>
-      <div class="vein-buttons">
-        <label><input type="radio" name="vein-color" value="blue"><button class="vein-button blue">Blue</button></label>
-        <label><input type="radio" name="vein-color" value="bluish-green"><button class="vein-button bluish-green">Bluish-Green</button></label>
-        <label><input type="radio" name="vein-color" value="green"><button class="vein-button green">Green</button></label>
-        <label><input type="radio" name="vein-color" value="purple"><button class="vein-button purple">Purple</button></label>
-      </div>
-    </div>
+      <form>
+        <div class="bq-question">
+          <h2>Question 1.</h2>
+          <div class="quiz-text">
+            <p>Select the skin color range MOST accurate to yours:</p>
+          </div>
+          <div class="color-buttons">
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color1"
+                value="1"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color6"
+                value="6"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color2"
+                value="2"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color7"
+                value="7"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color3"
+                value="3"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color8"
+                value="8"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color4"
+                value="4"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color9"
+                value="9"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color5"
+                value="5"
+            /></label>
+            <label
+              ><input
+                type="button"
+                class="skin-color"
+                name="skin-color"
+                id="color10"
+                value="10"
+            /></label>
+          </div>
+        </div>
+        <div class="bq-question">
+          <h2>Question 2.</h2>
+          <div class="quiz-text">
+            <p>What color are your veins?</p>
+          </div>
+          <div class="vein-buttons">
+            <label
+              ><input type="radio" name="vein-color" value="blue" /><button
+                class="vein-button blue"
+              >
+                Blue
+              </button></label
+            >
+            <label
+              ><input
+                type="radio"
+                name="vein-color"
+                value="bluish-green"
+              /><button class="vein-button bluish-green">
+                Bluish-Green
+              </button></label
+            >
+            <label
+              ><input type="radio" name="vein-color" value="green" /><button
+                class="vein-button green"
+              >
+                Green
+              </button></label
+            >
+            <label
+              ><input type="radio" name="vein-color" value="purple" /><button
+                class="vein-button purple"
+              >
+                Purple
+              </button></label
+            >
+          </div>
+        </div>
         <button class="matchbutton" type="submit">Get My Match!</button>
-    </form>
-  </div>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
