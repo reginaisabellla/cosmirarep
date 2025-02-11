@@ -101,6 +101,14 @@ background-color: #0a0213;
 color: white;
 }
 
+h3 {
+  font-family: Inter;
+}
+
+div {
+  font-family: Inter;
+}
+
 /* BODY STYLING END */
 
 /* PROFILE PAGE SPECIFIC STYLING START*/
