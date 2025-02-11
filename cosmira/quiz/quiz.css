@@ -102,13 +102,14 @@ body {
 .glitter-block h1 {
   top: 0px;
   left: 0px;
-  position: absolute;
+  position: sticky;
   transform: translate(50%, 0%);
   z-index: 2;
   font-size: 40px;
   padding-left: auto;
   padding-right: auto;
 }
+
 p {
   margin-top: 20px;
   margin-bottom: 30px;
