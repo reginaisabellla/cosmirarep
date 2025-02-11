@@ -1,25 +1,28 @@
 /* COSMIRA DIG4172C JAN 2025 */
+
 /*HEADER START*/
 
-/* @font-face {
-  font-family: "Hkreg";
-  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
-  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
-  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
-  font-weight: normal;
-  font-style: normal;
-} */
+/* @font-face import section start */
 
-@font-face {
-  font-family: "Inter";
-  src: url("../assests/fonts/Inter/Inter-Regular.otf");
-  /* src: url("../assests/fonts/Inter/Inter-Bold.otf") format("bold");
-  src: url("../assests/fonts/Inter/Inter-Italic.otf") format("italic");
-  src: url("../assests/fonts/Inter/Inter-BoldItalic.otf") format("bolditalic");
-  font-weight: normal;
-  font-style: normal; */
-}
+/* Inter import */
 
+  @font-face {
+    font-family: "Inter";
+    src: url("../assests/fonts/Inter/Inter-Regular.otf");
+    /* src: url("../assests/fonts/Inter/Inter-Bold.otf") format("bold");
+    src: url("../assests/fonts/Inter/Inter-Italic.otf") format("italic");
+    src: url("../assests/fonts/Inter/Inter-BoldItalic.otf") format("bolditalic");
+    font-weight: normal;
+    font-style: normal; */
+  }
+
+  /* Lexend Deca import */
+  @font-face {
+    font-family: "Lexend Deca";
+    src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf")
+  }
+
+/* @font-face import section end */
 * {
   margin: 0px;
   padding: 0px;
@@ -101,13 +104,19 @@ background-color: #0a0213;
 color: white;
 }
 
-h3 {
-  font-family: Inter;
-}
+/* applying fonts */
 
-div {
-  font-family: Inter;
-}
+  h3 {
+    font-family: Inter;
+  }
+
+  div {
+    font-family: Inter;
+  }
+
+  button {
+    font-family: Inter;
+  }
 
 /* BODY STYLING END */
 
@@ -115,128 +124,129 @@ div {
 
 .big-profile-container {
 /* this makes it so content lines up next to sidebar instead of under */
+
 display: flex;
 margin: 20px;
 }
 
-/* SIDEBAR STYLING (LEFT) START */
+  /* SIDEBAR STYLING (LEFT) START */
 
-.profile-sidebar {
-background: radial-gradient(#402e56db, #cab0b0c5); /* Gradient background */
-padding-left: 20px;
-padding-right:20px;
-padding-top: 20px;
-padding-bottom: 20px;
-border-radius: 10px;
-width: 300px;
-}
+  .profile-sidebar {
+  background: radial-gradient(#402e56db, #cab0b0c5); /* Gradient background */
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  width: 300px;
+  }
 
-.profile-sidebar img {
-display: block;
-margin: auto;
-width: 50%;
-}
+  .profile-sidebar img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  }
 
-.profile-pic {
-border-radius: 50%;
-}
+  .profile-pic {
+  border-radius: 50%;
+  }
 
-.username {
-text-align: center;
-padding-top: 10px;
-}
+  .username {
+  text-align: center;
+  padding-top: 10px;
+  }
 
-.profile-stats {
-text-align: center;
-padding: 10px;
-}
+  .profile-stats {
+  text-align: center;
+  padding: 10px;
+  }
 
-.sidebar-button {
-display: block;
-width: 100%;
-margin-top: 10px;
-margin-bottom: 10px;
-padding: 10px;
-background: #c1b1d5ef;
-border: none;
-color: #281e34ff;
-border-radius: 5px;
-}
+  .sidebar-button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
+  }
 
-.emphasized {
-background: #281e34ae;
-color: white;
-}
+  .emphasized {
+  background: #281e34ae;
+  color: white;
+  }
 
-.review-link {
-color: white;
-text-align: center;
-}
+  .review-link {
+  color: white;
+  text-align: center;
+  }
 
 /* SIDEBAR STYLING (LEFT) END */
 
-/* RIGHT SIDE OF SCREEN STYLING START */
+  /* RIGHT SIDE OF SCREEN STYLING START */
 
-.profile-content-container {
-flex-grow: 1;
-margin-left: 20px;
-background: radial-gradient(#cab0b090, #281e34ee); /* Gradient background */
-border-radius: 10px;
-}
+  .profile-content-container {
+  flex-grow: 1;
+  margin-left: 20px;
+  background: radial-gradient(#cab0b090, #281e34ee); /* Gradient background */
+  border-radius: 10px;
+  }
 
-.content-section {
-background-color: #c1b1d55e;
-padding: 15px;
-margin-bottom: 10px;
-margin-top: 10px;
-margin-left: 10px;
-margin-right: 10px;
-border-radius: 10px;
-}
+  .content-section {
+  background-color: #c1b1d55e;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  }
 
-.content-button {
-width: fit-content;
-margin-top: 15px;
-margin-bottom: 5px;
-padding-top: 7px;
-padding-bottom: 7px;
-padding-left: 15px;
-padding-right: 15px;
-background: #c1b1d5ef;
-border: none;
-color: #281e34ff;
-border-radius: 5px;
-}
+  .content-button {
+  width: fit-content;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
+  }
 
-.profile-discussions{
-  display: flex;
-}
+  .profile-discussions{
+    display: flex;
+  }
 
-.profile-discussions img {
-width: 280px;
-height: 200px;
-margin: 7px;
-border-radius: 5px;
-}
+  .profile-discussions img {
+  width: 280px;
+  height: 200px;
+  margin: 7px;
+  border-radius: 5px;
+  }
 
-.image-container {
-position: relative;
-color: white;
-}
+  .image-container {
+  position: relative;
+  color: white;
+  }
 
-.discussion-preview-text {
-position: absolute;
-bottom: 30px;
-left: 16px;
-}
+  .discussion-preview-text {
+  position: absolute;
+  bottom: 30px;
+  left: 16px;
+  }
 
-.profile-communities img {
-width: 230px;
-height: 250px;
-margin: 7px;
-border-radius: 5px;
-}
+  .profile-communities img {
+  width: 230px;
+  height: 250px;
+  margin: 7px;
+  border-radius: 5px;
+  }
 
-/* RIGHT SIDE OF SCREEN STYLING END */
+  /* RIGHT SIDE OF SCREEN STYLING END */
 
 /* PROFILE PAGE SPECIFIC STYLING END */
