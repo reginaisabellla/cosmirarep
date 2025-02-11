@@ -93,7 +93,7 @@ body {
   background: radial-gradient(#cab0b0, #402e56);
   border-radius: 10px;
   padding: 40px;
-  margin: 20px;
+  /* margin: 20px; */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   overflow: hidden; /* glitter box stays within box*/
   position: relative;
@@ -102,7 +102,7 @@ body {
 .glitter-block h1 {
   top: 0px;
   left: 0px;
-  position: relative;
+  position: absolute;
   transform: translate(50%, 0%);
   z-index: 2;
   font-size: 40px;
