@@ -18,7 +18,7 @@
 
   /* Lexend Deca import */
   @font-face {
-    font-family: "Lexend Deca";
+    font-family: "LexendDeca";
     src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf")
   }
 
@@ -67,7 +67,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  font-family: Inter;
+  font-family: LexendDeca;
 }
 
 .nav-links {
@@ -104,19 +104,21 @@ background-color: #0a0213;
 color: white;
 }
 
-/* applying fonts */
+  /* applying fonts start */
 
-  h3 {
-    font-family: Inter;
-  }
+    h3 {
+      font-family: Inter;
+    }
 
-  div {
-    font-family: Inter;
-  }
+    div {
+      font-family: LexendDeca;
+    }
 
-  button {
-    font-family: Inter;
-  }
+    button {
+      font-family: LexendDeca;
+    }
+
+    /* applying fonts end */
 
 /* BODY STYLING END */
 
