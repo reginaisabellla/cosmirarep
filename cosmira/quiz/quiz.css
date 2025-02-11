@@ -99,13 +99,15 @@ body {
   position: relative;
 }
 
-.glitter-block {
-  top: 0;
+.glitter-block h1 {
+  top: 0px;
   left: 0px;
   position: absolute;
   transform: translate(50%, 0%);
   z-index: 2;
   font-size: 40px;
+  padding-left: auto;
+  padding-right: auto;
 }
 p {
   margin-top: 20px;
