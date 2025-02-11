@@ -11,7 +11,7 @@
 } */
 
 @font-face {
-  font-family: "Hkreg";
+  font-family: "Inter";
   src: url("../assests/fonts/Inter/Inter-Regular.otf") format("truetype");
   src: url("../assests/fonts/Inter/Inter-Bold.otf") format("bold");
   src: url("../assests/fonts/Inter/Inter-Italic.otf") format("italic");
