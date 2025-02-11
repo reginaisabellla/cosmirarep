@@ -102,7 +102,7 @@ body {
 .glitter-block h1 {
   top: 0;
   left: 0px;
-  position: absolute;
+  /* position: absolute; */
   transform: translate(50%, 0%);
   z-index: 2;
   font-size: 40px;
