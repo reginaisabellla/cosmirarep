@@ -96,7 +96,7 @@ body {
   margin: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   overflow: hidden; /* glitter box stays within box*/
-  position: relative;
+  position: absolute;
 }
 
 .glitter-block h1 {
@@ -106,8 +106,6 @@ body {
   transform: translate(50%, 0%);
   z-index: 2;
   font-size: 40px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 p {
