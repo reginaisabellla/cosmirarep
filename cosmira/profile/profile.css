@@ -1,11 +1,21 @@
 /* COSMIRA DIG4172C JAN 2025 */
 /*HEADER START*/
 
-@font-face {
+/* @font-face {
   font-family: "Hkreg";
   src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
   src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
   src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Hkreg";
+  src: url("../assests/fonts/Inter/Inter-Regular.otf") format("truetype");
+  src: url("../assests/fonts/Inter/Inter-Bold.otf") format("bold");
+  src: url("../assests/fonts/Inter/Inter-Italic.otf") format("italic");
+  src: url("../assests/fonts/Inter/Inter-BoldItalic.otf") format("bolditalic");
   font-weight: normal;
   font-style: normal;
 }
@@ -41,7 +51,7 @@
   border: none;
   outline: none;
   background: rgba(132, 139, 198, 0.555);
-  font-family: "Hkreg" format("truetype");
+  font-family: "Inter" format("truetype");
   font-size: 15px;
   text-align: center;
 }
@@ -54,7 +64,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  font-family: "Hkreg" format("bold");
+  font-family: "Inter" format("bold");
 }
 
 .nav-links {
