@@ -88,41 +88,50 @@ body {
 }
 
 /*purple background box*/
-.container {
-  text-align: center;
+.container{
+  display: grid;
+  grid-template-columns: fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.pop-up {
+  background: #a495b8;
   background: radial-gradient(#cab0b0, #402e56);
   border-radius: 10px;
-  padding: 40px;
-  margin: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  overflow: hidden; /* glitter box stays within box*/
-  position: relative;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.glitter-block h1 {
-  top: 0;
-  left: 0px;
-  position: absolute;
-  transform: translate(50%, 0%);
-  z-index: 2;
-  font-size: 40px;
+.pop-up h1{
+  background: #280e31;
+  color: #f8e2ef;
+  padding: 20px;
+  border-radius: 10px 10px 0 0; 
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0; 
+  width: 100%;
 }
+
 p {
   margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.glitter-block img {
-  margin-left: -40px;
-  margin-top: -40px;
-  width: 150%;
-  height: 100px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .button-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 20px;
+
 }
 .button1 {
   background: linear-gradient(135deg, #f8e2ef, #defdc7); 
@@ -135,7 +144,8 @@ p {
   cursor: pointer;
   text-decoration: none; 
   transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133a; 
+  box-shadow: 0 0 15px 5px #30133a;
+  text-align: center; 
 }
 .button1:hover {
   background: linear-gradient(
@@ -186,8 +196,9 @@ p {
 .button-single {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
+  padding: 20px;
 }
 .skip-button {
   margin-top: 20px;
@@ -201,7 +212,8 @@ p {
   cursor: pointer;
   text-decoration: none; 
   transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133a; 
+  box-shadow: 0 0 15px 5px #30133a;
+  text-align: center; 
 }
 .skip-button:hover {
   background: #39273f; 
@@ -212,6 +224,7 @@ p {
 h2 {
   margin-top: 30px;
   color: #ffffff;
+  padding-left: 25px;
 }
 
 .quiz-text {
@@ -221,13 +234,9 @@ h2 {
   margin-bottom: 20px;
 }
 
+
 input[type="radio"] {
   margin-right: 5px;
-}
-
-.value{
-  color: #f4ded4;
-
 }
 .matchbutton {
   margin-top: 20px;
@@ -243,6 +252,7 @@ input[type="radio"] {
   transition: background 0.3s;
   box-shadow: 0 0 15px 5px #30133a; 
 }
+
 .matchbutton:hover {
   background-color: #39273f;
 }
@@ -251,14 +261,13 @@ input[type="radio"] {
 .color-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  margin-top: 10px;
 }
 .color-buttons label {
-  position: relative;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10PX;
   border-radius: 5px;
   cursor: pointer;
-
 }
 
 .color-buttons, .vein-buttons{
