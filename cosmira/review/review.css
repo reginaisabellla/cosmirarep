@@ -76,7 +76,7 @@ body {
   background-image: radial-gradient(#7e573c, #280e31);
   background-attachment: fixed;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Hkreg" format("truetype");
   background-color: #0a0213;
   color: white;
   display: flex;
@@ -244,7 +244,7 @@ body {
   width: 70%;
   align-self: flex-start;
   margin-left: auto;
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 /* individual review cards within reviews section */
