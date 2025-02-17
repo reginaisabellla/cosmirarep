@@ -80,8 +80,9 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #2c1c35, #4b345e);
+    background-image: radial-gradient(#7E573C, #280E31);
+    background-attachment: fixed;
+    font-family: 'Hkreg', Arial, sans-serif;
     color: white;
 }
 
