@@ -1,10 +1,14 @@
 <!-- need to add the basic doctype info -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmira</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- need to link css pages -->
     <link rel="stylesheet" href="home.css" />
   </head>
@@ -13,20 +17,54 @@
       <div class="heading">
         <div class="logo">
           <a href="https://reginaisabellla.github.io/cosmirarep/">
-          <img src="./cosmira/assests/img/cos-removebg.png" alt="Cosmira Logo" />
+            <img
+              src="./cosmira/assests/img/cos-removebg.png"
+              alt="Cosmira Logo"
+            />
           </a>
         </div>
         <div class="search">
-          <input type="text" placeholder="S E A R C H" />
+          <form action="search.js" method="post" name="searchBar">
+            <input type="text" placeholder="S E A R C H" />
+            <button type="submit" name="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
         </div>
       </div>
       <nav>
         <ul class="nav-links">
-          <li><a class="nav-link" href="../cosmirarep/cosmira/about/about.html">ABOUT</a></li>
-          <li><a class="nav-link" href="../cosmirarep/cosmira/quiz/quiz.html">QUIZ</a></li>
-          <li><a class="nav-link" href="../cosmirarep/cosmira/discover/discover.html">DISCOVER</a></li>
-          <li><a class="nav-link" href="../cosmirarep/cosmira/community/community.html">COMMUNITY</a></li>
-          <li><a class="nav-link" href="../cosmirarep/cosmira/profile/profile.html">PROFILE</a></li>
+          <li>
+            <a class="nav-link" href="../cosmirarep/cosmira/about/about.html"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="../cosmirarep/cosmira/quiz/quiz.html"
+              >QUIZ</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="../cosmirarep/cosmira/discover/discover.html"
+              >DISCOVER</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="../cosmirarep/cosmira/community/community.html"
+              >COMMUNITY</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="../cosmirarep/cosmira/profile/profile.html"
+              >PROFILE</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -35,7 +73,9 @@
       <div class="overlay"></div>
       <div class="content">
         <h1>MATCH MADE IN THE COSMOS</h1>
-        <a href="../cosmirarep/cosmira/discover/discover.html" class="btn">DISCOVER NOW</a>
+        <a href="../cosmirarep/cosmira/discover/discover.html" class="btn"
+          >DISCOVER NOW</a
+        >
       </div>
       <div class="carousel-dots">
         <span class="dot active"></span>
