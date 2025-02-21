@@ -1,11 +1,30 @@
-/* HEADER START */
+/*HEADER START*/
+
+/* @font-face import section start */
+
+/* Inter import */
+
 @font-face {
-  font-family: "Hkreg";
-  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
-  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
-  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
+  font-family: "Inter";
+  src: url("../assests/fonts/Inter/Inter-Regular.otf");
+  /* src: url("../assests/fonts/Inter/Inter-Bold.otf") format("bold");
+  src: url("../assests/fonts/Inter/Inter-Italic.otf") format("italic");
+  src: url("../assests/fonts/Inter/Inter-BoldItalic.otf") format("bolditalic");
   font-weight: normal;
-  font-style: normal;
+  font-style: normal; */
+}
+
+/* Lexend Deca import */
+@font-face {
+  font-family: "LexendDeca";
+  src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf");
+}
+
+/* @font-face import section end */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .heading {
@@ -13,12 +32,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 0px;
   background-color: rgba(0, 0, 0, 0.8);
-  width: 100vw;
+  position: sticky;
+  top: 0;
   height: 87px;
-  z-index: 1000;
-  position: relative;
 }
 
 .logo img {
@@ -26,7 +44,7 @@
   width: 300px;
 }
 
-/* search */
+/* Search Bar */
 .search input {
   padding: 10px 80px;
   border-radius: 15px;
@@ -34,20 +52,20 @@
   border: none;
   outline: none;
   background: rgba(132, 139, 198, 0.555);
-  font-family: "Hkreg" format("truetype");
+  font-family: Inter;
   font-size: 15px;
   text-align: center;
 }
 
-/* nav stuff */
+/* Navigation Bar */
 nav {
   display: flex;
   background-color: #8076af;
-  height: 10px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  font-family: "Hkreg" format("bold");
+  font-family: Inter;
 }
 
 .nav-links {
@@ -70,315 +88,232 @@ nav {
 .nav-links a:hover {
   color: #e5d0ff;
 }
-/* HEADER END */
+
+/*HEADER END*/
+
+/* applying fonts start */
+
+h1 {
+  font-family: Inter;
+  font-size: 2rem;
+}
+
+body {
+  font-family: LexendDeca;
+}
+
+button {
+  font-family: LexendDeca;
+}
+
+/* applying fonts end */
 
 body {
   background-image: radial-gradient(#7e573c, #280e31);
   background-attachment: fixed;
   margin: 0;
-  font-family: "Hkreg" format("truetype");
   background-color: #0a0213;
   color: white;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-/* content stuff */
-.main-content {
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+  gap: 25px;
+  margin: 25px;
+}
+
+/* Sidebar */
+.sidebar {
+  background: radial-gradient(#402e56db, #cab0b0c5); /* Gradient background */
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.product-heading {
+  background-color: rgba(59, 42, 77, 0.9); /* Matching the sidebar background */
+  padding: 20px;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0px 0px 20px 0px;
   width: 100%;
-  max-width: 1200px;
-  margin-top: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.product-image {
+  width: 140px;
+  height: 140px;
+  background-color: #aaa;
+  border-radius: 10px;
+  margin: 20px 50px 50px 50px;
+}
+
+.search-box {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: #c1b1d5ef;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: LexendDeca;
+}
+
+.average-rating p {
+  margin: 50px 0 5px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.stars span {
+  font-size: 30px;
+  color: #f5c518;
+}
+
+.create-review {
+  margin-top: auto;
+  margin-bottom: 50px;
+  padding: 12px 24px;
+  background-color: #281e34ae;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.create-review:hover {
+  background-color: #5e4c75ae;
+}
+
+/* Reviews Section */
+.reviews-section {
+  font-size: 1.2rem;
+  flex-grow: 1;
+  background-color: #c1b1d55e;
+  color: #333;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.reviews-heading {
+  background-color: rgba(59, 42, 77, 0.9); /* Matching the sidebar background */
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0px;
+  width: 100%;
+  color: #fff;
 }
 
 .reviews-container {
-  background: #a495b8;
-  border-radius: 20px;
-  padding: 30px;
-  padding-top: 0px;
-  width: 95%;
-  max-width: 1200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin: 40px auto 0px auto;
+  background: radial-gradient(#cab0b090, #281e34ee);
+  overflow-y: auto;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-#reviews-header {
-  display: flex;
-}
-
-.reviews-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
   gap: 20px;
+  padding: 30px;
 }
 
-.reviews-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.reviews-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-}
-
-/* aligning the filter content to the left side */
-.filters-container {
-  text-align: left;
-  margin-bottom: 20px;
-  align-self: flex-start;
-}
-
-/* some extra filter content styling */
-.filters-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.filters-list {
-  list-style: none;
-  padding: 0;
-}
-
-/* long-wear */
-#filter-item1 {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 8px 12px;
+.review {
+  background-color: #c1b1d5e6;
+  padding: 20px;
   border-radius: 10px;
-  margin-bottom: 5px;
-  background: #b7c3ff;
-  color: #402e56;
-  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* medium coverage */
-#filter-item2 {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 8px 12px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  background: #b7dbff;
-  color: #402e56;
-  font-weight: bold;
-}
-
-/* natural finish */
-#filter-item3 {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 8px 12px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  background: #defdc7;
-  color: #402e56;
-  font-weight: bold;
-}
-
-/* vegan */
-#filter-item4 {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 8px 12px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  background: #f3b7ff;
-  color: #402e56;
-  font-weight: bold;
-}
-
-/* plus sign styling */
-.add-filter {
-  background: #6d4b77;
-  padding: 5px 10px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 1.2rem;
-}
-
-/* review input field styling (to make it longer) */
-.review-text-input {
-  width: 100%;
-  max-width: 800px;
-  padding: 12px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  background: #6d4b77;
-  color: #ffffff;
-  font-size: 1.1rem;
-}
-
-/* list of reviews */
-.reviews-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 70%;
-  align-self: flex-start;
-  margin-left: auto;
-  margin-top: 0;
-}
-
-/* individual review cards within reviews section */
-.review-card {
-  background: #6b4780;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* review header - pfp, username, etc. */
 .review-header {
   display: flex;
   align-items: center;
-  gap: 10px;
   margin-bottom: 10px;
 }
 
-/* additional styling for username */
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
 .username {
   font-weight: bold;
-}
-
-/* additional styling for pfp */
-.profile-pic {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-
-/* medium coverage */
-#badge1 {
-  background: #b7dbff;
-  color: #402e56;
-  padding: 3px 8px;
-  border-radius: 10px;
-  font-size: 0.8rem;
-}
-
-/* natural finish */
-#badge2 {
-  background: #defdc7;
-  color: #402e56;
-  padding: 3px 8px;
-  border-radius: 10px;
-  font-size: 0.8rem;
-}
-
-/* long wear */
-#badge3 {
-  background: #b7c3ff;
-  color: #402e56;
-  padding: 3px 8px;
-  border-radius: 10px;
-  font-size: 0.8rem;
-}
-
-/* skin tone 1 for first user */
-.skin-tone1 {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #3a2415;
-  border: 2px solid #fff;
-}
-
-/* skin tone 2 for second user */
-.skin-tone2 {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #bc8d6a;
-  border: 2px solid #fff;
-}
-
-/* skin tone 3 for third user */
-.skin-tone3 {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #674226;
-  border: 2px solid #fff;
-}
-
-/* rating styling stuff */
-.rating {
-  margin-left: auto;
-  font-size: 1.1rem;
-  display: flex;
-  gap: 3px;
-}
-
-.rating span {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.review-text {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-/* input styling */
-.review-input {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.review-input input {
-  width: 100%;
-  max-width: 100%;
-  padding: 12px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  background: #cec6da;
-  color: #3e3e3e;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.review-input input::placeholder {
-  color: #3e3e3e;
-}
-
-.review-input .write-review {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-right: 10px;
   font-size: 1.2rem;
-  padding-right: 10px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.medium-coverage {
+  background-color: #b7dbff;
+  color: #281e34ff;
+}
+.natural-finish {
+  background-color: #defdc7;
+  color: #281e34ff;
+}
+.long-wear {
+  background-color: #b7c3ff;
+  color: #281e34ff;
+}
+
+#shade1 {
+  background-color: #3a2415;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: auto;
+  border: 2px solid white;
+}
+
+#shade2 {
+  background-color: #bc8d6a;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: auto;
+  border: 2px solid white;
+}
+
+#shade3 {
+  background-color: #674226;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: auto;
+  border: 2px solid white;
+}
+.rating {
+  font-size: 1.2rem;
+  color: #281e34ff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
