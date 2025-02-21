@@ -7,6 +7,10 @@
     <title>Cosmira</title>
     <!-- need to link js and css pages -->
     <script src="js/cosmira.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../search/search.css" />
   </head>
   <body>
@@ -14,11 +18,16 @@
       <div class="heading">
         <div class="logo">
           <a href="https://reginaisabellla.github.io/cosmirarep/">
-          <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+            <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
           </a>
         </div>
         <div class="search">
-          <input type="text" placeholder="S E A R C H" />
+          <form action="search.js" method="post" name="searchBar">
+            <input type="text" placeholder="S E A R C H" />
+            <button type="submit" name="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
         </div>
       </div>
       <nav>

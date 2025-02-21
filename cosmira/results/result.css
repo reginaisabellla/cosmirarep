@@ -1,0 +1,163 @@
+/*HEADER START*/
+@font-face {
+    font-family: "Hkreg";
+    src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
+    src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
+    src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .heading {
+    background-image: url("../assests/img/glitter.gif");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    height: 87px;
+  }
+  
+  .logo img {
+    height: 90px;
+    width: 300px;
+  }
+  
+  /* search bar */
+  .search input {
+    padding: 10px 80px;
+    border-radius: 15px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    background: rgba(132, 139, 198, 0.555);
+    font-family: "Hkreg" format("truetype");
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  /* navigation bar */
+  nav {
+    display: flex;
+    background-color: #8076af;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    font-family: "Hkreg" format("bold");
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #e5d0ff;
+  }
+  
+  /*HEADER END*/
+
+/* General Styles */
+body {
+    background-image: radial-gradient(#7E573C, #280E31);
+    background-attachment: fixed;
+    font-family: 'Hkreg', Arial, sans-serif;
+    color: white;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    background: #6e5b7b;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #8061a5;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.filter-button {
+    background: #9581b1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background: #7a6692;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background: #847194;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .filter-button {
+        margin-top: 10px;
+    }
+}
