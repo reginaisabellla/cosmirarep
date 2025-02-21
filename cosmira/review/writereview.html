@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmira</title>
+    <script src="../review/review.js"></script>
+    <link rel="stylesheet" href="../review/writereview.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="heading">
+        <div class="logo">
+          <a href="https://reginaisabellla.github.io/cosmirarep/">
+            <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+          </a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="S E A R C H" />
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="../about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../community/community.html">COMMUNITY</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../profile/profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <h1 class="product-heading">Product</h1>
+        <div class="product-image"></div>
+        <input type="text" placeholder="Search" class="search-box" />
+        <div class="average-rating">
+          <p>Average Rating</p>
+          <div class="stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
+            ><span>⭐</span>
+          </div>
+        </div>
+        <button class="create-review-page">Reviews Page</button>
+      </aside>
+      <main class="create-review-section">
+        <h1 class="create-review-heading">Create A Review</h1>
+        <div class="create-review-container">
+          <!-- Star Rating -->
+          <div class="star-rating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+
+          <!-- Review Textarea -->
+          <textarea
+            class="review-textarea"
+            placeholder="Create a review..."
+          ></textarea>
+
+          <!-- Buttons for Skin Type and Product Tags -->
+          <div class="tag-buttons">
+            <button class="tag-btn">+ Skin Type</button>
+            <button class="tag-btn">+ Product Tags</button>
+          </div>
+
+          <!-- Photo Upload -->
+          <div class="photo-upload">
+            <label for="photo-input" class="photo-label">Insert Photo</label>
+            <input
+              type="file"
+              id="photo-input"
+              accept="image/*"
+              style="display: none"
+            />
+            <!-- Post Button -->
+            <button class="post-button">Post</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="writereview.js"></script>
+  </body>
+</html>
