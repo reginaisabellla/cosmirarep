@@ -59,19 +59,20 @@ input{
   border-radius: 15px;
 }
 
-button{
+#searchButton{
   background: #8076af;
   border-radius: 15px;
   padding: 10px;
   border: solid 1px #8076af;
 }
-button :hover{
+#searchButton :hover{
   background-color: #8076afbc;
   cursor: pointer;
 }
 
 i{
   color: white;
+  
 }
 
 /* Navigation Bar */
@@ -118,3 +119,120 @@ body {
   background-color: #0a0213;
   color: white;
 }
+
+/* grid for search content*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
+  padding: 5px;
+}
+.searchPic {
+  max-width: 275px;
+  border: #280e31 solid 3px;
+  border-radius: 10px;
+}
+figure {
+  position: relative;
+}
+
+figcaption {
+  /* position: absolute; */
+  color: #402E56;
+  font-size: 30px;
+  text-align: center;
+  /* backdrop-filter: blur(14px) brightness(75%); */
+  /* margin-bottom: 5px;
+  cursor: pointer; */
+}
+h2 {
+  text-align: center;
+  /* background-color: #60376c; */
+  background-image: url(../assests/img/Shining-Stars-Landing-Header.png);
+  padding: 5px;
+  margin-top: 5px;
+  margin: 0;
+  height: 50px;
+}
+
+.pageSearch{
+  background-image: url(../assests/img/Shining-Stars-Landing-Header.png);
+  height: 50px;
+}
+
+.pageInput{
+  margin-left: 30%;
+  background-color: #532f895d;
+  height: 35px;
+  width: 450px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 23px;
+
+}
+
+.pageInput ::placeholder{
+  color: #ffffff;
+}
+
+#pageButton{
+  background-color: #0a02130b;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin-top: 5px;
+  
+}
+ol {
+  font-size: 30px;
+  margin-top: 0;
+  margin-left: 55px;
+}
+li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  color: white;
+}
+
+
+
+.trending {
+  display: flex;
+  flex-wrap: nowrap;
+
+  grid-row: 1/4;
+  background-color: #a495b8;
+  padding-bottom: 60.5px;
+  padding-top: 20px;
+  margin-top: 0;
+}
+
+.searchGrid{
+  background-color: #a495b8;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #a495b8;
+  padding-bottom: 5px;
+  gap: 25px;
+  padding-top: 75px;
+}
+
+.row2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #a495b8;
+  padding-bottom: 10px;
+  gap: 25px;
+  padding-top: 25px;
+}
+
