@@ -46,25 +46,35 @@
     <div class="big-profile-container">
       <!-- SIDEBAR SPECIFIC ORGANIZATION START (left side screen)-->
       <div class="profile-sidebar">
-        <!-- user specific things -->
+    <!-- user specific things start -->
+        <!-- pfp -->
         <img
           src="../assests/img/lolaslickk.png"
           alt="user profile picture"
           class="profile-pic"
         />
+        <!-- skin color swatch -->
+        <img
+          src="../assests/img/lolaskinswatch.png"
+          alt="user skin color swatch"
+          class="skin-color-swatch"
+        />        
+        <!-- username -->
         <h2 class="username">@LOLASLICKK</h2>
         <div class="profile-stats">
           <p class="review-amount">67 Reviews</p>
           <p class="discussion-amount">54 Discussions</p>
         </div>
+    <!-- user specific things end -->
+    <!-- sidebar buttons -->
         <!-- go back and redo this with javascript later *** -->
         <div class="sidebar-button-group">
           <button class="sidebar-button">Edit Profile</button>
           <button class="sidebar-button">Account Settings</button>
-          <button class="sidebar-button emphasized">
-            See Shade Match Results
-          </button>
+          <button class="sidebar-button emphasized">See Shade Match Results</button>
         </div>
+        <!-- link to review page -->
+        <!-- this needs to connect to our database -->
         <div class="review-link">
           <a href="../review/review.html" class="review-link"
             >+ Write a New Review</a
@@ -76,7 +86,7 @@
       <!-- CONTENT SECTION SPECIFIC STYLING START (right side screen) -->
 
       <div class="profile-content-container">
-
+    <!-- Your Reviews section -->
         <div class="content-section">
           <h3>Your Reviews</h3>
           <!-- need to add javascript functionality here -->
@@ -86,7 +96,7 @@
             <button class="content-button">By Date</button>
           </div>
         </div>
-
+    <!-- Your Likes section -->
         <div class="content-section">
           <h3>Your Likes</h3>
           <!-- need to add javascript functionality here -->
@@ -96,20 +106,34 @@
             <button class="content-button">By Date</button>
           </div>
         </div>
-
+    <!-- Your Images section -->
         <div class="content-section">
           <h3>Your Images</h3>
           <!-- need to add javascript functionality here -->
-          <div class="content-button-container">
-            <button class="content-button">By Brand</button>
-            <button class="content-button">By Product</button>
-            <button class="content-button">By Date</button>
-          </div>
+          <img
+            src="../assests/img/lolaplaceholder.png"
+            alt="zoom in on skin as placeholder for user uploaded image"
+            class="user-images"
+          />
+          <img
+            src="../assests/img/lolaplaceholder.png"
+            alt="zoom in on skin as placeholder for user uploaded image"
+            class="user-images"
+          />
+          <img
+            src="../assests/img/lolaplaceholder.png"
+            alt="zoom in on skin as placeholder for user uploaded image"
+            class="user-images"
+          />
+          <img
+            src="../assests/img/lolaplaceholder.png"
+            alt="zoom in on skin as placeholder for user uploaded image"
+            class="user-images"
+          />
         </div>
-
-        <!-- later make it so that pictures get a tint when mouse hovers -->
-        <!-- make images clickable to lead to discussions -->
-
+          <!-- later make it so that pictures get a tint when mouse hovers -->
+          <!-- make images clickable to lead to discussions -->
+    <!-- Your Discussions section -->
         <div class="content-section">
           <h3>Your Discussions</h3>
           <div class="profile-discussions">
@@ -143,7 +167,7 @@
             </div>
           </div>
         </div>
-
+    <!-- Your Communities section -->
         <div class="content-section">
           <h3>Your Communities</h3>
           <div class="profile-communities">
