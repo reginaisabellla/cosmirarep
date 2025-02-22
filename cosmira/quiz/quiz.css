@@ -111,7 +111,7 @@ body {
 
 .pop-up h1{
   background: #280e31;
-  color: #f8e2ef;
+  color: white;
   padding: 20px;
   border-radius: 10px 10px 0 0; 
   text-align: center;
@@ -121,8 +121,8 @@ body {
 }
 
 p {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -219,7 +219,7 @@ p {
   background: #39273f; 
 }
 
-/*Quiz-Beginner Survey Start*/
+/*Quiz Start*/
 
 h2 {
   margin-top: 30px;
@@ -234,10 +234,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-
-input[type="radio"] {
-  margin-right: 5px;
-}
+/*find match button*/
 .matchbutton {
   margin-top: 20px;
   background: #6d4b77;
@@ -252,7 +249,6 @@ input[type="radio"] {
   transition: background 0.3s;
   box-shadow: 0 0 15px 5px #30133a; 
 }
-
 .matchbutton:hover {
   background-color: #39273f;
 }
@@ -270,14 +266,18 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+  
 .color-buttons, .vein-buttons{
-  /*display: flex;*/
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.skin-color:hover{
+  background-color: #39273f;
+}
 .skin-color {
-  width: 100%; /* Ensure buttons take full width of grid cells */
-  padding: 10px; /* Adjust padding as needed */
+  width: 100%; /* full width of grid cells for button */
+  padding: 10px; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -311,6 +311,28 @@ input[type="radio"] {
 #color9{ background-color: #331f19; }
 #color10{ background-color:#1f120e; }
 
+#color1:hover{outline:solid #39273f;}
+#color2:hover{outline:solid #39273f;}
+#color3:hover{outline:solid #39273f;}
+#color4:hover{outline:solid #39273f;}
+#color5:hover{outline:solid #39273f;}
+#color6:hover{outline:solid #39273f;}
+#color7:hover{outline:solid #39273f;}
+#color8:hover{outline:solid #39273f;}
+#color9:hover{outline:solid #39273f;}
+#color10:hover{outline:solid #39273f;}
+
+#color1:focus{outline:solid #39273f;}
+#color2:focus{outline:solid #39273f;}
+#color3:focus{outline:solid #39273f;}
+#color4:focus{outline:solid #39273f;}
+#color5:focus{outline:solid #39273f;}
+#color6:focus{outline:solid #39273f;}
+#color7:focus{outline:solid #39273f;}
+#color8:focus{outline:solid #39273f;}
+#color9:focus{outline:solid #39273f;}
+#color10:focus{outline:solid #39273f;}
+
 .blue { background-color: #6989e7; }
 .bluish-green { background-color: #4ff1bb; }
 .green { background-color: #5ba155; }
@@ -320,7 +342,7 @@ input[type="radio"] {
   display: flex;
   flex-direction: column; /* Arrange items in a column */
   align-items: center; /* Center items horizontally */
-  gap: 10px; /* Adjust gap between buttons as needed */
+  gap: 10px; /* gap between buttons  */
 }
 
 .vein-button {
@@ -359,7 +381,35 @@ input[type="radio"] {
 }
 
 .vein-button input[type="radio"]:checked + label {
-  background-color: #333; /* Change to desired color when selected */
+  background-color: #333;
 }
 
-/*Quiz-Beginner Survey End*/
+.skin-type, .skin-issue, .undertone, .coverage, .finish {
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  color: white;
+}
+
+.skin-type label, .skin-issue label, .undertone label, .coverage label, .finish label {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  width: 100%; /* Ensure labels take full width of the container */
+  max-width: 300px; /* Optional: set a max-width for the labels */
+  text-align: left; /* Align text to the left */
+  padding: 10px; /* Add padding for better spacing */
+  background-color:#402E56DB; /* Optional: background color for labels */
+  border-radius: 10px; /* Optional: rounded corners for labels */
+}
+.skin-type input[type="radio"], .undertone input[type="radio"], .finish input[type="radio"]{
+  accent-color: #6d4b77;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.skin-issue input[type="checkbox"], .coverage input[type="checkbox"] {
+  accent-color: #6d4b77;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+

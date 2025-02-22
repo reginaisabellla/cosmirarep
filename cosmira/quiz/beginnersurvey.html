@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-BeginnerSurvey</title>
-    <!-- need to link js and css pages -->
+    <script src="../quiz/quiz.js"></script>
     <link rel="stylesheet" href="../quiz/quiz.css" />
   </head>
 <body>
@@ -48,7 +48,7 @@
           </div>
           <div class="color-buttons">
             <label>
-              <input type="button" class="skin-color" name="skin-color" id="color1" value="1"/>
+              <input type="button" class="skin-color" name="skin-color" id="color1" value="1" />
             </label>
             <label>
               <input type="button" class="skin-color" name="skin-color" id="color6" value="6"/>
@@ -82,43 +82,100 @@
         <div class="bq-question">
           <h2>Question 2.</h2>
           <div class="quiz-text">
-            <p>What is your skin type? (Normal, Dry, Oily, Combination)</p>
+            <p>What is your skin type?</p>
           </div>
+          <div class="skin-type">
           <label>
-            <input type="radio" name="skin-type" value="Normal"/>Normal
-            <input type="radio" name="skin-type" value="Normal"/>Dry
-            <input type="radio" name="skin-type" value="Normal"/>Oily
-            <input type="radio" name="skin-type" value="Normal"/>Combination
+            <input type="radio" name="skin-type" value="Normal" required/>Normal 
+          </label><br>
+          <label>
+            <input type="radio" name="skin-type" value="dry" required/>Dry 
+          </label><br>
+          <label>
+            <input type="radio" name="skin-type" value="oily" required/>Oily 
+          </label><br>
+          <label>
+            <input type="radio" name="skin-type" value="combination" required/>Combination <br>
           </label>
+          </div>
         </div>  
         <div class="bq-question">
           <h2>Question 3.</h2>
           <div class="quiz-text">
-            <p>Do you have any skin concerns (acne, hyperpigmentation, fine lines, etc.)?</p>
+            <p>Do you have any skin concerns?</p>
+          </div>
+          <div class="skin-issue">
+            <!---add js to make sure checkbox input required-->
+            <label>
+              <input type="checkbox" name="skin-issue" value="acne" />Acne
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="hyperpig" />Hyperpigmentation
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="finelines" />Fine-Lines or Wrinkles
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="Sensitive" />Sensitive Skin
+            </label><br>
           </div>
         </div>
         <div class="bq-question">
           <h2>Question 4.</h2>
           <div class="quiz-text">
-            <p>Have you previously used makeup with a specific undertone (pink, yellow, neutral)?</p>
+            <p>Have you previously used makeup with a specific undertone, which do you frequently wear?</p>
           </div>
+          <div class="undertone">
+            <!---add color range/wheel image that falls under each undertone-->
+            <label>
+              <input type="radio" name="undertone" value="cool" />Cool
+            </label><br>
+            <label>
+              <input type="radio" name="undertone" value="warm" />Warm 
+            </label><br>
+            <label>
+              <input type="radio" name="undertone" value="neutral"/>Neutral
+            </label><br>
+            </div>
         </div> 
         <div class="bq-question">
           <h2>Question 5.</h2>
           <div class="quiz-text">
             <p>What type of coverage do you prefer?</p>
           </div>
+          <div class="coverage">
+            <label>
+              <input type="checkbox" name="skin-issue" value="sheer" />Sheer
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="medium" />Medium
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="full" />Full
+            </label><br>
+          </div>
+       
         </div> 
         <div class="bq-question">
           <h2>Question 6.</h2>
           <div class="quiz-text">
-            <p>What foundation finish makes you look your best?(matte, dewy, natural)</p>
+            <p>What foundation finish are you looking for?</p>
+          </div>
+          <div class="finish">
+            <label>
+              <input type="radio" name="finish" value="sheer" required/>Matte
+            </label><br>
+            <label>
+              <input type="radio" name="finish" value="medium" required/>Dewy
+            </label><br>
+            <label>
+              <input type="radio" name="finish" value="full" required/>Natural
+            </label><br>
           </div>
         </div> 
         <div class="button-single">
           <button class="matchbutton" type="submit">Get My Match!</button>
         </div>
-        
       </form>
     </div>
   </div>
