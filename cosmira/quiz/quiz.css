@@ -249,6 +249,7 @@ h2 {
   transition: background 0.3s;
   box-shadow: 0 0 15px 5px #30133a; 
 }
+
 .matchbutton:hover {
   background-color: #39273f;
 }
