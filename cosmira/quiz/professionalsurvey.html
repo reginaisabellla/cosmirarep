@@ -83,43 +83,136 @@
           <h2>Question 2.</h2>
           <div class="quiz-text">
             <p>What color are your veins?</p>
+            <!--put pictures to display range of vein colors -->
           </div>
           <div class="vein-buttons">
             <label>
-              <input type="radio" name="vein-color" value="blue"/>
-              <button class="vein-buttonblue">Blue</button>
-            </label>
+              <input type="radio" name="vein-color" value="blue"/> Blue
+            </label><br>
             <label>
-              <input type="radio" name="vein-color" value="bluish-green"/>
-              <button class="vein-buttonbluish-green">Bluish-Green</button>
-            </label>
+              <input type="radio" name="vein-color" value="bluish-green"/> Bluish-Green
+            </label><br>
             <label>
-              <input type="radio" name="vein-color" value="green"/>
-              <button class="vein-buttongreen">Green</button>
-            </label>
+              <input type="radio" name="vein-color" value="green"/> Green
+            </label><br>
             <label>
-              <input type="radio" name="vein-color" value="purple"/>
-              <button class="vein-buttonpurple">Purple</button>
-            </label>
+              <input type="radio" name="vein-color" value="purple"/> Purple            
+            </label><br>
           </div>
         </div>         
         <div class="bq-question">
           <h2>Question 3.</h2>
           <div class="quiz-text">
-            <p>What is your skin type and texture,  how does your foundation respond after a few hours without reapplication? (Choose all that apply: Normal, Dry, Oily, Combination, Acne-prone, Sensitive)</p>
+            <p>What is your skin type and texture, how does your foundation respond after a few hours without reapplication? <br>
+              Choose all that apply. </p>
+          </div>
+          <div class="skin-type">
+            <label for="skin-type"> Skin Type:
+              <select id="selectbox" name="selectbox">
+                <option value="Normal">Normal</option>
+                <option value="Dry">Dry</option>
+                <option value="Oily">Oily</option>
+                <option value="Combination">Combination</option>
+              </select>
+              </label> <br>
+              <label for="skin-type"> Texture:
+                <select id="selectbox" name="selectbox">
+                  <option value="bump">Bumpy/Rough</option>
+                  <option value="smooth">Smooth/Soft</option>
+                  <option value="flak">Flaky</option>
+                  <option value="Combination">Leathery/Tight</option>
+                </select>
+                </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="enlargedpores"/> Enlarged Pores
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="shinyskin"/> Shiny Skin
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="freqpimples"/> Frequent Pimples 
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="lift"/> Makeup lifts & transfers easily 
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="lift"/> Makeup seperates, looks cakey or patchy 
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="smooth"/> Smooth Texture
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="uneven"/> Uneven/Dull Tone
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="tight"/> Tightness after washing
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="lines"/> Fine lines around eyes, cheeks, forehead, etc.
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="red"/> Redness or Irritation after 
+              </label><br>
           </div>
         </div>
         <div class="bq-question">
           <h2>Question 4.</h2>
           <div class="quiz-text">
-            <p>Do you have any skin conditions (rosacea, eczema, etc.) that affect your foundation choice? if so, what type of formulas often cause it and how severe are the reactions?</p>
+            <p>Do you have any skin conditions that affect your foundation choice? <br>
+              If so, what type of formulas often cause it and how severe are the reactions?</p>
           </div>
+          <div class="skin-issue">
+            <label>
+              <input type="checkbox" name="skin-issue" value="acne"/>Cystic/Severe/Mild Acne
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="hyperpig"/>Hyperpigmentation
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="finelines"/>Fine-Lines or Wrinkles
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="rosa"/>Rosacea
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="eczema"/>Eczema
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="psoriasis"/>Psoriasis
+            </label><br>
+              <label for="skin-issue"> Formula Type: 
+                <select id="selectbox" name="selectbox">
+                  <option value="liquid">Liquid</option>
+                  <option value="cream">Cream</option>
+                  <option value="powder">Powder</option>
+                </select>
+              </label><br>
+              <label for="skin-issue"> Severity:
+                <select id="selectbox" name="selectbox">
+                  <option value="none">None</option>
+                  <option value="mild">Mild</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="severe">Severe</option>
+                  <option value="extreme">Extremely Severe</option>
+                </select>
+              </label><br>
         </div> 
         <div class="bq-question">
           <h2>Question 5.</h2>
           <div class="quiz-text">
-            <p>Are there any specific ingredients you avoid in your foundation? What benefits do you look for in a formula?</p>
+            <p>Are there any specific ingredients you avoid in your foundation? <br>
+              What benefits do you look for in a formula?
+            </p>
           </div>
+          <div class="ingredients">
+            <label for="avoid-ingredients"> Ingredients to Avoid: 
+              <input type="text" name="avoid-ingredients" placeholder="e.g. Parabens, Sulfates, Fragrances, etc."/>
+            </label><br>
+            <label for="desired-benefits"> Desired Benefits:
+              <input type="text" name="desired-benefits" placeholder="e.g. Hydration, Anti-aging, Brightness, etc."/>
+            </label><br>
+          </div>
+
         </div> 
         <div class="bq-question">
           <h2>Question 6.</h2>

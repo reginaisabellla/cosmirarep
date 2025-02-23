@@ -41,7 +41,7 @@
     <div class="pop-up">
         <h1>INTERMEDIATE QUIZ</h1>
       <form>
-        <div class="bq-question">
+        <div class="iq-question">
           <h2>Question 1.</h2>
           <div class="quiz-text">
             <p>Select the skin color range MOST accurate to yours:</p>
@@ -79,48 +79,193 @@
             </label>
           </div>
         </div>
-        <div class="bq-question">
+        <div class="iq-question">
           <h2>Question 2.</h2>
           <div class="quiz-text">
-            <p>What is your skin type, and how does it react to different products? (Choose all that apply: Normal, Dry, Oily, Combination, Acne-prone, Sensitive)</p>
+            <p>What is your skin type, and how does it react to different products? Choose all that apply.</p>
+          </div>
+          <div class="skin-type">
+            <label for="skin-type"> Skin Type:
+              <select id="selectbox" name="selectbox">
+                <option value="Normal">Normal</option>
+                <option value="Dry">Dry</option>
+                <option value="Oily">Oily</option>
+                <option value="Combination">Combination</option>
+              </select>
+              </label> <br>
+              <label>
+                <input type="checkbox" name="reactions" value="enlargedpores"/> Enlarged Pores
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="shinyskin"/> Shiny Skin
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="freqpimples"/> Frequent Pimples 
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="lift"/> Makeup lifts & transfers easily 
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="lift"/> Makeup seperates, looks cakey or patchy 
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="smooth"/> Smooth Texture
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="uneven"/> Uneven/Dull Tone
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="tight"/> Tightness after washing
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="lines"/> Fine lines around eyes, cheeks, forehead, etc.
+              </label><br>
+              <label>
+                <input type="checkbox" name="reactions" value="red"/> Redness or Irritation after 
+              </label><br>
           </div>
         </div>  
-        <div class="bq-question">
+        <div class="iq-question">
           <h2>Question 3.</h2>
           <div class="quiz-text">
-            <p>Do you experience any skin concerns on a regular basis, such as acne, hyperpigmentation, fine lines, or dehydration? If so, how often?
+            <p>Do you experience any skin concerns on a regular basis? If so, how often?
             </p>
           </div>
+          <div class="skin-issue">
+            <label>
+              <input type="checkbox" name="skin-issue" value="acne"/>Acne
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="hyperpig"/>Hyperpigmentation
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="finelines"/>Fine-Lines or Wrinkles
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="rosa"/>Rosacea
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="eczema"/>Eczema
+            </label><br>
+            <label>
+              <input type="checkbox" name="skin-issue" value="psoriasis"/>Psoriasis
+            </label><br>
+              <label for="skin-issue"> Happens: 
+                <select id="selectbox" name="selectbox">
+                  <option value="freq">Frequently</option>
+                  <option value="week">Once a Week</option>
+                  <option value="seasonal">Occasionally/Seasonal</option>
+                  <option value="rarely">Rarely</option>
+                  <option value="menstrual">Usually around my menstrual cycle</option>
+                </select>
+              </label><br>
+          </div>
         </div>
-        <div class="bq-question">
+        <div class="iq-question">
           <h2>Question 4.</h2>
           <div class="quiz-text">
-            <p>What is your skin's natural undertone? (Choose one: Pink, Yellow, Olive, Neutral, or Other - describe)</p>
+            <p>What is your skin's natural undertone? Please select one.</p>
           </div>
+          <div class="undertone">
+            <!---add color range/wheel image that falls under each undertone-->
+            <label>
+              <input type="radio" name="undertone" value="pink" />Pink
+            </label><br>
+            <label>
+              <input type="radio" name="undertone" value="pink" />Red
+            </label><br>
+            <label>
+              <input type="radio" name="undertone" value="yellow" />Yellow
+            </label><br>
+            <label>
+              <input type="radio" name="undertone" value="olive" />Olive
+            </label><br>
+            <label>
+              <input type="radio" name="undertone" value="neutral"/>Neutral
+            </label><br>
+            <label>
+              <input type="radio" name="undertone" value="other"/>Other: <input type="text" name="other-undertone" placeholder="e.g. Golden, Peachy, etc."/>
+            </label><br>
+            </div>
         </div> 
-        <div class="bq-question">
+        <div class="iq-question">
           <h2>Question 5.</h2>
           <div class="quiz-text">
             <p>Do you have any prominent facial features (large pores, dark circles, etc.)?</p>
           </div>
+          <div class="features">
+            <label>
+              <input type="checkbox" name="features" value="pores"/>Large Pores
+            </label><br>
+            <label>
+              <input type="checkbox" name="features" value="circles"/>Dark Circles
+            </label><br>
+            <label>
+              <input type="checkbox" name="features" value="freckles"/>Freckles or Sunspots
+            </label><br>
+            <label>
+              <input type="checkbox" name="features" value="scar"/> Scarring/Blemishes
+            </label><br>
+            <label>
+              <input type="checkbox" name="features" value="mole"/>Moles
+            </label><br>
+          </div>
         </div> 
-        <div class="bq-question">
+        <div class="iq-question">
           <h2>Question 6.</h2>
           <div class="quiz-text">
-            <p>How important is coverage to you, and do you prioritize concealing imperfections or evening out your skin tone?</p>
+            <!---possibly revise question in the future-->
+            <p>How important is coverage to you, do you prioritize concealing imperfections or evening out your skin tone?</p>
+          </div>
+          <div class="coverage">
+            <label>
+              <input type="radio" name="coverage" value="conceal" /> Conceal Imperfections
+            </label><br>
+            <label>
+              <input type="radio" name="coverage" value="even" /> Even Out Skin Tone
+            </label><br>
+            <label>
+              <input type="radio" name="coverage" value="both" /> Both
+            </label><br>
           </div>
         </div>
-        <div class="bq-question">
+        <div class="iq-question">
           <h2>Question 7.</h2>
           <div class="quiz-text">
             <p>Do you have a preferred foundation type (liquid, cream, powder) ?</p>
           </div>
+          <div class="foundation-type">
+            <label>
+              <input type="radio" name="type" value="liquid" /> Liquid
+            </label><br>
+            <label>
+              <input type="radio" name="type" value="cream" /> Cream
+            </label><br>
+            <label>
+              <input type="radio" name="type" value="blush" /> Powder
+            </label><br>
+          </div>
         </div>
-        <div class="bq-question">
+        <div class="iq-question">
           <h2>Question 8.</h2>
           <div class="quiz-text">
             <p>How do you prefer to apply foundation? (fingers, brush, sponge, other)</p>
           </div>
+          <div class="apply">
+            <label>
+              <input type="radio" name="apply" value="fingers" /> Fingers
+            </label><br>
+            <label>
+              <input type="radio" name="apply" value="brush" /> Brush
+            </label><br>
+            <label>
+              <input type="radio" name="apply" value="sponge" /> Sponge
+            </label><br>
+            <label>
+              <input type="radio" name="apply" value="other" /> Other: <input type="text" name="other-apply" placeholder="e.g. Silicone Blender, etc."/>
+            </label><br>
+          </div>
+
         </div>
         <div class="button-single">
             <button class="matchbutton" type="submit">Get My Match!</button>
