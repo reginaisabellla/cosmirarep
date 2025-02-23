@@ -212,36 +212,125 @@
               <input type="text" name="desired-benefits" placeholder="e.g. Hydration, Anti-aging, Brightness, etc."/>
             </label><br>
           </div>
-
         </div> 
         <div class="bq-question">
           <h2>Question 6.</h2>
           <div class="quiz-text">
-            <p>In your skincare routine, do you often use any topical medication, AHA, BHA, or Retinoid products? If so, describe your skin's elasticity and firmness.</p>
+            <p>In your skincare routine, do you often use any topical medication, AHA, BHA, or Retinoid products? <br>
+              If so, describe your skin's elasticity and firmness.</p>
           </div>
+          <div class="medication">
+            <label>
+              <input type="checkbox" name="medication" value="retinoid"/> Retinoid
+            </label><br>
+            <label>
+              <input type="checkbox" name="medication" value="aha"/> AHA
+            </label><br>
+            <label>
+              <input type="checkbox" name="medication" value="bha"/> BHA
+            </label><br>
+            <label>
+              <input type="checkbox" name="medication" value="medication"/> Topical Medication
+            </label><br>
+            <label for="skin-elasticity"> Skin Elasticity:
+              <select id="selectbox" name="selectbox">
+                <option value="elastic">Elastic/Stretchy</option>
+                <option value="firm">Firm/Tight</option>
+                <option value="sagging">Sagging/Loose</option>
+              </select>
+            </label><br>
         </div>
         <div class="bq-question">
           <h2>Question 7.</h2>
           <div class="quiz-text">
-            <p>Do you prefer a specific foundation formula type (mineral, oil-based, water-based)?</p>
+            <p>Do you prefer a specific foundation formula type?</p>
+          </div>
+          <div class="formula-type">  
+            <label>
+              <input type="radio" name="formula-type" value="mineral"> Mineral
+            </label><br>
+            <label>
+              <input type="radio" name="formula-type" value="oil-based"> Oil-Based
+            </label><br>
+            <label>
+              <input type="radio" name="formula-type" value="water-based"> Water-Based
+            </label><br>
+            <label>
+              <input type="radio" name="formula-type" value="custom"> Silicone-Based
+            </label><br> 
           </div>
         </div>
         <div class="bq-question">
           <h2>Question 8.</h2>
           <div class="quiz-text">
-            <p>How often do you wear makeup, and what is your makeup prep routine? (primer, sunscreen, moisturizer)?</p>
+            <p>How often do you wear makeup, and what is your makeup prep routine? (Including Skincare)</p>
+          </div>
+          <div class="routine"> 
+            <label for="routine"> Makeup Routine:
+              <select id="selectbox" name="selectbox">
+                <option value="daily">Daily</option>
+                <option value="occasionally">Occasionally</option>
+                <option value="specialoccasions">Special Occasions/Events</option>
+                <option value="never">Rarely/Never</option>
+              </select>
+            </label><br>
+            <label>
+              <input type="checkbox" name="routine" value="skincare"> Cleansing & Exfoliating  
+            </label><br>
+            <label>
+              <input type="checkbox" name="routine" value="primer"> Primer
+            </label><br>
+            <label>
+              <input type="checkbox" name="routine" value="sunscreen"> Sunscreen
+            </label><br>
+            <label>
+              <input type="checkbox" name="routine" value="moisturizer"> Moisturizer
+            </label><br>
+            <label>
+              <input type="checkbox" name="routine" value="illuminating"> Illuminating Cream, Serums, & Oils
+            </label><br>
           </div>
         </div>
         <div class="bq-question">
           <h2>Question 9.</h2>
           <div class="quiz-text">
-            <p>How do you feel about wearing foundation in different lighting conditions, such as natural light, artificial light, or flash photography?</p>
+            <p>How do you feel about wearing foundation in different lighting conditions? Please explain. 
+            </p>
+          </div>
+          <!--revise answer choices for shaded light or other opt-->
+          <div class="light">
+            <label for="natural"> Natural Light: 
+              <input type="text" name="natural" placeholder="e.g. My foundation looks natural"/>
+            </label><br>
+            <label for="direct"> Direct Sunlight: 
+              <input type="text" name="direct" placeholder="e.g. My foundation looks bright"/>
+            </label><br>
+            <label for="flash"> Flash Photography: 
+              <input type="text" name="flash" placeholder="e.g. My foundation looks washed out"/>
+            </label><br>
+            <label for="artificial"> Artifical Lighting: 
+              <input type="text" name="artifical" placeholder="e.g. My foundation looks dull"/>  
+            </label><br>
           </div>
         </div>
         <div class="bq-question">
           <h2>Question 10.</h2>
           <div class="quiz-text">
             <p>Have you noticed any changes in your skin tone or undertones over time, such as during different seasons, climates,  or hormonal fluctuations?</p>
+          </div>
+          <div class="changes">
+            <label>
+              <input type="radio" name="skin-changes" value="yes"> Yes <input type="text" name="other-undertone" placeholder="Please explain..."/>
+            </label><br>
+            <label>
+              <input type="radio" name="skin-changes" value="no"> No
+            </label><br>
+            <label>
+              <input type="radio" name="skin-changes" value="sometimes"> Sometimes
+            </label><br>
+            <label>
+              <input type="radio" name="skin-changes" value="unsure"> Unsure
+            </label><br>
           </div>
         </div>
         <div class="button-single">
