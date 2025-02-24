@@ -132,7 +132,6 @@ p {
   gap: 10px;
   padding: 20px;
   text-align: center;
-
 }
 .button1 {
   background: linear-gradient(135deg, #f8e2ef, #defdc7); 
@@ -164,8 +163,10 @@ p {
   padding: 15px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.3s;
   box-shadow: 0 0 15px 5px #30133a;
+
 }
 .button2:hover {
   background: linear-gradient(
@@ -183,6 +184,7 @@ p {
   padding: 15px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.3s;
   box-shadow: 0 0 15px 5px #30133a; 
 }
@@ -227,7 +229,6 @@ h2 {
   color: #ffffff;
   padding-left: 25px;
 }
-
 .quiz-text {
   color: #ffffff;
 }
@@ -258,6 +259,8 @@ h2 {
 .color-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .color-buttons label {
   display: flex;
@@ -267,38 +270,23 @@ h2 {
   cursor: pointer;
 }
 
-  
-.color-buttons {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skin-color:hover{
-  background-color: #39273f;
-}
-.skin-color {
-  width: 100%; /* full width of grid cells for button */
-  padding: 10px; 
+.skin-color{
+  padding: 20px 150px;
+  margin: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  color:#280E31;
+  font-weight: bold; 
+  width: 100%; /* full width of grid cells for button */
   text-align: center;
   transition: background-color 0.3s;
-  background-color: white;
+  background-color: white;    
 }
-
-
-.skin-color{
-    padding: 20px 150px;
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-    color:#280E31;
-    font-weight: bold;
-    
+.skin-color:hover{
+  background-color: #39273f;
 }
 
 #color1{ background-color: #f4ded4;}
@@ -429,25 +417,25 @@ h2 {
 
 .ingredients label,
 .light label{
-  position: relative; /* Establish positioning context for the label */
+  position: relative; 
   display: flex;
-  flex-direction: column; /* Arrange items in a column */
+  flex-direction: column; 
   align-items: flex-start; /* Align items to the left */
   background-color: #402E56DB;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
-  max-width: 500px; /* Adjust as needed */
+  max-width: 500px; 
 }
 
 .ingredients label span,
 .light label span {
   position: absolute;
-  top: -20px; /* Adjust as needed */
-  left: 10px; /* Adjust as needed */
-  background-color: #402E56DB; /* Match the background color */
-  padding: 0 5px; /* Add padding for better spacing */
-  font-size: 0.9rem; /* Adjust font size as needed */
+  top: -20px; 
+  left: 10px; 
+  background-color: #402E56DB; 
+  padding: 0 5px; 
+  font-size: 0.9rem; 
 }
 
 .ingredients input[type="text"],
@@ -457,8 +445,8 @@ h2 {
   border-radius: 10px;
   border: none;
   padding: 10px;
-  margin-top: 20px; /* Add margin to create space for the label */
-  box-sizing: border-box; /* Ensure padding is included in the width */
+  margin-top: 20px; 
+  box-sizing: border-box; 
 }
 
 
