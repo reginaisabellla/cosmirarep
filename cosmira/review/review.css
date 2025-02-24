@@ -124,7 +124,7 @@ body {
   margin: 25px;
 }
 
-/* Sidebar */
+/* sidebar content start */
 .sidebar {
   background: radial-gradient(#402e56db, #cab0b0c5); /* Gradient background */
   min-width: 300px;
@@ -203,7 +203,9 @@ body {
   background-color: #5e4c75ae;
 }
 
-/* Reviews Section */
+/* sidebar content end */
+
+/* reviews content start */
 .reviews-section {
   font-size: 1.2rem;
   flex-grow: 1;
@@ -237,6 +239,7 @@ body {
   padding: 30px;
 }
 
+/* each singular review box w/ all content */
 .review {
   background-color: #c1b1d5e6;
   padding: 20px;
@@ -317,3 +320,4 @@ body {
   align-items: center;
   gap: 4px;
 }
+/* review content end */

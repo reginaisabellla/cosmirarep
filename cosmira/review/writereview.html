@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="../review/writereview.css" />
   </head>
   <body>
-    <!-- Header Section -->
+    <!-- header Section -->
     <header>
       <div class="heading">
+        <!-- logo -->
         <div class="logo">
           <a href="https://reginaisabellla.github.io/cosmirarep/">
             <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
           </a>
         </div>
+        <!-- search bar -->
         <div class="search">
           <input type="text" placeholder="S E A R C H" />
         </div>
       </div>
       <nav>
+        <!-- nav bar links -->
         <ul class="nav-links">
           <li>
             <a class="nav-link" href="../about/about.html">ABOUT</a>
@@ -38,25 +41,36 @@
         </ul>
       </nav>
     </header>
-
+    <!-- sidebar container -->
     <div class="container">
+      <!-- sidebar content start -->
       <aside class="sidebar">
+        <!-- sidebar heading -->
         <h1 class="product-heading">Product</h1>
+        <!-- product image -->
         <div class="product-image"></div>
+        <!-- product search bar (to specifically see the reviews of said product) -->
         <input type="text" placeholder="Search" class="search-box" />
+        <!-- average star rating for product -->
         <div class="average-rating">
           <p>Average Rating</p>
+          <!-- star rating start -->
           <div class="stars">
             <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
             ><span>⭐</span>
           </div>
+          <!-- star rating end -->
         </div>
+        <!-- create review button (that will take users to writereview.html page) -->
         <button class="create-review-page">Reviews Page</button>
       </aside>
+      <!-- reviews content start (next to sidebar) -->
       <main class="create-review-section">
+        <!-- create review heading -->
         <h1 class="create-review-heading">Create A Review</h1>
+        <!-- actual create review content container -->
         <div class="create-review-container">
-          <!-- Star Rating -->
+          <!-- star rating start -->
           <div class="star-rating">
             <span class="star" data-value="1">★</span>
             <span class="star" data-value="2">★</span>
@@ -64,20 +78,21 @@
             <span class="star" data-value="4">★</span>
             <span class="star" data-value="5">★</span>
           </div>
+          <!-- star rating end -->
 
-          <!-- Review Textarea -->
+          <!-- create review input box -->
           <textarea
             class="review-textarea"
             placeholder="Create a review..."
           ></textarea>
 
-          <!-- Buttons for Skin Type and Product Tags -->
+          <!-- buttons for skin type and product tags -->
           <div class="tag-buttons">
             <button class="tag-btn">+ Skin Type</button>
             <button class="tag-btn">+ Product Tags</button>
           </div>
 
-          <!-- Photo Upload -->
+          <!-- photo upload -->
           <div class="photo-upload">
             <label for="photo-input" class="photo-label">Insert Photo</label>
             <input
@@ -86,7 +101,7 @@
               accept="image/*"
               style="display: none"
             />
-            <!-- Post Button -->
+            <!-- post button -->
             <button class="post-button">Post</button>
           </div>
         </div>

@@ -112,6 +112,7 @@ body {
   align-items: center;
 }
 
+/* all content on page */
 .container {
   display: flex;
   height: calc(100vh - 60px);
@@ -119,7 +120,7 @@ body {
   margin: 25px;
 }
 
-/* Sidebar */
+/* sidebar content start */
 .sidebar {
   background: radial-gradient(#402e56db, #cab0b0c5);
   min-width: 300px;
@@ -180,6 +181,9 @@ body {
   color: #f5c518;
 }
 
+/* sidebar content end */
+
+/* create review content start */
 .create-review-page {
   margin-top: auto;
   margin-bottom: 50px;
@@ -197,7 +201,7 @@ body {
   background-color: #5e4c75ae;
 }
 
-/* Reviews Section */
+/* reviews section */
 .create-review-section {
   font-size: 1.2rem;
   flex-grow: 1;
@@ -234,7 +238,7 @@ body {
   border-radius: 0px 0px 10px 10px;
 }
 
-/* Star Rating */
+/* star rating */
 .star-rating {
   display: flex;
   justify-content: center;
@@ -253,7 +257,7 @@ body {
   color: #f5c518;
 }
 
-/* Review Textarea */
+/* create review input box */
 .review-textarea {
   width: 60%;
   margin: 0 auto;
@@ -268,7 +272,7 @@ body {
   color: #333;
 }
 
-/* Tag Buttons */
+/* tag buttons */
 .tag-buttons {
   display: flex;
   gap: 15px;
@@ -292,7 +296,7 @@ body {
   background-color: #e1d6f1ef;
 }
 
-/* Photo Upload */
+/* photo upload */
 .photo-upload {
   display: flex;
   justify-content: center;
@@ -319,7 +323,7 @@ body {
   background-color: #fcf9fc99;
 }
 
-/* Post Button */
+/* post button */
 .post-button {
   font-size: 1.5rem;
   text-align: center;
@@ -338,3 +342,5 @@ body {
 .post-button:hover {
   background-color: #5e4c75ae;
 }
+
+/* create review content end */
