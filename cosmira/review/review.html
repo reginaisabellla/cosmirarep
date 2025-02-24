@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmira</title>
-    <script src="../review/review.js"></script>
     <link rel="stylesheet" href="../review/review.css" />
   </head>
   <body>
-    <!-- Header Section -->
+    <!-- header Section -->
     <header>
       <div class="heading">
+        <!-- logo -->
         <div class="logo">
           <a href="https://reginaisabellla.github.io/cosmirarep/">
             <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
           </a>
         </div>
+        <!-- search bar -->
         <div class="search">
           <input type="text" placeholder="S E A R C H" />
         </div>
       </div>
+      <!-- nav bar links -->
       <nav>
         <ul class="nav-links">
           <li>
@@ -38,71 +40,106 @@
         </ul>
       </nav>
     </header>
-
+    <!-- content container -->
     <div class="container">
+      <!-- sidebar content start -->
       <aside class="sidebar">
+        <!-- sidebar heading -->
         <h1 class="product-heading">Product</h1>
+        <!-- image of product -->
         <div class="product-image"></div>
+        <!-- product search bar (to specifically see the reviews of said product) -->
         <input type="text" placeholder="Search" class="search-box" />
+        <!-- average star rating for product -->
         <div class="average-rating">
           <p>Average Rating</p>
-          <div class="stars">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
-            ><span>⭐</span>
+          <div class="star-rating">
+            <!-- star rating start -->
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
           </div>
+          <!-- star rating end -->
         </div>
+        <!-- create review button (that will take users to writereview.html page) -->
         <button class="create-review">Create Review</button>
       </aside>
+      <!-- reviews content start (next to sidebar) -->
       <main class="reviews-section">
+        <!-- reviews heading -->
         <h1 class="reviews-heading">Reviews</h1>
+        <!-- actual reviews content container -->
         <div class="reviews-container">
+          <!-- user 1 content -->
           <div class="review">
             <div class="review-header">
+              <!-- pfp -->
               <img
                 src="/cosmira/assests/img/profilepicture1.jpg"
                 alt="Profile Pic"
                 class="profile-pic"
               />
+              <!-- username -->
               <span class="username">jordan_8</span>
+              <!-- user tags -->
               <span class="tag medium-coverage">Medium Coverage</span>
+              <!-- skintone  -->
               <span id="shade1"></span>
+              <!-- user's star rating -->
               <div class="rating">⭐ 4.5</div>
             </div>
+            <!-- user's written review -->
             <p>
               Great coverage!! I was able to build onto the product for more
               coverage and blur out some dark spots.
             </p>
           </div>
+          <!-- user 2 content -->
           <div class="review">
             <div class="review-header">
+              <!-- pfp -->
               <img
                 src="/cosmira/assests/img/profilepicture3.jpg"
                 alt="Profile Pic"
                 class="profile-pic"
               />
+              <!-- username -->
               <span class="username">motzerella</span>
+              <!-- user tags -->
               <span class="tag natural-finish">Natural Finish</span>
+              <!-- skintone -->
               <span id="shade2"></span>
+              <!-- user's star rating -->
               <div class="rating">⭐ 4.0</div>
             </div>
+            <!-- user's written review -->
             <p>
               Build-able coverage and very nice finish! I like the formula but
               the shelf life is so short before it starts separating. Would
               recommend if you wear foundation often.
             </p>
           </div>
+          <!-- user 3 content -->
           <div class="review">
             <div class="review-header">
+              <!-- pfp -->
               <img
                 src="/cosmira/assests/img/profilepicture2.jpg"
                 alt="Profile Pic"
                 class="profile-pic"
               />
+              <!-- username -->
               <span class="username">kimswim</span>
+              <!-- user tags -->
               <span class="tag long-wear">Long-wear</span>
+              <!-- skintone -->
               <span id="shade3"></span>
+              <!-- user's star rating -->
               <div class="rating">⭐ 3.5</div>
             </div>
+            <!-- user's written review -->
             <p>
               This foundation looks lovely immediately after application but if
               you have oily skin, this will not last all day. I was oily after a
@@ -110,9 +147,9 @@
             </p>
           </div>
         </div>
+        <!-- end of review content container -->
       </main>
     </div>
-
     <script src="review.js"></script>
   </body>
 </html>
