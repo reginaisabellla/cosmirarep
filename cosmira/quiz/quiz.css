@@ -236,26 +236,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/*find match button*/
-.matchbutton {
-  margin-top: 20px;
-  background: #6d4b77;
-  border: none;
-  border-radius: 15px;
-  color: white;
-  padding: 15px;
-  width: 150px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background 0.3s;
-  box-shadow: 0 0 15px 5px #30133a; 
-}
-.matchbutton:hover {
-  background-color: #39273f;
-}
-
-/*buttons*/
+/*skin color range boxes*/
 .color-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -270,24 +251,37 @@ h2 {
   cursor: pointer;
 }
 
-.skin-color{
+
+.color-box {
+  width: 100%;/* full width of grid cells for button */
   padding: 20px 150px;
-  margin: 5px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-  color:#280E31;
-  font-weight: bold; 
-  width: 100%; /* full width of grid cells for button */
   text-align: center;
   transition: background-color 0.3s;
-  background-color: white;    
+  background-color: white;
+  margin: 5px;
 }
-.skin-color:hover{
-  background-color: #39273f;
+.color-box:hover{
+  outline: solid #39273f;
 }
+.skin-color input[type="radio"] {
+ display: none;
+}
+.skin-color input[type="radio"]:checked + .color-box {
+  outline: solid #39273f;
+}
+.textcolor {
+  color: #280E31;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
 
 #color1{ background-color: #f4ded4;}
 #color2{ background-color: #ebc2af; }
@@ -299,28 +293,6 @@ h2 {
 #color8{ background-color: #4d2a1d; }
 #color9{ background-color: #331f19; }
 #color10{ background-color:#1f120e; }
-
-#color1:hover{outline:solid #39273f;}
-#color2:hover{outline:solid #39273f;}
-#color3:hover{outline:solid #39273f;}
-#color4:hover{outline:solid #39273f;}
-#color5:hover{outline:solid #39273f;}
-#color6:hover{outline:solid #39273f;}
-#color7:hover{outline:solid #39273f;}
-#color8:hover{outline:solid #39273f;}
-#color9:hover{outline:solid #39273f;}
-#color10:hover{outline:solid #39273f;}
-
-#color1:focus{outline:solid #39273f;}
-#color2:focus{outline:solid #39273f;}
-#color3:focus{outline:solid #39273f;}
-#color4:focus{outline:solid #39273f;}
-#color5:focus{outline:solid #39273f;}
-#color6:focus{outline:solid #39273f;}
-#color7:focus{outline:solid #39273f;}
-#color8:focus{outline:solid #39273f;}
-#color9:focus{outline:solid #39273f;}
-#color10:focus{outline:solid #39273f;}
 
 
 .skin-type, 
@@ -450,5 +422,22 @@ h2 {
 }
 
 
-
+/*find match button*/
+.matchbutton {
+  margin-top: 20px;
+  background: #6d4b77;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px;
+  width: 150px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+  box-shadow: 0 0 15px 5px #30133a; 
+}
+.matchbutton:hover {
+  background-color: #39273f;
+}
 
