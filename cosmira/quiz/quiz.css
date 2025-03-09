@@ -131,7 +131,7 @@ p {
   flex-direction: column;
   gap: 10px;
   padding: 20px;
-
+  text-align: center;
 }
 .button1 {
   background: linear-gradient(135deg, #f8e2ef, #defdc7); 
@@ -163,8 +163,10 @@ p {
   padding: 15px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.3s;
   box-shadow: 0 0 15px 5px #30133a;
+
 }
 .button2:hover {
   background: linear-gradient(
@@ -182,6 +184,7 @@ p {
   padding: 15px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.3s;
   box-shadow: 0 0 15px 5px #30133a; 
 }
@@ -219,20 +222,205 @@ p {
   background: #39273f; 
 }
 
-/*Quiz Start*/
+/*Quiz pages Start*/
 
 h2 {
   margin-top: 30px;
   color: #ffffff;
   padding-left: 25px;
 }
-
 .quiz-text {
   color: #ffffff;
 }
-.bq-question {
+.bq-question, .iq-question {
   margin-bottom: 20px;
 }
+
+/*skin color range boxes*/
+.color-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.color-buttons label {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10PX;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.color-box {
+  width: 100%;/* full width of grid cells for button */
+  padding: 20px 150px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  background-color: white;
+  margin: 5px;
+}
+.color-box:hover{
+  outline: solid #39273f;
+}
+.skin-color input[type="radio"] {
+ display: none;
+}
+.skin-color input[type="radio"]:checked + .color-box {
+  outline: solid #39273f;
+}
+.textcolor {
+  color: #280E31;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+
+#color1{ background-color: #f4ded4;}
+#color2{ background-color: #ebc2af; }
+#color3{ background-color: #d2a28b; }
+#color4{ background-color: #c18b6f; }
+#color5{ background-color: #a56c50; }
+#color6{ background-color: #86543b; }
+#color7{ background-color: #633a26; }
+#color8{ background-color: #4d2a1d; }
+#color9{ background-color: #331f19; }
+#color10{ background-color:#1f120e; }
+
+
+.skin-type, 
+.skin-issue, 
+.undertone, 
+.coverage, 
+.finish, 
+.features, 
+.foundation-type,
+.apply, 
+.vein-buttons,
+.medication,
+.formula-type,
+.routine,
+.changes
+{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; /* Center items horizontally */
+  justify-content: center; 
+  color: white;
+}
+
+
+.skin-type label, 
+.skin-issue label, 
+.undertone label, 
+.coverage label, 
+.finish label, 
+.features label, 
+.foundation-type label,
+.apply label,
+.vein-buttons label,
+.medication label,
+.formula-type label,
+.routine label,
+.changes label
+{
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  width: 100%; /* labels take full width of the container */
+  max-width: 300px; 
+  text-align: left; /* Align text to the left */
+  padding: 10px; 
+  background-color:#402E56DB; 
+  border-radius: 10px; 
+}
+.skin-type input[type="radio"], 
+.undertone input[type="radio"], 
+.finish input[type="radio"], 
+.coverage input[type="radio"], 
+.foundation-type input[type="radio"], 
+.features input[type="radio"],
+.apply input[type="radio"],
+.vein-buttons input[type="radio"],
+.formula-type input[type="radio"],
+.changes input[type="radio"]{
+  accent-color: #6d4b77;
+  margin-right: 10px; 
+}
+
+.skin-issue input[type="checkbox"], 
+.coverage input[type="checkbox"], 
+.skin-type input[type="checkbox"], 
+.features input[type="checkbox"],
+.medication input[type="checkbox"],
+.routine input[type="checkbox"]{
+  accent-color: #6d4b77;
+  margin-right: 10px;
+}
+
+#selectbox, 
+.undertone input[type="text"],
+.apply input[type="text"],
+.changes input[type="text"]{
+  width:200px;
+  margin-left: auto;
+  padding: auto;
+  height:40px;
+  border-radius:10px;
+  align-items: center;
+}
+
+.ingredients,
+.light{
+  position: relative; /* Establish positioning context */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  color: white;
+}
+
+.ingredients label,
+.light label{
+  position: relative; 
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; /* Align items to the left */
+  background-color: #402E56DB;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px; 
+}
+
+.ingredients label span,
+.light label span {
+  position: absolute;
+  top: -20px; 
+  left: 10px; 
+  background-color: #402E56DB; 
+  padding: 0 5px; 
+  font-size: 0.9rem; 
+}
+
+.ingredients input[type="text"],
+.light input[type="text"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-top: 20px; 
+  box-sizing: border-box; 
+}
+
 
 /*find match button*/
 .matchbutton {
@@ -252,165 +440,5 @@ h2 {
 
 .matchbutton:hover {
   background-color: #39273f;
-}
-
-/*buttons*/
-.color-buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.color-buttons label {
-  display: flex;
-  padding-left: 10px;
-  padding-right: 10PX;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-  
-.color-buttons, .vein-buttons{
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skin-color:hover{
-  background-color: #39273f;
-}
-.skin-color {
-  width: 100%; /* full width of grid cells for button */
-  padding: 10px; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.3s;
-  background-color: white;
-}
-
-
-.skin-color, .vein-button{
-    padding: 20px 150px;
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-    color:#280E31;
-    font-weight: bold;
-    
-}
-
-#color1{ background-color: #f4ded4;}
-#color2{ background-color: #ebc2af; }
-#color3{ background-color: #d2a28b; }
-#color4{ background-color: #c18b6f; }
-#color5{ background-color: #a56c50; }
-#color6{ background-color: #86543b; }
-#color7{ background-color: #633a26; }
-#color8{ background-color: #4d2a1d; }
-#color9{ background-color: #331f19; }
-#color10{ background-color:#1f120e; }
-
-#color1:hover{outline:solid #39273f;}
-#color2:hover{outline:solid #39273f;}
-#color3:hover{outline:solid #39273f;}
-#color4:hover{outline:solid #39273f;}
-#color5:hover{outline:solid #39273f;}
-#color6:hover{outline:solid #39273f;}
-#color7:hover{outline:solid #39273f;}
-#color8:hover{outline:solid #39273f;}
-#color9:hover{outline:solid #39273f;}
-#color10:hover{outline:solid #39273f;}
-
-#color1:focus{outline:solid #39273f;}
-#color2:focus{outline:solid #39273f;}
-#color3:focus{outline:solid #39273f;}
-#color4:focus{outline:solid #39273f;}
-#color5:focus{outline:solid #39273f;}
-#color6:focus{outline:solid #39273f;}
-#color7:focus{outline:solid #39273f;}
-#color8:focus{outline:solid #39273f;}
-#color9:focus{outline:solid #39273f;}
-#color10:focus{outline:solid #39273f;}
-
-.blue { background-color: #6989e7; }
-.bluish-green { background-color: #4ff1bb; }
-.green { background-color: #5ba155; }
-.purple { background-color: #663399; }
-
-.vein-buttons {
-  display: flex;
-  flex-direction: column; /* Arrange items in a column */
-  align-items: center; /* Center items horizontally */
-  gap: 10px; /* gap between buttons  */
-}
-
-.vein-button {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-  font-weight: bold;
-  text-align: center;
-}
-
-.vein-button input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.vein-button.blue {
-  background-color: #6989e7;
-}
-
-.vein-button.bluish-green {
-  background-color: #4ff1bb;
-}
-
-.vein-button.green {
-  background-color: #5ba155;
-}
-
-.vein-button.purple {
-  background-color: #663399;
-}
-
-.vein-button input[type="radio"]:checked + label {
-  background-color: #333;
-}
-
-.skin-type, .skin-issue, .undertone, .coverage, .finish {
-  display: flex; /* Use Flexbox */
-  flex-direction: column; /* Arrange items in a column */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  color: white;
-}
-
-.skin-type label, .skin-issue label, .undertone label, .coverage label, .finish label {
-  display: flex;
-  align-items: center; /* Center items vertically */
-  justify-content: flex-start; /* Align items to the left */
-  width: 100%; /* Ensure labels take full width of the container */
-  max-width: 300px; /* Optional: set a max-width for the labels */
-  text-align: left; /* Align text to the left */
-  padding: 10px; /* Add padding for better spacing */
-  background-color:#402E56DB; /* Optional: background color for labels */
-  border-radius: 10px; /* Optional: rounded corners for labels */
-}
-.skin-type input[type="radio"], .undertone input[type="radio"], .finish input[type="radio"]{
-  accent-color: #6d4b77;
-  margin-right: 10px; /* Adjust margin as needed */
-}
-
-.skin-issue input[type="checkbox"], .coverage input[type="checkbox"] {
-  accent-color: #6d4b77;
-  margin-right: 10px; /* Adjust margin as needed */
 }
 
