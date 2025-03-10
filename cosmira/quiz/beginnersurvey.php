@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
+
+<?php
+//connecting to database
+session_start();
+require("db_connect.php");
+
+//later will add login function
+
+//allowing user selections to enter database
+ if(isset($_POST["submit"])){
+    $matchQuery = "INSERT INTO cosmira_match_beginner(match_beginner_user_id, match_skin_tone, match_skin_type, match_skin_concern, match_skin_undertone, match_coverage, match_finish) VALUE (NULL, '".$_POST["skin-colortest"]."', '".$_POST["skin-type"]."', '".$_POST["skin-issue"]."', '".$_POST["undertone"]."', '".$_POST["coverage"]."', '".$_POST["finish"]."' )";
+
+    //error checking
+    $matchQuery = $mysqli->query($matchQuery);
+        if($mysqli->error){
+            print "connection error :(". $mysqli->error ;
+        }
+ }
+
+?>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -203,11 +224,17 @@
           </div>
         </div> 
         <div class="button-single">
-          <button class="matchbutton" type="submit">Get My Match!</button>
+          <input class="matchbutton" name="submit" type="submit" value="Get My Match!" id="submit">
         </div>
       </form>
     </div>
   </div>
-  <script src="../quiz/quiz.js"></script>
+  <!-- <script src="../quiz/quiz.js"></script> -->
 </body>
 </html>
+
+<!-- closing mysqli -->
+
+<?php
+    $mysqli->close();
+?>

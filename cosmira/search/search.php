@@ -103,9 +103,9 @@ $productResults = $mysqli ->query($productQuery);
                 //grabbing product info from database
                 foreach ($products as $product){
                           
-                    print "\t\t<h3 class= 'brandName' >". $product->product_brand ."</h3>\n";
+                    print "\t\t<h1 class= 'brandName' >". $product->product_brand ."</h1>\n";
                     
-                    print "\t\t<h1>". $product->product_name ."</h1>\n";
+                    print "\t\t <div class ='nameBack'><h3><a href= '../product/product.php'>". $product->product_name ."</a></h3></div>\n";
                     
                     print "\t\t<h4>". $product->product_category ."</h4>\n";
                     
