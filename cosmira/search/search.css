@@ -236,3 +236,18 @@ a {
   padding-top: 25px;
 }
 
+/* css for the database stuff*/
+
+img{
+  width: 200px;
+
+}
+
+.productAlign{
+  display: flex;
+  flex-direction: column;
+}
+
+.brandName{
+  color:#280e31;
+}

@@ -1,4 +1,22 @@
 <!DOCTYPE php>
+
+<?php
+
+//connecting to database
+require("db_connect.php");
+
+//retrieve data
+$productQuery = "SELECT product_id, product_name, product_brand, product_category, product_image_url, product_description FROM cosmira_products";
+
+//connection check
+$productResults = $mysqli ->query($productQuery);
+    if ($mysqli->error){
+        print "collection failed" . $mysqli->error;
+    }
+
+?>
+
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -71,7 +89,39 @@
       </div>
 
       <div class="searchGrid">
-        <div class="pageSearch">
+          <div class="contentAlign">
+            <div class="productAlign">
+              <?php
+
+                // empty array for database content
+                $products = [];
+
+                //store data in the array
+                  while($productRow = $productResults->fetch_object()) {
+                    $products[] = $productRow;
+                }
+                //grabbing product info from database
+                foreach ($products as $product){
+                          
+                    print "\t\t<h3 class= 'brandName' >". $product->product_brand ."</h3>\n";
+                    
+                    print "\t\t<h1>". $product->product_name ."</h1>\n";
+                    
+                    print "\t\t<h4>". $product->product_category ."</h4>\n";
+                    
+                    print "\t\t<figure><img src='". $product->product_image_url ."' alt= '". $product->product_name ."'><figure>\n";
+                    
+                    print "\t\t<p>". $product->product_description ."</p>\n";
+
+                    print "<br/>";
+                }                    
+            ?>
+            </div> 
+          </div>
+               
+          <!-- potential version for if database isnt working -->
+
+       <!--  <div class="pageSearch" >
               <form action="search.js" method="post" name="pageSearch">
                 <input type="text" placeholder="elf poreless putty primer" class="pageInput"/>
                 <button type="submit" name="search" id="pageButton">
@@ -81,7 +131,7 @@
         </div>
         <div class="row1">
           <figure>
-            <img src="../assests/img/icon1.png" alt="icon of a shopping bag with a heart" class="searchPic">
+            <img src="../assests/img/icon1.svg" alt="icon of a shopping bag with a heart" class="searchPic">
             <figcaption>
               Products by brand
             </figcaption>
@@ -93,7 +143,7 @@
             </figcaption>
           </figure>
           <figure>
-            <img src="../assests/img/icon3.png" alt="icon of dollar bills" class="searchPic">
+            <img src="../assests/img/icon3.svg" alt="icon of dollar bills" class="searchPic">
             <figcaption>
               Products by price
             </figcaption>
@@ -118,7 +168,7 @@
               Tutorials
             </figcaption>
           </figure>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>
