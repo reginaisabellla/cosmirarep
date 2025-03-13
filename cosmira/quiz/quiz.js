@@ -12,54 +12,8 @@ form.addEventListener('submit', function(event) {
         errorSpan.style.color = "red";
         return false;
     }
-    let skinType = document.forms["quiz-form"]["skin-type"].value;
-    if (skinType== "") {
-        let errorSpan = document.getElementById("skin-type-error");
-        errorSpan.textContent = "Please choose a skin type.";
-        errorSpan.style.display = "block";
-        errorSpan.style.textAlign = "center";
-        errorSpan.style.color = "red";
-        return false;
-    }
-    let skinIssue = document.forms["quiz-form"]["skin-issue"].value;
-    if (skinIssue== "") {
-        let errorSpan = document.getElementById("skin-issue-error");
-        errorSpan.textContent = "Please choose a skin issue.";
-        errorSpan.style.display = "block";
-        errorSpan.style.textAlign = "center";
-        errorSpan.style.color = "red";
-  
-      return false;
-    }
-    let undertone = document.forms["quiz-form"]["undertone"].value;
-    if (undertone== "") {
-        let errorSpan = document.getElementById("undertone-error");
-        errorSpan.textContent = "Please choose an undertone.";
-        errorSpan.style.display = "block";
-        errorSpan.style.textAlign = "center";
-        errorSpan.style.color = "red";
-  
-      return false;
-    }
-    let coverage = document.forms["quiz-form"]["coverage"].value
-    if (coverage== "") {
-        let errorSpan = document.getElementById("coverage-error");
-        errorSpan.textContent = "Please choose a coverage.";
-        errorSpan.style.display = "block";
-        errorSpan.style.textAlign = "center";
-        errorSpan.style.color = "red";
-      return false;
-    }
-    let finish = document.forms["quiz-form"]["finish"].value;  
-    if (finish== "") {
-        let errorSpan = document.getElementById("finish-error");
-        errorSpan.textContent = "Please choose a finish.";
-        errorSpan.style.display = "block";
-        errorSpan.style.textAlign = "center";
-        errorSpan.style.color = "red";
-      return false;
-    }
     
+    window.location.href = "../results/result.html";
     //test out later
     /*function validateFields(fields) {
         let isValid = true;
