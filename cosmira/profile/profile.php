@@ -1,0 +1,253 @@
+<!-- cosmira january 2025 -->
+<!-- need to add the basic doctype info -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmira</title>
+    <!-- need to link css pages -->
+    <link rel="stylesheet" href="../profile/profile.css" />
+  </head>
+
+  <body>
+    <!-- COSMIRA HEADER START -->
+    <header>
+      <div class="heading">
+        <div class="logo">
+          <a href="https://reginaisabellla.github.io/cosmirarep/">
+          <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+          </a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="S E A R C H" />
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="../about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../community/community.html">COMMUNITY</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../profile/profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- COSMIRA HEADER END -->
+
+    <div class="big-profile-container">
+<!-- SIDEBAR SPECIFIC ORGANIZATION START (left side screen)-->
+      <div class="profile-sidebar">
+    <!-- user specific things start -->
+        <!-- pfp -->
+        <img
+          src="../assests/img/lolaslickk.png"
+          alt="user profile picture"
+          class="profile-pic"
+        />
+        <!-- skin color swatch -->
+        <img
+          src="../assests/img/lolaskinswatch.png"
+          alt="user skin color swatch"
+          class="skin-color-swatch"
+        />        
+        <!-- username -->
+        <h2 class="username">@LOLASLICKK</h2>
+        <div class="profile-stats">
+          <p class="review-amount">67 Reviews</p>
+          <p class="discussion-amount">54 Discussions</p>
+        </div>
+    <!-- user specific things end -->
+    <!-- sidebar buttons -->
+        <!-- go back and redo this with javascript later *** -->
+        <div class="sidebar-button-group">
+          <button class="sidebar-button">Edit Profile</button>
+          <button class="sidebar-button">Account Settings</button>
+          <button class="sidebar-button emphasized">See Shade Match Results</button>
+        </div>
+        <!-- link to review page -->
+        <!-- this needs to connect to our database -->
+        <div class="review-link">
+          <a href="../review/review.html" class="review-link"
+            >+ Write a New Review</a>
+        </div>
+        <div class="sidebar-skin-properties">
+          <h3>SKIN PROPERTIES</h3>
+            <p>Undertone: Warm</p>
+            <p>Skin Type: Oily</p>
+            <p>Quiz Result: TBD</p>
+        </div>
+        <div class="social-links">
+          <h3>SOCIAL LINKS</h3>
+            <p>Instagram</p>
+            <p>TikTok</p>
+            <p>Twitter</p>
+        </div>
+      </div>
+<!-- SIDEBAR SPECIFIC ORGANIZATION END -->
+
+<!-- CONTENT SECTION SPECIFIC STYLING START (right side screen) -->
+
+      <div class="profile-content-container">
+    <!-- Your Reviews section -->
+        <div class="content-section">
+          <h2>Your Reviews</h2>
+          <!-- need to add javascript functionality here -->
+          <!-- <div class="content-button-container">
+            <button class="content-button">By Brand</button>
+            <button class="content-button">By Product</button>
+            <button class="content-button">By Date</button>
+          </div> -->
+          <div class="user-recent-reviews-container">
+          <!-- need to pull this from database -->
+            <div class="user-recent-review">
+              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <p class="date-reviewed">February 20, 2025</p>
+              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="user-recent-review">
+              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <p class="date-reviewed">February 20, 2025</p>
+              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate 
+                velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+            <div class="user-recent-review">
+              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <p class="date-reviewed">February 20, 2025</p>
+              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="user-recent-review">
+              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <p class="date-reviewed">February 20, 2025</p>
+              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="user-recent-review">
+              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <p class="date-reviewed">February 20, 2025</p>
+              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate 
+                velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+            <p>View more...</p>
+          </div>
+        </div>
+    <!-- Your Images section -->
+        <div class="content-section">
+          <h2>Your Images</h2>
+          <!-- need to add javascript functionality here -->
+          <img
+            src="../assests/img/lolaplaceholder.png"
+            alt="zoom in on skin as placeholder for user uploaded image"
+            class="user-images"
+          />
+          <img
+            src="../assests/img/lolaplaceholder.png"
+            alt="zoom in on skin as placeholder for user uploaded image"
+            class="user-images"
+          />
+          <img
+            src="../assests/img/lolaplaceholder.png"
+            alt="zoom in on skin as placeholder for user uploaded image"
+            class="user-images"
+          />
+          <img
+            src="../assests/img/lolaplaceholder.png"
+            alt="zoom in on skin as placeholder for user uploaded image"
+            class="user-images"
+          />
+        </div>
+    <!-- Your Likes section -->
+    <div class="content-section">
+      <h2>Your Likes</h2>
+      <!-- need to add javascript functionality here -->
+      <div class="content-button-container">
+        <button class="content-button">By Brand</button>
+        <button class="content-button">By Product</button>
+        <button class="content-button">By Date</button>
+      </div>
+    </div>
+          <!-- later make it so that pictures get a tint when mouse hovers -->
+          <!-- make images clickable to lead to discussions -->
+    <!-- Your Discussions section -->
+        <div class="content-section">
+          <h2>Your Discussions</h2>
+          <div class="profile-discussions">
+            <!-- need image container and discussion-preview-text class bc that's how i made the text go on the images -->
+            <div class="image-container">
+              <img
+                src="../assests/img/profiledis1.png"
+                alt="image of beige colored fenty beauty eaze drop blurring skin tint"
+              />
+              <div class="discussion-preview-text">
+                fenty's eaze drop skin tint worth it?
+              </div>
+            </div>
+            <div class="image-container">
+              <img
+                src="../assests/img/profiledis2.jpg"
+                alt="image of foundation powder compact, a makeup brush, and other makeup products"
+              />
+              <div class="discussion-preview-text">
+                this dupe is better than the real thing
+              </div>
+            </div>
+            <div class="image-container">
+              <img
+                src="../assests/img/profiledis3.png"
+                alt="assorted skin care supplies arranged in a clean bathroom"
+              />
+              <div class="discussion-preview-text">
+                best korean skin care products
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Your Communities section -->
+        <div class="content-section">
+          <h2>Your Communities</h2>
+          <div class="profile-communities">
+            <img
+              src="../assests/img/profilecom1.jpg"
+              alt="cosrx korean skin care products"
+            />
+            <img
+              src="../assests/img/profilecom2.png"
+              alt="selfie of a woman with well soft, seamless foundation application"
+            />
+            <img
+              src="../assests/img/profilecom3.jpg"
+              alt="korean skin care serums"
+            />
+            <img
+              src="../assests/img/profilecom4.jpg"
+              alt="woman using facial cleansing brush"
+            />
+          </div>
+        </div>
+      </div>
+<!-- CONTENT SECTION SPECIFIC STYLING END -->
+    </div>
+  </body>
+</html>

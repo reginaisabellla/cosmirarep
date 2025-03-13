@@ -13,7 +13,7 @@
       <div class="heading">
         <div class="logo">
           <a href="/index.html">
-            <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+          <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
           </a>
         </div>
         <div class="search">

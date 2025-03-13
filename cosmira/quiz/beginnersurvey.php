@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
+
+<?php
+//connecting to database
+session_start();
+require("db_connect.php");
+
+//later will add login function
+
+//allowing user selections to enter database
+ if(isset($_POST["submit"])){
+    $matchQuery = "INSERT INTO cosmira_match_beginner(match_beginner_user_id, match_skin_tone, match_skin_type, match_skin_concern, match_skin_undertone, match_coverage, match_finish) VALUE (NULL, '".$_POST["skin-colortest"]."', '".$_POST["skin-type"]."', '".$_POST["skin-issue"]."', '".$_POST["undertone"]."', '".$_POST["coverage"]."', '".$_POST["finish"]."' )";
+
+    //error checking
+    $matchQuery = $mysqli->query($matchQuery);
+        if($mysqli->error){
+            print "connection error :(". $mysqli->error ;
+        }
+ }
+
+?>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -44,7 +65,6 @@
           <h2>Question 1.</h2>
           <div class="quiz-text">
             <p>Select the skin color range MOST accurate to yours:</p>
-            <span id="skin-color-error"></span>
           </div>
           <div class="color-buttons">
             <label class="skin-color">
@@ -113,20 +133,19 @@
           <h2>Question 2.</h2>
           <div class="quiz-text">
             <p>What is your skin type?</p>
-            <span id="skin-type-error"></span>
           </div>
           <div class="skin-type">
           <label>
-            <input type="radio" name="skin-type" value="Normal" />Normal 
+            <input type="radio" name="skin-type" value="Normal" required/>Normal 
           </label><br>
           <label>
-            <input type="radio" name="skin-type" value="dry" />Dry 
+            <input type="radio" name="skin-type" value="dry" required/>Dry 
           </label><br>
           <label>
-            <input type="radio" name="skin-type" value="oily" />Oily 
+            <input type="radio" name="skin-type" value="oily" required/>Oily 
           </label><br>
           <label>
-            <input type="radio" name="skin-type" value="combination"/>Combination
+            <input type="radio" name="skin-type" value="combination" required/>Combination <br>
           </label>
           </div>
         </div>  
@@ -134,7 +153,6 @@
           <h2>Question 3.</h2>
           <div class="quiz-text">
             <p>Do you have any skin concerns?</p>
-            <span id="skin-issue-error"></span>
           </div>
           <div class="skin-issue">
             <!---add js to make sure checkbox input required-->
@@ -157,7 +175,6 @@
           <div class="quiz-text">
             <p>Have you previously used makeup with a specific undertone, which do you frequently wear?</p>
           </div>
-          <span class="undertone-error"></span>
           <div class="undertone">
             <!---add color range/wheel image that falls under each undertone-->
             <label>
@@ -175,7 +192,6 @@
           <h2>Question 5.</h2>
           <div class="quiz-text">
             <p>What type of coverage do you prefer?</p>
-            <span id="coverage-error"></span>
           </div>
           <div class="coverage">
             <label>
@@ -195,25 +211,30 @@
           <div class="quiz-text">
             <p>What foundation finish are you looking for?</p>
           </div>
-          <span class="finish-error"></span>
           <div class="finish">
             <label>
-              <input type="radio" name="finish" value="sheer" />Matte
+              <input type="radio" name="finish" value="sheer" required/>Matte
             </label><br>
             <label>
-              <input type="radio" name="finish" value="medium"/>Dewy
+              <input type="radio" name="finish" value="medium" required/>Dewy
             </label><br>
             <label>
-              <input type="radio" name="finish" value="full" />Natural
+              <input type="radio" name="finish" value="full" required/>Natural
             </label><br>
           </div>
         </div> 
         <div class="button-single">
-          <button class="matchbutton" type="submit">Get My Match!</button>
+          <input class="matchbutton" name="submit" type="submit" value="Get My Match!" id="submit">
         </div>
       </form>
     </div>
   </div>
-  <script src="../quiz/quiz.js"></script>
+  <!-- <script src="../quiz/quiz.js"></script> -->
 </body>
 </html>
+
+<!-- closing mysqli -->
+
+<?php
+    $mysqli->close();
+?>
