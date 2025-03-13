@@ -60,7 +60,40 @@ form.addEventListener('submit', function(event) {
       return false;
     }
     
-
+    //test out later
+    /*function validateFields(fields) {
+        let isValid = true;
+        let errorMessage = "";
+        for (let i = 0; i < fields.length; i++) {
+          let field = fields[i];
+          let fieldValue = field.value.trim();
+          if (fieldValue === "") {
+            errorMessage += ${field.name} is required.\n;
+            isValid = false;
+          } else if (field.type === "email" && !validateEmail(fieldValue)) {
+            errorMessage += Invalid email address.\n;
+            isValid = false;
+          } else if (field.type === "phone" && !validatePhone(fieldValue)) {
+            errorMessage += Invalid phone number.\n;
+            isValid = false;
+          }
+        }
+        if (!isValid) {
+          alert(errorMessage);
+          return false;
+        }
+        return true;
+      }
+      // Example usage:
+      let fields = [
+        document.getElementById("name"),
+        document.getElementById("email"),
+        document.getElementById("phone"),
+        document.getElementById("skin-colortest")
+      ];
+      if (!validateFields(fields)) {
+        return false;
+      }*/
 
     
 
