@@ -6,18 +6,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $productId = $_POST['product_id'];
     $rating = $_POST['rating'];
-    $review_text = $_POST['review_text'];
+    $review_text = isset($_POST['review_text']) ? $_POST['review_text'] : '';
     $skin_type = isset($_POST['skin_type']) ? $_POST['skin_type'] : null;
     $coverage_type = isset($_POST['coverage_type']) ? $_POST['coverage_type'] : null;
     $wear_type = isset($_POST['wear_type']) ? $_POST['wear_type'] : null;
     $tags = isset($_POST['tags']) ? $_POST['tags'] : [];
 
-    // Validate input
-    if (empty($username) || empty($productId) || empty($rating) || empty($review_text)) {
-        die("Please fill in all required fields");
+    // Only validate rating as required
+    if (empty($rating)) {
+        die("Please provide a star rating");
     }
 
-    // Handle file upload
+    // Handle file upload if provided
     $photo_path = null;
     if (isset($_FILES['photo']) && $_FILES['photo']['error'] == 0) {
         $target_dir = "../assests/img/reviews/";
@@ -39,7 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (move_uploaded_file($_FILES["photo"]["tmp_name"], $target_file)) {
             $photo_path = $target_file;
         } else {
-            die("Sorry, there was an error uploading your file.");
+            // If file upload fails, continue without photo
+            error_log("File upload failed for review");
         }
     }
 
@@ -52,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
         $review_id = $stmt->insert_id;
 
-        // Insert tags
+        // Insert tags if any
         if (!empty($tags)) {
             $tag_sql = "INSERT INTO review_tags (review_id, tag_name) VALUES (?, ?)";
             $tag_stmt = $conn->prepare($tag_sql);
@@ -67,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: review.html?product_id=" . $productId);
         exit();
     } else {
-        echo "Error: " . $stmt->error;
+        die("Error creating review: " . $conn->error);
     }
 }
 ?>
