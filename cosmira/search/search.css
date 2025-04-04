@@ -236,3 +236,46 @@ a {
   padding-top: 25px;
 }
 
+/* css for the database stuff*/
+
+img{
+  width: 200px;
+
+}
+
+.productAlign{
+  display: flex;
+  flex-direction: column;
+ 
+  text-align:center ;
+}
+
+
+p{
+  padding: 10px;
+  font-size: 20px;
+}
+
+h1{
+  background-color: #622e74 ;
+  color: #debcf8;
+}
+h3{
+  text-decoration: none;
+  font-size: 25px;
+  
+}
+h4{
+  padding: 5px;
+  color: #402E56;
+
+}
+.nameBack{
+  background-color:#622e74;
+
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
