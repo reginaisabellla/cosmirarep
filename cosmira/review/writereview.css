@@ -178,7 +178,28 @@ body {
 
 .stars span {
   font-size: 30px;
+  color: #d3c1c1;  /* Default uncolored state */
+}
+
+.average-stars .star {
+  font-size: 30px;
+  color: #d3c1c1 !important;  /* Using !important to ensure this base state takes precedence */
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  pointer-events: none;  /* This prevents any hover or click interactions */
+}
+
+.average-stars .star.filled {
+  color: #f5c518 !important;
+}
+
+.average-stars .star.half-filled::before {
+  content: '★';
+  position: absolute;
   color: #f5c518;
+  width: 50%;
+  overflow: hidden;
 }
 
 /* sidebar content end */
@@ -247,14 +268,14 @@ body {
 
 .star-rating .star {
   font-size: 4rem;
-  color: #d3c1c1;
+  color: #d3c1c1 !important;  /* Using !important to ensure this base state takes precedence */
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.2s ease;
 }
 
-.star-rating .star:hover,
-.star-rating .star.active {
-  color: #f5c518;
+.star-rating .star.highlight,
+.star-rating .star.selected {
+  color: #f5c518 !important;  /* Yellow color for active states */
 }
 
 /* create review input box */

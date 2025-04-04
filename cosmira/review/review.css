@@ -183,7 +183,7 @@ body {
 
 .stars span {
   font-size: 30px;
-  color: #f5c518;
+  color: #d3c1c1;  /* Default color changed to match uncolored state */
 }
 
 .create-review {
@@ -320,4 +320,62 @@ body {
   align-items: center;
   gap: 4px;
 }
-/* review content end */
+
+.average-stars .star {
+  font-size: 30px;
+  color: #d3c1c1;  /* Default uncolored state */
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  pointer-events: none;  /* This prevents any hover or click interactions */
+}
+
+.average-stars .star.filled {
+  color: #f5c518;  /* Yellow color for filled stars */
+}
+
+.average-stars .star.half-filled::before {
+  content: '★';
+  position: absolute;
+  color: #f5c518;
+  width: 50%;
+  overflow: hidden;
+}
+
+.average-rating-value {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.star-rating .star {
+  font-size: 30px;
+  color: #d3c1c1 !important;  /* Using !important to ensure this base state takes precedence */
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* Only color the stars when they have the specific filled class */
+.star-rating .star.filled {
+  color: #f5c518 !important;
+}
+
+.star-rating .star.half-filled::before {
+  content: '★';
+  position: absolute;
+  color: #f5c518;
+  width: 50%;
+  overflow: hidden;
+}
+
+.average-rating-value {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+}

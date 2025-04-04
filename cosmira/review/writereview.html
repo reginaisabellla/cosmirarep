@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmira</title>
-    <script src="../review/review.js"></script>
+    <script src="./writereview.js"></script>
     <link rel="stylesheet" href="../review/writereview.css" />
   </head>
   <body>
@@ -55,10 +55,14 @@
         <div class="average-rating">
           <p>Average Rating</p>
           <!-- star rating start -->
-          <div class="stars">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
-            ><span>⭐</span>
+          <div class="star-rating average-stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
           </div>
+          <span class="average-rating-value"></span>
           <!-- star rating end -->
         </div>
         <!-- create review button (that will take users to writereview.html page) -->
