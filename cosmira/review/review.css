@@ -174,13 +174,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 150px;  /* Give some consistent height to the container */
+  min-height: 150px;
+  margin-bottom: 20px;
 }
 
 .average-rating p {
-  margin: 0 0 15px;  /* Adjust margin to work with flex layout */
+  margin: 0 0 15px;
   text-align: center;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .star-rating.average-stars {
@@ -188,22 +190,33 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  margin-bottom: 10px;
 }
 
-.stars {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
-.stars span {
+.average-stars .star {
   font-size: 30px;
-  color: #d3c1c1;  /* Default color changed to match uncolored state */
+  color: #d3c1c1;
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.average-stars .star.filled {
+  color: #f5c518 !important;
+}
+
+.average-rating-value {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 .create-review {
-  margin-top: 20px;  /* Reduced from auto */
-  margin-bottom: 20px;  /* Reduced from 50px */
+  margin: 0;
   padding: 12px 24px;
   background-color: #281e34ae;
   border: none;
@@ -212,6 +225,8 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   transition: background-color 0.3s;
+  width: fit-content;
+  align-self: center;
 }
 
 .create-review:hover {

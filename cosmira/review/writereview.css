@@ -170,12 +170,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 150px;
+  margin-bottom: 20px;
 }
 
 .average-rating p {
   margin: 0 0 15px;
   text-align: center;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .star-rating.average-stars {
@@ -183,6 +185,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  margin-bottom: 10px;
 }
 
 .average-stars .star {
@@ -210,6 +213,7 @@ body {
   display: block;
   text-align: center;
   margin-top: 5px;
+  margin-bottom: 20px;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -218,8 +222,7 @@ body {
 
 /* create review content start */
 .create-review-page {
-  margin-top: 20px;  /* Reduced from auto */
-  margin-bottom: 20px;  /* Reduced from 50px */
+  margin: 0;
   padding: 12px 24px;
   background-color: #281e34ae;
   border: none;
@@ -228,6 +231,8 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   transition: background-color 0.3s;
+  width: fit-content;
+  align-self: center;
 }
 
 .create-review-page:hover {
@@ -278,12 +283,43 @@ body {
   gap: 10px;
 }
 
-/* Interactive stars in create review container */
-.create-review-container .star-rating .star {
+.star-rating .star {
   font-size: 4rem;
   color: #d3c1c1 !important;
   cursor: pointer;
   transition: color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.star.highlight {
+  color: #FFD700;
+}
+
+.star.half-highlight::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #FFD700;
+}
+
+.star.selected {
+  color: #FFD700;
+}
+
+.star.half-selected::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #FFD700;
+}
+
+.star.half-selected {
+  color: #e0e0e0;
 }
 
 .create-review-container .star-rating .star.highlight,

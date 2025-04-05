@@ -14,28 +14,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle star rating
     reviewStars.forEach((star, index) => {
-        star.addEventListener('mouseover', () => {
-            reviewStars.forEach(s => s.classList.remove('highlight'));
-            for (let i = 0; i <= index; i++) {
-                reviewStars[i].classList.add('highlight');
-            }
+        star.addEventListener('mousemove', (e) => {
+            const rect = star.getBoundingClientRect();
+            const isLeftHalf = e.clientX - rect.left < rect.width / 2;
+            const currentRating = isLeftHalf ? index + 0.5 : index + 1;
+
+            reviewStars.forEach((s, i) => {
+                s.classList.remove('highlight', 'half-highlight');
+                if (i < index) {
+                    s.classList.add('highlight');
+                } else if (i === index) {
+                    s.classList.add(isLeftHalf ? 'half-highlight' : 'highlight');
+                }
+            });
         });
 
         star.addEventListener('mouseout', () => {
-            reviewStars.forEach(s => s.classList.remove('highlight'));
+            reviewStars.forEach(s => s.classList.remove('highlight', 'half-highlight'));
             if (selectedRating > 0) {
-                for (let i = 0; i < selectedRating; i++) {
-                    reviewStars[i].classList.add('selected');
-                }
+                const fullStars = Math.floor(selectedRating);
+                const hasHalf = selectedRating % 1 !== 0;
+
+                reviewStars.forEach((s, i) => {
+                    if (i < fullStars) {
+                        s.classList.add('selected');
+                    } else if (i === fullStars && hasHalf) {
+                        s.classList.add('half-selected');
+                    }
+                });
             }
         });
 
-        star.addEventListener('click', () => {
-            selectedRating = index + 1;
-            reviewStars.forEach(s => s.classList.remove('highlight', 'selected'));
-            for (let i = 0; i < selectedRating; i++) {
-                reviewStars[i].classList.add('selected');
-            }
+        star.addEventListener('click', (e) => {
+            const rect = star.getBoundingClientRect();
+            const isLeftHalf = e.clientX - rect.left < rect.width / 2;
+            selectedRating = isLeftHalf ? index + 0.5 : index + 1;
+
+            reviewStars.forEach((s, i) => {
+                s.classList.remove('highlight', 'half-highlight', 'selected', 'half-selected');
+                if (i < index) {
+                    s.classList.add('selected');
+                } else if (i === index) {
+                    s.classList.add(isLeftHalf ? 'half-selected' : 'selected');
+                }
+            });
+            
             // Hide error message when star is selected
             errorMessage.style.display = 'none';
         });
