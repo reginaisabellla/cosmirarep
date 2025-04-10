@@ -56,95 +56,115 @@
               <p>Select the skin color range MOST accurate to yours:</p>
             </div>
             <div class="color-buttons">
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color1"
+                  name="skin-colortest"
                   value="1"
                 />
+                <span class="color-box" id="color1">
+                  <div class="textcolor">1</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color6"
+                  name="skin-colortest"
                   value="6"
                 />
+                <span class="color-box" id="color6">
+                  <div class="textcolor">6</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color2"
+                  name="skin-colortest"
                   value="2"
                 />
+                <span class="color-box" id="color2">
+                  <div class="textcolor">2</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color7"
+                  name="skin-colortest"
                   value="7"
                 />
+                <span class="color-box" id="color7">
+                  <div class="textcolor">7</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color3"
+                  name="skin-colortest"
                   value="3"
                 />
+                <span class="color-box" id="color3">
+                  <div class="textcolor">3</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color8"
+                  name="skin-colortest"
                   value="8"
                 />
+                <span class="color-box" id="color8">
+                  <div class="textcolor">8</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color4"
+                  name="skin-colortest"
                   value="4"
                 />
+                <span class="color-box" id="color4">
+                  <div class="textcolor">4</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color9"
+                  name="skin-colortest"
                   value="9"
                 />
+                <span class="color-box" id="color9">
+                  <div class="textcolor">9</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color5"
+                  name="skin-colortest"
                   value="5"
                 />
+                <span class="color-box" id="color5">
+                  <div class="textcolor">5</div>
+                </span>
               </label>
-              <label>
+              <label class="skin-color">
                 <input
-                  type="button"
+                  type="radio"
                   class="skin-color"
-                  name="skin-color"
-                  id="color10"
+                  name="skin-colortest"
                   value="10"
                 />
+                <span class="color-box" id="color10">
+                  <div class="textcolor">10</div>
+                </span>
               </label>
             </div>
           </div>
@@ -156,20 +176,20 @@
             <div class="vein-buttons">
               <label>
                 <input type="radio" name="vein-color" value="blue" />
-                <button class="vein-buttonblue">Blue</button>
-              </label>
+                Blue </label
+              ><br />
               <label>
                 <input type="radio" name="vein-color" value="bluish-green" />
-                <button class="vein-buttonbluish-green">Bluish-Green</button>
-              </label>
+                Bluish-Green </label
+              ><br />
               <label>
                 <input type="radio" name="vein-color" value="green" />
-                <button class="vein-buttongreen">Green</button>
-              </label>
+                Green </label
+              ><br />
               <label>
                 <input type="radio" name="vein-color" value="purple" />
-                <button class="vein-buttonpurple">Purple</button>
-              </label>
+                Purple </label
+              ><br />
             </div>
           </div>
           <div class="bq-question">
@@ -177,20 +197,143 @@
             <div class="quiz-text">
               <p>
                 What is your skin type and texture, how does your foundation
-                respond after a few hours without reapplication? (Choose all
-                that apply: Normal, Dry, Oily, Combination, Acne-prone,
-                Sensitive)
+                respond after a few hours without reapplication? <br />
+                Choose all that apply.
               </p>
+            </div>
+            <div class="skin-type">
+              <label for="skin-type">
+                Skin Type:
+                <select id="selectbox" name="selectbox">
+                  <option value="Normal">Normal</option>
+                  <option value="Dry">Dry</option>
+                  <option value="Oily">Oily</option>
+                  <option value="Combination">Combination</option>
+                </select>
+              </label>
+              <br />
+              <label for="skin-type">
+                Texture:
+                <select id="selectbox" name="selectbox">
+                  <option value="bump">Bumpy/Rough</option>
+                  <option value="smooth">Smooth/Soft</option>
+                  <option value="flak">Flaky</option>
+                  <option value="Combination">Leathery/Tight</option>
+                </select> </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="enlargedpores" />
+                Enlarged Pores </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="shinyskin" />
+                Shiny Skin </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="freqpimples" />
+                Frequent Pimples </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="lift" /> Makeup
+                lifts & transfers easily </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="lift" /> Makeup
+                seperates, looks cakey or patchy </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="smooth" /> Smooth
+                Texture </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="uneven" />
+                Uneven/Dull Tone </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="tight" />
+                Tightness after washing </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="lines" /> Fine
+                lines around eyes, cheeks, forehead, etc. </label
+              ><br />
+              <label>
+                <input type="checkbox" name="reactions" value="red" /> Redness
+                or Irritation after </label
+              ><br />
             </div>
           </div>
           <div class="bq-question">
             <h2>Question 4.</h2>
             <div class="quiz-text">
               <p>
-                Do you have any skin conditions (rosacea, eczema, etc.) that
-                affect your foundation choice? if so, what type of formulas
-                often cause it and how severe are the reactions?
+                Do you have any skin conditions that affect your foundation
+                choice? <br />
+                If so, what type of formulas often cause it and how severe are
+                the reactions?
               </p>
+            </div>
+            <div class="skin-issue">
+              <label>
+                <input
+                  type="checkbox"
+                  name="skin-issue"
+                  value="acne"
+                />Cystic/Severe/Mild Acne </label
+              ><br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="skin-issue"
+                  value="hyperpig"
+                />Hyperpigmentation </label
+              ><br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="skin-issue"
+                  value="finelines"
+                />Fine-Lines or Wrinkles </label
+              ><br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="skin-issue"
+                  value="rosa"
+                />Rosacea </label
+              ><br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="skin-issue"
+                  value="eczema"
+                />Eczema </label
+              ><br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="skin-issue"
+                  value="psoriasis"
+                />Psoriasis </label
+              ><br />
+              <label for="skin-issue">
+                Formula Type:
+                <select id="selectbox" name="selectbox">
+                  <option value="liquid">Liquid</option>
+                  <option value="cream">Cream</option>
+                  <option value="powder">Powder</option>
+                </select> </label
+              ><br />
+              <label for="skin-issue">
+                Severity:
+                <select id="selectbox" name="selectbox">
+                  <option value="none">None</option>
+                  <option value="mild">Mild</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="severe">Severe</option>
+                  <option value="extreme">Extremely Severe</option>
+                </select> </label
+              ><br />
             </div>
           </div>
           <div class="bq-question">
@@ -198,8 +341,27 @@
             <div class="quiz-text">
               <p>
                 Are there any specific ingredients you avoid in your foundation?
+                <br />
                 What benefits do you look for in a formula?
               </p>
+            </div>
+            <div class="ingredients">
+              <label for="avoid-ingredients">
+                Ingredients to Avoid:
+                <input
+                  type="text"
+                  name="avoid-ingredients"
+                  placeholder="e.g. Parabens, Sulfates, Fragrances, etc."
+                /> </label
+              ><br />
+              <label for="desired-benefits">
+                Desired Benefits:
+                <input
+                  type="text"
+                  name="desired-benefits"
+                  placeholder="e.g. Hydration, Anti-aging, Brightness, etc."
+                /> </label
+              ><br />
             </div>
           </div>
           <div class="bq-question">
@@ -207,18 +369,59 @@
             <div class="quiz-text">
               <p>
                 In your skincare routine, do you often use any topical
-                medication, AHA, BHA, or Retinoid products? If so, describe your
-                skin's elasticity and firmness.
+                medication, AHA, BHA, or Retinoid products? <br />
+                If so, describe your skin's elasticity and firmness.
               </p>
+            </div>
+            <div class="medication">
+              <label>
+                <input type="checkbox" name="medication" value="retinoid" />
+                Retinoid </label
+              ><br />
+              <label>
+                <input type="checkbox" name="medication" value="aha" />
+                AHA </label
+              ><br />
+              <label>
+                <input type="checkbox" name="medication" value="bha" />
+                BHA </label
+              ><br />
+              <label>
+                <input type="checkbox" name="medication" value="medication" />
+                Topical Medication </label
+              ><br />
+              <label for="skin-elasticity">
+                Skin Elasticity:
+                <select id="selectbox" name="selectbox">
+                  <option value="elastic">Elastic/Stretchy</option>
+                  <option value="firm">Firm/Tight</option>
+                  <option value="sagging">Sagging/Loose</option>
+                </select> </label
+              ><br />
             </div>
           </div>
           <div class="bq-question">
             <h2>Question 7.</h2>
             <div class="quiz-text">
-              <p>
-                Do you prefer a specific foundation formula type (mineral,
-                oil-based, water-based)?
-              </p>
+              <p>Do you prefer a specific foundation formula type?</p>
+            </div>
+            <div class="formula-type">
+              <label>
+                <input type="radio" name="formula-type" value="mineral" />
+                Mineral </label
+              ><br />
+              <label>
+                <input type="radio" name="formula-type" value="oil-based" />
+                Oil-Based </label
+              ><br />
+              <label>
+                <input type="radio" name="formula-type" value="water-based" />
+                Water-Based </label
+              ><br />
+              <label>
+                <input type="radio" name="formula-type" value="custom" />
+                Silicone-Based </label
+              ><br />
             </div>
           </div>
           <div class="bq-question">
@@ -226,8 +429,41 @@
             <div class="quiz-text">
               <p>
                 How often do you wear makeup, and what is your makeup prep
-                routine? (primer, sunscreen, moisturizer)?
+                routine? (Including Skincare)
               </p>
+            </div>
+            <div class="routine">
+              <label for="routine">
+                Makeup Routine:
+                <select id="selectbox" name="selectbox">
+                  <option value="daily">Daily</option>
+                  <option value="occasionally">Occasionally</option>
+                  <option value="specialoccasions">
+                    Special Occasions/Events
+                  </option>
+                  <option value="never">Rarely/Never</option>
+                </select> </label
+              ><br />
+              <label>
+                <input type="checkbox" name="routine" value="skincare" />
+                Cleansing & Exfoliating </label
+              ><br />
+              <label>
+                <input type="checkbox" name="routine" value="primer" />
+                Primer </label
+              ><br />
+              <label>
+                <input type="checkbox" name="routine" value="sunscreen" />
+                Sunscreen </label
+              ><br />
+              <label>
+                <input type="checkbox" name="routine" value="moisturizer" />
+                Moisturizer </label
+              ><br />
+              <label>
+                <input type="checkbox" name="routine" value="illuminating" />
+                Illuminating Cream, Serums, & Oils </label
+              ><br />
             </div>
           </div>
           <div class="bq-question">
@@ -235,9 +471,43 @@
             <div class="quiz-text">
               <p>
                 How do you feel about wearing foundation in different lighting
-                conditions, such as natural light, artificial light, or flash
-                photography?
+                conditions? Please explain.
               </p>
+            </div>
+            <!--revise answer choices for shaded light or other opt-->
+            <div class="light">
+              <label for="natural">
+                Natural Light:
+                <input
+                  type="text"
+                  name="natural"
+                  placeholder="e.g. My foundation looks natural"
+                /> </label
+              ><br />
+              <label for="direct">
+                Direct Sunlight:
+                <input
+                  type="text"
+                  name="direct"
+                  placeholder="e.g. My foundation looks bright"
+                /> </label
+              ><br />
+              <label for="flash">
+                Flash Photography:
+                <input
+                  type="text"
+                  name="flash"
+                  placeholder="e.g. My foundation looks washed out"
+                /> </label
+              ><br />
+              <label for="artificial">
+                Artifical Lighting:
+                <input
+                  type="text"
+                  name="artifical"
+                  placeholder="e.g. My foundation looks dull"
+                /> </label
+              ><br />
             </div>
           </div>
           <div class="bq-question">
@@ -248,6 +518,27 @@
                 over time, such as during different seasons, climates, or
                 hormonal fluctuations?
               </p>
+            </div>
+            <div class="changes">
+              <label>
+                <input type="radio" name="skin-changes" value="yes" /> Yes
+                <input
+                  type="text"
+                  name="other-undertone"
+                  placeholder="Please explain..."
+                /> </label
+              ><br />
+              <label>
+                <input type="radio" name="skin-changes" value="no" /> No </label
+              ><br />
+              <label>
+                <input type="radio" name="skin-changes" value="sometimes" />
+                Sometimes </label
+              ><br />
+              <label>
+                <input type="radio" name="skin-changes" value="unsure" />
+                Unsure </label
+              ><br />
             </div>
           </div>
           <div class="button-single">

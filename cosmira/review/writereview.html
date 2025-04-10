@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmira</title>
-    <script src="../review/review.js"></script>
     <link rel="stylesheet" href="../review/writereview.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -59,10 +58,14 @@
         <div class="average-rating">
           <p>Average Rating</p>
           <!-- star rating start -->
-          <div class="stars">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
-            ><span>⭐</span>
+          <div class="star-rating average-stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
           </div>
+          <span class="average-rating-value"></span>
           <!-- star rating end -->
         </div>
         <!-- create review button (that will take users to writereview.html page) -->
@@ -82,19 +85,40 @@
             <span class="star" data-value="4">★</span>
             <span class="star" data-value="5">★</span>
           </div>
+          <p class="error-message">Star rating is required.</p>
           <!-- star rating end -->
 
           <!-- create review input box -->
           <textarea
             class="review-textarea"
-            placeholder="Create a review..."
+            placeholder="Write your review... (optional)"
           ></textarea>
 
           <!-- buttons for skin type and product tags -->
           <div class="tag-buttons">
-            <button class="tag-btn">+ Skin Type</button>
-            <button class="tag-btn">+ Product Tags</button>
+            <div class="tag-section">
+              <button class="tag-btn" id="skinTypeBtn">+ Skin Type</button>
+              <div class="tag-options skin-type-options" style="display: none;">
+                <div class="tag-option" data-type="skin">Dry</div>
+                <div class="tag-option" data-type="skin">Oily</div>
+                <div class="tag-option" data-type="skin">Combination</div>
+                <div class="tag-option" data-type="skin">Normal</div>
+                <div class="tag-option" data-type="skin">Sensitive</div>
+              </div>
+            </div>
+            <div class="tag-section">
+              <button class="tag-btn" id="productTagsBtn">+ Product Tags</button>
+              <div class="tag-options product-tags-options" style="display: none;">
+                <div class="tag-option" data-type="product">Long-lasting</div>
+                <div class="tag-option" data-type="product">Lightweight</div>
+                <div class="tag-option" data-type="product">Full Coverage</div>
+                <div class="tag-option" data-type="product">Natural Finish</div>
+                <div class="tag-option" data-type="product">Matte</div>
+                <div class="tag-option" data-type="product">Dewy</div>
+              </div>
+            </div>
           </div>
+          <div class="selected-tags"></div>
 
           <!-- photo upload -->
           <div class="photo-upload">

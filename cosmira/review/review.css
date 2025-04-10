@@ -169,26 +169,54 @@ body {
   font-family: LexendDeca;
 }
 
+.average-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  margin-bottom: 20px;
+}
+
 .average-rating p {
-  margin: 50px 0 5px;
+  margin: 0 0 15px;
   text-align: center;
   font-size: 1.5rem;
+  color: #fff;
 }
 
-.stars {
+.star-rating.average-stars {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
+  margin-bottom: 10px;
 }
 
-.stars span {
+.average-stars .star {
   font-size: 30px;
-  color: #f5c518;
+  color: #d3c1c1;
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.average-stars .star.filled {
+  color: #f5c518 !important;
+}
+
+.average-rating-value {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 .create-review {
-  margin-top: auto;
-  margin-bottom: 50px;
+  margin: 0;
   padding: 12px 24px;
   background-color: #281e34ae;
   border: none;
@@ -197,6 +225,8 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   transition: background-color 0.3s;
+  width: fit-content;
+  align-self: center;
 }
 
 .create-review:hover {
@@ -253,6 +283,19 @@ body {
   margin-bottom: 10px;
 }
 
+.user-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;  /* Reduced from 5px to 2px to bring the date closer */
+}
+
+.username-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .profile-pic {
   width: 50px;
   height: 50px;
@@ -261,63 +304,140 @@ body {
 }
 
 .username {
-  font-weight: bold;
-  margin-right: 10px;
-  font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;  /* Decreased from 1.4rem */
+    margin: 0;
+    display: inline;
 }
 
-.tag {
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 1rem;
-  margin-right: 10px;
-  color: #fff;
+.date {
+    color: #666;
+    font-size: 1.1rem;  /* Increased from 0.9rem */
+    margin: 0;
 }
 
-.medium-coverage {
-  background-color: #b7dbff;
-  color: #281e34ff;
-}
-.natural-finish {
-  background-color: #defdc7;
-  color: #281e34ff;
-}
-.long-wear {
-  background-color: #b7c3ff;
-  color: #281e34ff;
-}
-
-#shade1 {
-  background-color: #3a2415;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-right: auto;
-  border: 2px solid white;
-}
-
-#shade2 {
-  background-color: #bc8d6a;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-right: auto;
-  border: 2px solid white;
-}
-
-#shade3 {
-  background-color: #674226;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-right: auto;
-  border: 2px solid white;
-}
 .rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;  /* Slightly increased gap for better spacing with larger stars */
   font-size: 1.2rem;
   color: #281e34ff;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
 }
-/* review content end */
+
+.rating .star {
+    font-size: 2.2rem;  /* Increased from 1.8rem to 2.2rem */
+    color: #d3c1c1;
+}
+
+.rating .star.filled {
+    color: #f5c518 !important;  /* Make sure filled stars show up in yellow */
+}
+
+.average-stars .star {
+  font-size: 30px;
+  color: #d3c1c1;  /* Default uncolored state */
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  pointer-events: none;  /* This prevents any hover or click interactions */
+}
+
+.average-stars .star.filled {
+  color: #f5c518;  /* Yellow color for filled stars */
+}
+
+.average-stars .star.half-filled::before {
+  content: '★';
+  position: absolute;
+  color: #f5c518;
+  width: 50%;
+  overflow: hidden;
+}
+
+.average-rating-value {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.star-rating .star {
+  font-size: 30px;
+  color: #d3c1c1 !important;  /* Using !important to ensure this base state takes precedence */
+  cursor: default;
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* Only color the stars when they have the specific filled class */
+.star-rating .star.filled {
+  color: #f5c518 !important;
+}
+
+.star-rating .star.half-filled::before {
+  content: '★';
+  position: absolute;
+  color: #f5c518;
+  width: 50%;
+  overflow: hidden;
+}
+
+.average-rating-value {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Review tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;  /* Increased from 12px */
+}
+
+.tag {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 1rem;  /* Decreased from 1.1rem */
+    color: #fff;
+}
+
+.skin-tag {
+    background-color: #8e6b9e;
+}
+
+.product-tag {
+    background-color: #6b819e;
+}
+
+/* Delete button */
+.delete-review {
+    padding: 4px 12px;  /* Match tag padding */
+    border-radius: 16px;  /* Match tag border-radius */
+    font-size: 1rem;  /* Match tag font size */
+    background-color: #281e34ae;  /* Changed back to original color */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;  /* Increased from 10px */
+    align-self: flex-end;
+}
+
+.delete-review:hover {
+    background-color: #5e4c75ae;  /* Changed back to original hover color */
+}
+
+.review-content p {
+    font-size: 1.3rem;  /* Decreased to match text entry size */
+    line-height: 1.6;
+    margin-bottom: 20px;  /* Added margin below the review text */
+}
