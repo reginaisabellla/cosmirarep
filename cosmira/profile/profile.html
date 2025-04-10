@@ -8,6 +8,10 @@
     <title>Cosmira</title>
     <!-- need to link css pages -->
     <link rel="stylesheet" href="../profile/profile.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -16,11 +20,16 @@
       <div class="heading">
         <div class="logo">
           <a href="https://reginaisabellla.github.io/cosmirarep/">
-          <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+            <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
           </a>
         </div>
         <div class="search">
-          <input type="text" placeholder="S E A R C H" />
+          <form action="../search/search.php" method="post" name="searchBar">
+            <input type="text" placeholder="S E A R C H" />
+            <button type="submit" name="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
         </div>
       </div>
       <nav>
@@ -44,9 +53,9 @@
     <!-- COSMIRA HEADER END -->
 
     <div class="big-profile-container">
-<!-- SIDEBAR SPECIFIC ORGANIZATION START (left side screen)-->
+      <!-- SIDEBAR SPECIFIC ORGANIZATION START (left side screen)-->
       <div class="profile-sidebar">
-    <!-- user specific things start -->
+        <!-- user specific things start -->
         <!-- pfp -->
         <img
           src="../assests/img/lolaslickk.png"
@@ -58,46 +67,49 @@
           src="../assests/img/lolaskinswatch.png"
           alt="user skin color swatch"
           class="skin-color-swatch"
-        />        
+        />
         <!-- username -->
         <h2 class="username">@LOLASLICKK</h2>
         <div class="profile-stats">
           <p class="review-amount">67 Reviews</p>
           <p class="discussion-amount">54 Discussions</p>
         </div>
-    <!-- user specific things end -->
-    <!-- sidebar buttons -->
+        <!-- user specific things end -->
+        <!-- sidebar buttons -->
         <!-- go back and redo this with javascript later *** -->
         <div class="sidebar-button-group">
           <button class="sidebar-button">Edit Profile</button>
           <button class="sidebar-button">Account Settings</button>
-          <button class="sidebar-button emphasized">See Shade Match Results</button>
+          <button class="sidebar-button emphasized">
+            See Shade Match Results
+          </button>
         </div>
         <!-- link to review page -->
         <!-- this needs to connect to our database -->
         <div class="review-link">
           <a href="../review/review.html" class="review-link"
-            >+ Write a New Review</a>
+            >+ Write a New Review</a
+          >
         </div>
         <div class="sidebar-skin-properties">
           <h3>SKIN PROPERTIES</h3>
-            <p>Undertone: Warm</p>
-            <p>Skin Type: Oily</p>
-            <p>Quiz Result: TBD</p>
+          <p>Undertone: Warm</p>
+          <p>Skin Type: Oily</p>
+          <p>Quiz Result: TBD</p>
         </div>
         <div class="social-links">
           <h3>SOCIAL LINKS</h3>
-            <p>Instagram</p>
-            <p>TikTok</p>
-            <p>Twitter</p>
+          <p>Instagram</p>
+          <p>TikTok</p>
+          <p>Twitter</p>
         </div>
       </div>
-<!-- SIDEBAR SPECIFIC ORGANIZATION END -->
+      <!-- SIDEBAR SPECIFIC ORGANIZATION END -->
 
-<!-- CONTENT SECTION SPECIFIC STYLING START (right side screen) -->
+      <!-- CONTENT SECTION SPECIFIC STYLING START (right side screen) -->
 
       <div class="profile-content-container">
-    <!-- Your Reviews section -->
+        <!-- Your Reviews section -->
         <div class="content-section">
           <h2>Your Reviews</h2>
           <!-- need to add javascript functionality here -->
@@ -107,53 +119,70 @@
             <button class="content-button">By Date</button>
           </div> -->
           <div class="user-recent-reviews-container">
-          <!-- need to pull this from database -->
+            <!-- need to pull this from database -->
             <div class="user-recent-review">
-              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <h3 class="product-reviewed">
+                COSRX Advanced Snail 92 All In One Cream
+              </h3>
               <p class="date-reviewed">February 20, 2025</p>
-              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua.
+              <p class="user-recent-review-text">
+                Placeholder for recent user review. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
               </p>
             </div>
             <div class="user-recent-review">
-              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <h3 class="product-reviewed">
+                COSRX Advanced Snail 92 All In One Cream
+              </h3>
               <p class="date-reviewed">February 20, 2025</p>
-              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate 
-                velit esse cillum dolore eu fugiat nulla pariatur.
+              <p class="user-recent-review-text">
+                Placeholder for recent user review. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
               </p>
             </div>
             <div class="user-recent-review">
-              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <h3 class="product-reviewed">
+                COSRX Advanced Snail 92 All In One Cream
+              </h3>
               <p class="date-reviewed">February 20, 2025</p>
-              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua.
+              <p class="user-recent-review-text">
+                Placeholder for recent user review. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
               </p>
             </div>
             <div class="user-recent-review">
-              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <h3 class="product-reviewed">
+                COSRX Advanced Snail 92 All In One Cream
+              </h3>
               <p class="date-reviewed">February 20, 2025</p>
-              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua.
+              <p class="user-recent-review-text">
+                Placeholder for recent user review. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
               </p>
             </div>
             <div class="user-recent-review">
-              <h3 class="product-reviewed">COSRX Advanced Snail 92 All In One Cream</h3>
+              <h3 class="product-reviewed">
+                COSRX Advanced Snail 92 All In One Cream
+              </h3>
               <p class="date-reviewed">February 20, 2025</p>
-              <p class="user-recent-review-text"> Placeholder for recent user review. Lorem ipsum 
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate 
-                velit esse cillum dolore eu fugiat nulla pariatur.
+              <p class="user-recent-review-text">
+                Placeholder for recent user review. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
               </p>
             </div>
             <p>View more...</p>
           </div>
         </div>
-    <!-- Your Images section -->
+        <!-- Your Images section -->
         <div class="content-section">
           <h2>Your Images</h2>
           <!-- need to add javascript functionality here -->
@@ -178,19 +207,19 @@
             class="user-images"
           />
         </div>
-    <!-- Your Likes section -->
-    <div class="content-section">
-      <h2>Your Likes</h2>
-      <!-- need to add javascript functionality here -->
-      <div class="content-button-container">
-        <button class="content-button">By Brand</button>
-        <button class="content-button">By Product</button>
-        <button class="content-button">By Date</button>
-      </div>
-    </div>
-          <!-- later make it so that pictures get a tint when mouse hovers -->
-          <!-- make images clickable to lead to discussions -->
-    <!-- Your Discussions section -->
+        <!-- Your Likes section -->
+        <div class="content-section">
+          <h2>Your Likes</h2>
+          <!-- need to add javascript functionality here -->
+          <div class="content-button-container">
+            <button class="content-button">By Brand</button>
+            <button class="content-button">By Product</button>
+            <button class="content-button">By Date</button>
+          </div>
+        </div>
+        <!-- later make it so that pictures get a tint when mouse hovers -->
+        <!-- make images clickable to lead to discussions -->
+        <!-- Your Discussions section -->
         <div class="content-section">
           <h2>Your Discussions</h2>
           <div class="profile-discussions">
@@ -224,7 +253,7 @@
             </div>
           </div>
         </div>
-    <!-- Your Communities section -->
+        <!-- Your Communities section -->
         <div class="content-section">
           <h2>Your Communities</h2>
           <div class="profile-communities">
@@ -247,7 +276,7 @@
           </div>
         </div>
       </div>
-<!-- CONTENT SECTION SPECIFIC STYLING END -->
+      <!-- CONTENT SECTION SPECIFIC STYLING END -->
     </div>
   </body>
 </html>

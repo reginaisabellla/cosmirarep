@@ -8,6 +8,10 @@
     <!-- need to link js and css pages -->
     <script src="community.js"></script>
     <link rel="stylesheet" href="../community/community.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -18,7 +22,12 @@
           </a>
         </div>
         <div class="search">
-          <input type="text" placeholder="S E A R C H" />
+          <form action="../search/search.php" method="post" name="searchBar">
+            <input type="text" placeholder="S E A R C H" />
+            <button type="submit" name="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
         </div>
       </div>
       <nav>

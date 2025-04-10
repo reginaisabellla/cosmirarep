@@ -6,156 +6,255 @@
     <title>Quiz-ProfessionalSurvey</title>
     <script src="../quiz/quiz.js"></script>
     <link rel="stylesheet" href="../quiz/quiz.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
-<body>
-  <header>
-    <div class="heading">
-      <div class="logo">
-        <a href="https://reginaisabellla.github.io/cosmirarep/">
-        <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
-        </a>
+  <body>
+    <header>
+      <div class="heading">
+        <div class="logo">
+          <a href="https://reginaisabellla.github.io/cosmirarep/">
+            <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+          </a>
+        </div>
+        <div class="search">
+          <form action="../search/search.php" method="post" name="searchBar">
+            <input type="text" placeholder="S E A R C H" />
+            <button type="submit" name="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="search">
-        <input type="text" placeholder="S E A R C H" />
-      </div>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li>
-          <a class="nav-link" href="../about/about.html">ABOUT</a>
-        </li>
-        <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
-        <li>
-          <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
-        </li>
-        <li>
-          <a class="nav-link" href="../community/community.html">COMMUNITY</a>
-        </li>
-        <li>
-          <a class="nav-link" href="../profile/profile.html">PROFILE</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <div class="pop-up">
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="../about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../community/community.html">COMMUNITY</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../profile/profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="pop-up">
         <h1>PROFESSIONAL QUIZ</h1>
-      <form>
-        <div class="bq-question">
-          <h2>Question 1.</h2>
-          <div class="quiz-text">
-            <p>Select the skin color range MOST accurate to yours:</p>
+        <form>
+          <div class="bq-question">
+            <h2>Question 1.</h2>
+            <div class="quiz-text">
+              <p>Select the skin color range MOST accurate to yours:</p>
+            </div>
+            <div class="color-buttons">
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color1"
+                  value="1"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color6"
+                  value="6"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color2"
+                  value="2"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color7"
+                  value="7"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color3"
+                  value="3"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color8"
+                  value="8"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color4"
+                  value="4"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color9"
+                  value="9"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color5"
+                  value="5"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color10"
+                  value="10"
+                />
+              </label>
+            </div>
           </div>
-          <div class="color-buttons">
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color1" value="1"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color6" value="6"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color2" value="2"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color7" value="7"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color3" value="3"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color8" value="8"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color4" value="4"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color9" value="9"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color5" value="5"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color10" value="10"/>
-            </label>
+          <div class="bq-question">
+            <h2>Question 2.</h2>
+            <div class="quiz-text">
+              <p>What color are your veins?</p>
+            </div>
+            <div class="vein-buttons">
+              <label>
+                <input type="radio" name="vein-color" value="blue" />
+                <button class="vein-buttonblue">Blue</button>
+              </label>
+              <label>
+                <input type="radio" name="vein-color" value="bluish-green" />
+                <button class="vein-buttonbluish-green">Bluish-Green</button>
+              </label>
+              <label>
+                <input type="radio" name="vein-color" value="green" />
+                <button class="vein-buttongreen">Green</button>
+              </label>
+              <label>
+                <input type="radio" name="vein-color" value="purple" />
+                <button class="vein-buttonpurple">Purple</button>
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 2.</h2>
-          <div class="quiz-text">
-            <p>What color are your veins?</p>
+          <div class="bq-question">
+            <h2>Question 3.</h2>
+            <div class="quiz-text">
+              <p>
+                What is your skin type and texture, how does your foundation
+                respond after a few hours without reapplication? (Choose all
+                that apply: Normal, Dry, Oily, Combination, Acne-prone,
+                Sensitive)
+              </p>
+            </div>
           </div>
-          <div class="vein-buttons">
-            <label>
-              <input type="radio" name="vein-color" value="blue"/>
-              <button class="vein-buttonblue">Blue</button>
-            </label>
-            <label>
-              <input type="radio" name="vein-color" value="bluish-green"/>
-              <button class="vein-buttonbluish-green">Bluish-Green</button>
-            </label>
-            <label>
-              <input type="radio" name="vein-color" value="green"/>
-              <button class="vein-buttongreen">Green</button>
-            </label>
-            <label>
-              <input type="radio" name="vein-color" value="purple"/>
-              <button class="vein-buttonpurple">Purple</button>
-            </label>
+          <div class="bq-question">
+            <h2>Question 4.</h2>
+            <div class="quiz-text">
+              <p>
+                Do you have any skin conditions (rosacea, eczema, etc.) that
+                affect your foundation choice? if so, what type of formulas
+                often cause it and how severe are the reactions?
+              </p>
+            </div>
           </div>
-        </div>         
-        <div class="bq-question">
-          <h2>Question 3.</h2>
-          <div class="quiz-text">
-            <p>What is your skin type and texture,  how does your foundation respond after a few hours without reapplication? (Choose all that apply: Normal, Dry, Oily, Combination, Acne-prone, Sensitive)</p>
+          <div class="bq-question">
+            <h2>Question 5.</h2>
+            <div class="quiz-text">
+              <p>
+                Are there any specific ingredients you avoid in your foundation?
+                What benefits do you look for in a formula?
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 4.</h2>
-          <div class="quiz-text">
-            <p>Do you have any skin conditions (rosacea, eczema, etc.) that affect your foundation choice? if so, what type of formulas often cause it and how severe are the reactions?</p>
+          <div class="bq-question">
+            <h2>Question 6.</h2>
+            <div class="quiz-text">
+              <p>
+                In your skincare routine, do you often use any topical
+                medication, AHA, BHA, or Retinoid products? If so, describe your
+                skin's elasticity and firmness.
+              </p>
+            </div>
           </div>
-        </div> 
-        <div class="bq-question">
-          <h2>Question 5.</h2>
-          <div class="quiz-text">
-            <p>Are there any specific ingredients you avoid in your foundation? What benefits do you look for in a formula?</p>
+          <div class="bq-question">
+            <h2>Question 7.</h2>
+            <div class="quiz-text">
+              <p>
+                Do you prefer a specific foundation formula type (mineral,
+                oil-based, water-based)?
+              </p>
+            </div>
           </div>
-        </div> 
-        <div class="bq-question">
-          <h2>Question 6.</h2>
-          <div class="quiz-text">
-            <p>In your skincare routine, do you often use any topical medication, AHA, BHA, or Retinoid products? If so, describe your skin's elasticity and firmness.</p>
+          <div class="bq-question">
+            <h2>Question 8.</h2>
+            <div class="quiz-text">
+              <p>
+                How often do you wear makeup, and what is your makeup prep
+                routine? (primer, sunscreen, moisturizer)?
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 7.</h2>
-          <div class="quiz-text">
-            <p>Do you prefer a specific foundation formula type (mineral, oil-based, water-based)?</p>
+          <div class="bq-question">
+            <h2>Question 9.</h2>
+            <div class="quiz-text">
+              <p>
+                How do you feel about wearing foundation in different lighting
+                conditions, such as natural light, artificial light, or flash
+                photography?
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 8.</h2>
-          <div class="quiz-text">
-            <p>How often do you wear makeup, and what is your makeup prep routine? (primer, sunscreen, moisturizer)?</p>
+          <div class="bq-question">
+            <h2>Question 10.</h2>
+            <div class="quiz-text">
+              <p>
+                Have you noticed any changes in your skin tone or undertones
+                over time, such as during different seasons, climates, or
+                hormonal fluctuations?
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 9.</h2>
-          <div class="quiz-text">
-            <p>How do you feel about wearing foundation in different lighting conditions, such as natural light, artificial light, or flash photography?</p>
-          </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 10.</h2>
-          <div class="quiz-text">
-            <p>Have you noticed any changes in your skin tone or undertones over time, such as during different seasons, climates,  or hormonal fluctuations?</p>
-          </div>
-        </div>
-        <div class="button-single">
+          <div class="button-single">
             <button class="matchbutton" type="submit">Get My Match!</button>
-        </div>
-      </form>
+          </div>
+        </form>
+      </div>
     </div>
-</div> 
-</body>
+  </body>
 </html>

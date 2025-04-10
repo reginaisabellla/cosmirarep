@@ -6,128 +6,218 @@
     <title>Quiz-IntermediateSurvey</title>
     <script src="../quiz/quiz.js"></script>
     <link rel="stylesheet" href="../quiz/quiz.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
-<body>
-  <header>
-    <div class="heading">
-      <div class="logo">
-        <a href="https://reginaisabellla.github.io/cosmirarep/">
-        <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
-        </a>
+  <body>
+    <header>
+      <div class="heading">
+        <div class="logo">
+          <a href="https://reginaisabellla.github.io/cosmirarep/">
+            <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
+          </a>
+        </div>
+        <div class="search">
+          <form action="../search/search.php" method="post" name="searchBar">
+            <input type="text" placeholder="S E A R C H" />
+            <button type="submit" name="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="search">
-        <input type="text" placeholder="S E A R C H" />
-      </div>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li>
-          <a class="nav-link" href="../about/about.html">ABOUT</a>
-        </li>
-        <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
-        <li>
-          <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
-        </li>
-        <li>
-          <a class="nav-link" href="../community/community.html">COMMUNITY</a>
-        </li>
-        <li>
-          <a class="nav-link" href="../profile/profile.html">PROFILE</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <div class="pop-up">
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="../about/about.html">ABOUT</a>
+          </li>
+          <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
+          <li>
+            <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../community/community.html">COMMUNITY</a>
+          </li>
+          <li>
+            <a class="nav-link" href="../profile/profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="pop-up">
         <h1>INTERMEDIATE QUIZ</h1>
-      <form>
-        <div class="bq-question">
-          <h2>Question 1.</h2>
-          <div class="quiz-text">
-            <p>Select the skin color range MOST accurate to yours:</p>
+        <form>
+          <div class="bq-question">
+            <h2>Question 1.</h2>
+            <div class="quiz-text">
+              <p>Select the skin color range MOST accurate to yours:</p>
+            </div>
+            <div class="color-buttons">
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color1"
+                  value="1"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color6"
+                  value="6"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color2"
+                  value="2"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color7"
+                  value="7"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color3"
+                  value="3"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color8"
+                  value="8"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color4"
+                  value="4"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color9"
+                  value="9"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color5"
+                  value="5"
+                />
+              </label>
+              <label>
+                <input
+                  type="button"
+                  class="skin-color"
+                  name="skin-color"
+                  id="color10"
+                  value="10"
+                />
+              </label>
+            </div>
           </div>
-          <div class="color-buttons">
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color1" value="1"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color6" value="6"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color2" value="2"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color7" value="7"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color3" value="3"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color8" value="8"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color4" value="4"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color9" value="9"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color5" value="5"/>
-            </label>
-            <label>
-              <input type="button" class="skin-color" name="skin-color" id="color10" value="10"/>
-            </label>
+          <div class="bq-question">
+            <h2>Question 2.</h2>
+            <div class="quiz-text">
+              <p>
+                What is your skin type, and how does it react to different
+                products? (Choose all that apply: Normal, Dry, Oily,
+                Combination, Acne-prone, Sensitive)
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 2.</h2>
-          <div class="quiz-text">
-            <p>What is your skin type, and how does it react to different products? (Choose all that apply: Normal, Dry, Oily, Combination, Acne-prone, Sensitive)</p>
+          <div class="bq-question">
+            <h2>Question 3.</h2>
+            <div class="quiz-text">
+              <p>
+                Do you experience any skin concerns on a regular basis, such as
+                acne, hyperpigmentation, fine lines, or dehydration? If so, how
+                often?
+              </p>
+            </div>
           </div>
-        </div>  
-        <div class="bq-question">
-          <h2>Question 3.</h2>
-          <div class="quiz-text">
-            <p>Do you experience any skin concerns on a regular basis, such as acne, hyperpigmentation, fine lines, or dehydration? If so, how often?
-            </p>
+          <div class="bq-question">
+            <h2>Question 4.</h2>
+            <div class="quiz-text">
+              <p>
+                What is your skin's natural undertone? (Choose one: Pink,
+                Yellow, Olive, Neutral, or Other - describe)
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 4.</h2>
-          <div class="quiz-text">
-            <p>What is your skin's natural undertone? (Choose one: Pink, Yellow, Olive, Neutral, or Other - describe)</p>
+          <div class="bq-question">
+            <h2>Question 5.</h2>
+            <div class="quiz-text">
+              <p>
+                Do you have any prominent facial features (large pores, dark
+                circles, etc.)?
+              </p>
+            </div>
           </div>
-        </div> 
-        <div class="bq-question">
-          <h2>Question 5.</h2>
-          <div class="quiz-text">
-            <p>Do you have any prominent facial features (large pores, dark circles, etc.)?</p>
+          <div class="bq-question">
+            <h2>Question 6.</h2>
+            <div class="quiz-text">
+              <p>
+                How important is coverage to you, and do you prioritize
+                concealing imperfections or evening out your skin tone?
+              </p>
+            </div>
           </div>
-        </div> 
-        <div class="bq-question">
-          <h2>Question 6.</h2>
-          <div class="quiz-text">
-            <p>How important is coverage to you, and do you prioritize concealing imperfections or evening out your skin tone?</p>
+          <div class="bq-question">
+            <h2>Question 7.</h2>
+            <div class="quiz-text">
+              <p>
+                Do you have a preferred foundation type (liquid, cream, powder)
+                ?
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 7.</h2>
-          <div class="quiz-text">
-            <p>Do you have a preferred foundation type (liquid, cream, powder) ?</p>
+          <div class="bq-question">
+            <h2>Question 8.</h2>
+            <div class="quiz-text">
+              <p>
+                How do you prefer to apply foundation? (fingers, brush, sponge,
+                other)
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bq-question">
-          <h2>Question 8.</h2>
-          <div class="quiz-text">
-            <p>How do you prefer to apply foundation? (fingers, brush, sponge, other)</p>
-          </div>
-        </div>
-        <div class="button-single">
+          <div class="button-single">
             <button class="matchbutton" type="submit">Get My Match!</button>
-        </div>
-      </form>
+          </div>
+        </form>
+      </div>
     </div>
-</div> 
-</body>
+  </body>
 </html>
-
