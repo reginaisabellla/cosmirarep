@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
         </div>
         <div class="search">
           <form action="../search/search.php" method="post" name="searchBar">
-            <input class="searchText" type="text" placeholder="S E A R C H" />
+            <input type="text" placeholder="S E A R C H" />
             <button type="submit" name="search">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -100,7 +100,7 @@
           <div class="tag-buttons">
             <div class="tag-section">
               <button class="tag-btn" id="skinTypeBtn">+ Skin Type</button>
-              <div class="tag-options skin-type-options" style="display: none;">
+              <div class="tag-options skin-type-options" style="display: none">
                 <div class="tag-option" data-type="skin">Dry</div>
                 <div class="tag-option" data-type="skin">Oily</div>
                 <div class="tag-option" data-type="skin">Combination</div>
@@ -109,8 +109,13 @@
               </div>
             </div>
             <div class="tag-section">
-              <button class="tag-btn" id="productTagsBtn">+ Product Tags</button>
-              <div class="tag-options product-tags-options" style="display: none;">
+              <button class="tag-btn" id="productTagsBtn">
+                + Product Tags
+              </button>
+              <div
+                class="tag-options product-tags-options"
+                style="display: none"
+              >
                 <div class="tag-option" data-type="product">Long-lasting</div>
                 <div class="tag-option" data-type="product">Lightweight</div>
                 <div class="tag-option" data-type="product">Full Coverage</div>
