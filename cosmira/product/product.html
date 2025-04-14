@@ -7,17 +7,26 @@
     <title>Cosmira</title>
     <!-- need to link css pages -->
     <link rel="stylesheet" href="../product/product.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="heading">
         <div class="logo">
-          <a href="/index.html">
+          <a href="https://reginaisabellla.github.io/cosmirarep/">
             <img src="../assests/img/cos-removebg.png" alt="Cosmira Logo" />
           </a>
         </div>
         <div class="search">
-          <input type="text" placeholder="S E A R C H" />
+          <form action="../search/search.php" method="post" name="searchBar">
+            <input class="searchText" type="text" placeholder="S E A R C H" />
+            <button type="submit" name="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
         </div>
       </div>
       <nav>
@@ -72,10 +81,10 @@
           </div>
           <div class="buttonDisp">
             <!-- unsure how to incorporate stars, will skip for now -->
-            <button id="longW">Long-wear</button>
-            <button id="medCov">Medium Coverage</button>
-            <button id="natFin">Natural Finish</button>
-            <button id="veg">Vegan</button>
+            <button class="pageButton" id="longW">Long-wear</button>
+            <button class="pageButton" id="medCov">Medium Coverage</button>
+            <button class="pageButton" id="natFin">Natural Finish</button>
+            <button class="pageButton" id="veg">Vegan</button>
           </div>
           <div class="communityRev">
             <h2>COMMUNITY SAYS</h2>
@@ -84,7 +93,7 @@
               However the longevity varies on users depending on occasion or
               type of day.
             </p>
-            <button id="seeAll" title="coming soon!">
+            <button class="pageButton" id="seeAll" title="coming soon!">
               SEE ALL REVIEWS & DISCUSSIONS &rarr;
             </button>
           </div>

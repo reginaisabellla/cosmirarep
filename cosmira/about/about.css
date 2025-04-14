@@ -1,9 +1,9 @@
 /*HEADER START*/
 @font-face {
-  font-family: 'Hkreg';
-  src: url('../fonts/HankenGrotesk-Regular.ttf') format('truetype');
-  src: url('../fonts/HankenGrotesk-Bold.ttf') format('bold');
-  src: url('../fonts/HankenGrotesk-SemiBoldItalic.ttf') format('bolditalic');
+  font-family: "Hkreg";
+  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
+  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
+  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
   font-weight: normal;
   font-style: normal;
 }
@@ -31,30 +31,58 @@
   width: 300px;
 }
 
-/* search bar */
+/* Search Bar */
 .search input {
-  padding: 10px 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 60px;
   border-radius: 15px;
-  margin-right: 20px;
+  background:none;
   border: none;
   outline: none;
-  background: rgba(132, 139, 198, 0.555);
-  font-family: 'Hkreg' format('truetype');
+  font-family: "Hkreg" format("truetype");
   font-size: 15px;
   text-align: center;
+  
 }
 
+input::placeholder{ color: rgba(255, 255, 255, 0.632)  ; }
+
+input{
+  color: white;
+}
+
+.search{
+  background: rgba(132, 139, 198, 0.555);
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+button{
+  background: #8076af;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid 1px #8076af;
+}
+button :hover{
+  background-color: #8076afbc;
+  cursor: pointer;
+}
+
+i{
+  color: white;
+}
 /* navigation bar */
 nav {
   display: flex;
-  background-color: #8076AF;
+  background-color: #8076af;
   height: 40px;
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  font-family: 'Hkreg' format('bold'); 
+  font-family: "Hkreg" format("bold");
 }
-
 
 .nav-links {
   list-style: none;

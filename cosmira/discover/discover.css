@@ -35,15 +35,42 @@ body {
 
 /* Search Bar */
 .search input {
-  padding: 10px 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 60px;
   border-radius: 15px;
-  margin-right: 20px;
+  background:none;
   border: none;
   outline: none;
-  background: rgba(132, 139, 198, 0.555);
   font-family: "Hkreg" format("truetype");
   font-size: 15px;
   text-align: center;
+  
+}
+input{
+  color: white;
+}
+
+.search{
+  background: rgba(132, 139, 198, 0.555);
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+button{
+  background: #8076af;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid 1px #8076af;
+}
+button :hover{
+  background-color: #8076afbc;
+  cursor: pointer;
+}
+
+i{
+  color: white;
 }
 
 /* Navigation Bar */
@@ -87,7 +114,7 @@ nav {
 
   padding: 5px;
 }
-img {
+.pagePic {
   max-width: 175px;
   border: #280e31 solid 3px;
   border-radius: 5px;
