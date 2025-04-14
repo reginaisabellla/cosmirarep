@@ -135,6 +135,51 @@ body {
   border-radius: 10px;
 }
 
+/* Consistent average rating layout and alignment */
+.sidebar .average-rating {
+  height: 150px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .average-rating p {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar .average-stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.sidebar .average-stars .star {
+  font-size: 30px;
+  color: #d3c1c1;
+  pointer-events: none;
+}
+
+.sidebar .average-stars .star.filled {
+  color: #f5c518 !important;
+}
+
+/* Fix shifting caused by average rating value text */
+.sidebar .average-rating-value {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  height: 1.4em; /* Reserve vertical space */
+  line-height: 1.4em; /* Align vertically */
+  margin: 0; /* Remove extra spacing */
+}
+
+/* Sidebar heading */
 .product-heading {
   background-color: rgba(59, 42, 77, 0.9); /* Matching the sidebar background */
   padding: 20px;
@@ -287,7 +332,7 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 2px;  /* Reduced from 5px to 2px to bring the date closer */
+  gap: 2px; /* Reduced from 5px to 2px to bring the date closer */
 }
 
 .username-rating {
@@ -304,22 +349,22 @@ body {
 }
 
 .username {
-    font-weight: bold;
-    font-size: 1.2rem;  /* Decreased from 1.4rem */
-    margin: 0;
-    display: inline;
+  font-weight: bold;
+  font-size: 1.2rem; /* Decreased from 1.4rem */
+  margin: 0;
+  display: inline;
 }
 
 .date {
-    color: #666;
-    font-size: 1.1rem;  /* Increased from 0.9rem */
-    margin: 0;
+  color: #666;
+  font-size: 1.1rem; /* Increased from 0.9rem */
+  margin: 0;
 }
 
 .rating {
   display: inline-flex;
   align-items: center;
-  gap: 5px;  /* Slightly increased gap for better spacing with larger stars */
+  gap: 5px; /* Slightly increased gap for better spacing with larger stars */
   font-size: 1.2rem;
   color: #281e34ff;
   display: flex;
@@ -328,29 +373,29 @@ body {
 }
 
 .rating .star {
-    font-size: 2.2rem;  /* Increased from 1.8rem to 2.2rem */
-    color: #d3c1c1;
+  font-size: 2.2rem; /* Increased from 1.8rem to 2.2rem */
+  color: #d3c1c1;
 }
 
 .rating .star.filled {
-    color: #f5c518 !important;  /* Make sure filled stars show up in yellow */
+  color: #f5c518 !important; /* Make sure filled stars show up in yellow */
 }
 
 .average-stars .star {
   font-size: 30px;
-  color: #d3c1c1;  /* Default uncolored state */
+  color: #d3c1c1; /* Default uncolored state */
   cursor: default;
   position: relative;
   display: inline-block;
-  pointer-events: none;  /* This prevents any hover or click interactions */
+  pointer-events: none; /* This prevents any hover or click interactions */
 }
 
 .average-stars .star.filled {
-  color: #f5c518;  /* Yellow color for filled stars */
+  color: #f5c518; /* Yellow color for filled stars */
 }
 
 .average-stars .star.half-filled::before {
-  content: '★';
+  content: "★";
   position: absolute;
   color: #f5c518;
   width: 50%;
@@ -367,7 +412,7 @@ body {
 
 .star-rating .star {
   font-size: 30px;
-  color: #d3c1c1 !important;  /* Using !important to ensure this base state takes precedence */
+  color: #d3c1c1 !important; /* Using !important to ensure this base state takes precedence */
   cursor: default;
   position: relative;
   display: inline-block;
@@ -380,7 +425,7 @@ body {
 }
 
 .star-rating .star.half-filled::before {
-  content: '★';
+  content: "★";
   position: absolute;
   color: #f5c518;
   width: 50%;
@@ -397,47 +442,47 @@ body {
 
 /* Review tags */
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 20px;  /* Increased from 12px */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px; /* Increased from 12px */
 }
 
 .tag {
-    padding: 4px 12px;
-    border-radius: 16px;
-    font-size: 1rem;  /* Decreased from 1.1rem */
-    color: #fff;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 1rem; /* Decreased from 1.1rem */
+  color: #fff;
 }
 
 .skin-tag {
-    background-color: #8e6b9e;
+  background-color: #8e6b9e;
 }
 
 .product-tag {
-    background-color: #6b819e;
+  background-color: #6b819e;
 }
 
 /* Delete button */
 .delete-review {
-    padding: 4px 12px;  /* Match tag padding */
-    border-radius: 16px;  /* Match tag border-radius */
-    font-size: 1rem;  /* Match tag font size */
-    background-color: #281e34ae;  /* Changed back to original color */
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px;  /* Increased from 10px */
-    align-self: flex-end;
+  padding: 4px 12px; /* Match tag padding */
+  border-radius: 16px; /* Match tag border-radius */
+  font-size: 1rem; /* Match tag font size */
+  background-color: #281e34ae; /* Changed back to original color */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Increased from 10px */
+  align-self: flex-end;
 }
 
 .delete-review:hover {
-    background-color: #5e4c75ae;  /* Changed back to original hover color */
+  background-color: #5e4c75ae; /* Changed back to original hover color */
 }
 
 .review-content p {
-    font-size: 1.3rem;  /* Decreased to match text entry size */
-    line-height: 1.6;
-    margin-bottom: 20px;  /* Added margin below the review text */
+  font-size: 1.3rem; /* Decreased to match text entry size */
+  line-height: 1.6;
+  margin-bottom: 20px; /* Added margin below the review text */
 }

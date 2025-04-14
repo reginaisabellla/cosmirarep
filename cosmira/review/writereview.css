@@ -131,6 +131,50 @@ body {
   border-radius: 10px;
 }
 
+/* Consistent average rating layout and alignment */
+.sidebar .average-rating {
+  height: 150px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .average-rating p {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar .average-stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.sidebar .average-stars .star {
+  font-size: 30px;
+  color: #d3c1c1;
+  pointer-events: none;
+}
+
+.sidebar .average-stars .star.filled {
+  color: #f5c518 !important;
+}
+
+/* Fix shifting caused by average rating value text */
+.sidebar .average-rating-value {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  height: 1.4em; /* Reserve vertical space */
+  line-height: 1.4em; /* Align vertically */
+  margin: 0; /* Remove extra spacing */
+}
+
 .product-heading {
   background-color: rgba(59, 42, 77, 0.9);
   padding: 20px;
@@ -202,7 +246,7 @@ body {
 }
 
 .average-stars .star.half-filled::before {
-  content: '★';
+  content: "★";
   position: absolute;
   color: #f5c518;
   width: 50%;
@@ -216,6 +260,16 @@ body {
   margin-bottom: 20px;
   font-size: 1.2rem;
   color: #fff;
+}
+
+/* Force match average star display to Reviews page */
+.average-rating .average-stars .star {
+  font-size: 30px !important;
+  color: #d3c1c1 !important;
+}
+
+.average-rating .average-stars .star.filled {
+  color: #f5c518 !important;
 }
 
 /* sidebar content end */
@@ -293,29 +347,29 @@ body {
 }
 
 .star.highlight {
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .star.half-highlight::before {
-  content: '★';
+  content: "★";
   position: absolute;
   left: 0;
   width: 50%;
   overflow: hidden;
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .star.selected {
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .star.half-selected::before {
-  content: '★';
+  content: "★";
   position: absolute;
   left: 0;
   width: 50%;
   overflow: hidden;
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .star.half-selected {
@@ -352,7 +406,7 @@ body {
   border-radius: 8px;
   border: none;
   padding: 12px;
-  font-size: 1.3rem;  /* Decreased from 1.4rem */
+  font-size: 1.3rem; /* Decreased from 1.4rem */
   font-family: LexendDeca;
   resize: vertical;
   background-color: #fff;
@@ -360,7 +414,7 @@ body {
 }
 
 .review-textarea::placeholder {
-  font-size: 1.3rem;  /* Decreased from 1.4rem */
+  font-size: 1.3rem; /* Decreased from 1.4rem */
   color: #666;
 }
 
