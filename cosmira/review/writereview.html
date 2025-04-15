@@ -79,77 +79,89 @@
         <h1 class="create-review-heading">Create A Review</h1>
         <!-- actual create review content container -->
         <div class="create-review-container">
-          <!-- star rating start -->
-          <div class="star-rating">
-            <span class="star" data-value="1">★</span>
-            <span class="star" data-value="2">★</span>
-            <span class="star" data-value="3">★</span>
-            <span class="star" data-value="4">★</span>
-            <span class="star" data-value="5">★</span>
-          </div>
-          <p class="error-message">Star rating is required.</p>
-          <!-- star rating end -->
+          <!-- Single content section to match profile page structure -->
+          <div class="review-content-section">
+            <!-- star rating start -->
+            <div class="star-rating">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <p class="error-message">Star rating is required.</p>
+            <!-- star rating end -->
 
-          <!-- create review input box -->
-          <textarea
-            class="review-textarea"
-            placeholder="Write your review... (optional)"
-          ></textarea>
+            <!-- create review input box -->
+            <textarea
+              class="review-textarea"
+              placeholder="Write your review... (optional)"
+            ></textarea>
 
-          <!-- buttons for skin type and product tags -->
-          <div class="tag-buttons">
-            <div class="tag-section">
-              <button class="tag-btn" id="skinTypeBtn">+ Skin Type</button>
-              <div class="tag-options skin-type-options" style="display: none">
-                <div class="tag-option" data-type="skin">Dry</div>
-                <div class="tag-option" data-type="skin">Oily</div>
-                <div class="tag-option" data-type="skin">Combination</div>
-                <div class="tag-option" data-type="skin">Normal</div>
-                <div class="tag-option" data-type="skin">Sensitive</div>
+            <!-- buttons for skin type and product tags -->
+            <div class="tag-buttons">
+              <div class="tag-section">
+                <button class="tag-btn" id="skinTypeBtn">+ Skin Type</button>
+                <div
+                  class="tag-options skin-type-options"
+                  style="display: none"
+                >
+                  <div class="tag-option" data-type="skin">Dry</div>
+                  <div class="tag-option" data-type="skin">Oily</div>
+                  <div class="tag-option" data-type="skin">Combination</div>
+                  <div class="tag-option" data-type="skin">Normal</div>
+                  <div class="tag-option" data-type="skin">Sensitive</div>
+                </div>
+              </div>
+              <div class="tag-section">
+                <button class="tag-btn" id="productTagsBtn">
+                  + Product Tags
+                </button>
+                <div
+                  class="tag-options product-tags-options"
+                  style="display: none"
+                >
+                  <div class="tag-option" data-type="product">Long-lasting</div>
+                  <div class="tag-option" data-type="product">Lightweight</div>
+                  <div class="tag-option" data-type="product">
+                    Full Coverage
+                  </div>
+                  <div class="tag-option" data-type="product">
+                    Natural Finish
+                  </div>
+                  <div class="tag-option" data-type="product">Matte</div>
+                  <div class="tag-option" data-type="product">Dewy</div>
+                  <div class="tag-option" data-type="product">Cakey</div>
+                  <div class="tag-option" data-type="product">Wears Off</div>
+                  <div class="tag-option" data-type="product">Heavy</div>
+                  <div class="tag-option" data-type="product">Irritating</div>
+                  <div class="tag-option" data-type="product">
+                    Breakout-Prone
+                  </div>
+                  <div class="tag-option" data-type="product">
+                    Not Sweat-Proof
+                  </div>
+                  <div class="tag-option" data-type="product">
+                    Contains Allergens
+                  </div>
+                  <div class="tag-option" data-type="product">Expensive</div>
+                </div>
               </div>
             </div>
-            <div class="tag-section">
-              <button class="tag-btn" id="productTagsBtn">
-                + Product Tags
-              </button>
-              <div
-                class="tag-options product-tags-options"
+            <div class="selected-tags"></div>
+
+            <!-- photo upload -->
+            <div class="photo-upload">
+              <label for="photo-input" class="photo-label">Insert Photo</label>
+              <input
+                type="file"
+                id="photo-input"
+                accept="image/*"
                 style="display: none"
-              >
-                <div class="tag-option" data-type="product">Long-lasting</div>
-                <div class="tag-option" data-type="product">Lightweight</div>
-                <div class="tag-option" data-type="product">Full Coverage</div>
-                <div class="tag-option" data-type="product">Natural Finish</div>
-                <div class="tag-option" data-type="product">Matte</div>
-                <div class="tag-option" data-type="product">Dewy</div>
-                <div class="tag-option" data-type="product">Cakey</div>
-                <div class="tag-option" data-type="product">Wears Off</div>
-                <div class="tag-option" data-type="product">Heavy</div>
-                <div class="tag-option" data-type="product">Irritating</div>
-                <div class="tag-option" data-type="product">Breakout-Prone</div>
-                <div class="tag-option" data-type="product">
-                  Not Sweat-Proof
-                </div>
-                <div class="tag-option" data-type="product">
-                  Contains Allergens
-                </div>
-                <div class="tag-option" data-type="product">Expensive</div>
-              </div>
+              />
+              <!-- post button -->
+              <button class="post-button">Post</button>
             </div>
-          </div>
-          <div class="selected-tags"></div>
-
-          <!-- photo upload -->
-          <div class="photo-upload">
-            <label for="photo-input" class="photo-label">Insert Photo</label>
-            <input
-              type="file"
-              id="photo-input"
-              accept="image/*"
-              style="display: none"
-            />
-            <!-- post button -->
-            <button class="post-button">Post</button>
           </div>
         </div>
       </main>
