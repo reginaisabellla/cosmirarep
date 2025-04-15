@@ -70,7 +70,7 @@ input::placeholder {
 
 button {
   background: #8076af;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px;
   border: solid 1px #8076af;
 }
@@ -326,7 +326,7 @@ body {
   margin: 0;
   padding: 12px 24px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
   font-size: 1.2rem;
@@ -340,7 +340,7 @@ body {
 .reviews-page:hover {
   background-color: #5e4c75ae;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* reviews section */
@@ -368,7 +368,10 @@ body {
 }
 
 .create-review-container {
-  background: radial-gradient(#cab0b090, #281e34ee); /* Gradient background moved here */
+  background: radial-gradient(
+    #cab0b090,
+    #281e34ee
+  ); /* Gradient background moved here */
   overflow-y: auto;
   flex-grow: 1;
   display: flex;
@@ -481,6 +484,16 @@ body {
   color: #666;
 }
 
+/* tag container - new wrapper to prevent layout shifts */
+.tags-container {
+  width: 100%;
+  height: 150px; /* Fixed height to contain all tag elements */
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* tag buttons */
 .tag-buttons {
   display: flex;
@@ -488,6 +501,7 @@ body {
   justify-content: flex-start;
   width: 60%;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .tag-section {
@@ -510,7 +524,7 @@ body {
 .tag-btn:hover {
   background-color: #e1d6f1ef;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .tag-options {
@@ -537,10 +551,10 @@ body {
 }
 
 .tag-options.product-tags-options {
-  column-count: 2;
+  column-count: 3;
   column-gap: 20px;
-  width: 450px;
-  padding: 10px;
+  width: 670px;
+  padding: 10px 10px 10px 10px;
   box-sizing: border-box;
   white-space: nowrap;
 }
@@ -613,7 +627,7 @@ body {
   height: 50px;
   background-color: #281e34ae;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -622,7 +636,7 @@ body {
 .post-button:hover {
   background-color: #5e4c75ae;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* create review content end */
