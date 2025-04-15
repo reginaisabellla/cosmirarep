@@ -113,122 +113,149 @@ i{
 
 .fullPage {
   display: flex;
+  margin: 20px;
+  gap: 20px;
 }
 
 img {
   width: 450px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-figcaption{
-    font-size: 20px;
+figcaption {
+  font-family: LexendDeca;
+  font-size: 20px;
+  color: #fff;
 }
 
-#viewOther{
-    cursor: pointer;
-    text-decoration: underline;
+#viewOther {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #e5d0ff;
+  font-family: LexendDeca;
 }
 
-.pageButton{
-    font-size: 25px;
-    margin: 3px;
-    border-radius: 8px;
-    border: none;
+.pageButton {
+  font-family: LexendDeca;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 15px;
+  border: solid 1px #8076af;
+  background: #8076af;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
 }
 
-/* code credited to https://css-shape.com/star/ , will redo stars to correlate with actual ratings system */
+.pageButton:hover {
+  background-color: #8076afbc;
+  cursor: pointer;
+}
+
 .star {
-    width: 50px;  
-    height: 50px;
-    aspect-ratio: 1;
-    background: #F7E8E1;
-    clip-path: polygon(50% 0,
-      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-     ); 
-    
-  }
-
-  .emptyStar {
-    width: 50px;  
-    height: 50px;
-    aspect-ratio: 1;
-    background: #7D708D;
-    clip-path: polygon(50% 0,
-      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-     ); 
-    
-  }
-
-  .ratings{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-left: 10px;
-    padding-top: 15px;
-  }
-
-.buttonDisp{
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border-right: #60376C solid 2px;   
-}
-.communityRev{
-    padding-left: 10px;
-    width: 600px;
-    
+  width: 30px;  
+  height: 30px;
+  aspect-ratio: 1;
+  background: #f5c518;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
 }
 
-.productDesc{
-    color: #280E31;
-    background-color: #A495B8 ;
-    display: flex;
-    height: 308px;
-    font-size: 25px;
-    
+.emptyStar {
+  width: 30px;  
+  height: 30px;
+  aspect-ratio: 1;
+  background: #d3c1c1;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
 }
 
-.productName{
-   
-   margin-top: 0px;
-   padding-left: 8px;
+.ratings {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  font-family: LexendDeca;
+  color: #fff;
 }
 
-h1{
-    background-image: url("../assests/img/header.png");
-    color: #F8E2EF;
-    text-align: center;
-    padding: 5px;
-    margin-bottom: 0px;
+.buttonDisp {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-#longW{
-    background-color: #B7C3FF;
-    width: fit-content;
+.communityRev {
+  padding: 20px;
+  width: 600px;
+  color: #fff;
 }
 
-#medCov{
-    background-color: #B7DBFF;
-    width: fit-content;
+.productDesc {
+  background: radial-gradient(#402e56db, #cab0b0c5);
+  color: #fff;
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: LexendDeca;
+  margin-bottom: 15px;
 }
 
-#natFin{
-    background-color: #DEFDC7;
-    width: fit-content;
+.productName {
+  margin-top: 0px;
+  padding-left: 8px;
+  font-family: Inter;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-#veg{
-    background-color: #F3B7FF;
-    width: fit-content;
+h1 {
+  font-family: Inter;
+  font-size: 1.7rem;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0px;
+  background: rgba(59, 42, 77, 0.9);
 }
 
-#seeAll{
-    color: #FFFFFF;
-    background-color: #60376C;
-    padding: 2px;
+/* Tag styling */
+#longW, #medCov, #natFin, #veg {
+  font-family: LexendDeca;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  color: #280E31;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+#longW { background-color: #B7C3FF; }
+#medCov { background-color: #B7DBFF; }
+#natFin { background-color: #DEFDC7; }
+#veg { background-color: #F3B7FF; }
+
+#seeAll {
+  font-family: LexendDeca;
+  color: #FFFFFF;
+  background: #8076af;
+  padding: 8px 15px;
+  border-radius: 15px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+#seeAll:hover {
+  background-color: #8076afbc;
+  cursor: pointer;
 }
