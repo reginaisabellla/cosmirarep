@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const reviewsContainer = document.querySelector('.reviews-container');
     const createReviewBtn = document.querySelector('.create-review');
+    const averageStars = document.querySelectorAll('.average-stars .star');
+    const averageRatingValue = document.querySelector('.average-rating-value');
 
     // Add click handler for create review button
-    createReviewBtn.addEventListener('click', () => {
-        window.location.href = 'writereview.html';
-    });
+    if (createReviewBtn) {
+        createReviewBtn.addEventListener('click', () => {
+            window.location.href = 'writereview.html';
+        });
+    }
 
     // Function to create star rating HTML
     function createStarRating(rating) {
@@ -81,13 +85,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         return reviewElement;
-    }
-
-    // Function to update average rating display
+    }    // Function to update average rating display
     function updateAverageRating() {
         const reviews = JSON.parse(localStorage.getItem('productReviews') || '[]');
         const averageStars = document.querySelectorAll('.average-stars .star');
         const averageRatingValue = document.querySelector('.average-rating-value');
+        
+        console.log("Updating average rating. Found reviews:", reviews.length);
+        console.log("Found star elements:", averageStars.length);
         
         // Reset all stars first
         averageStars.forEach(star => {
@@ -100,9 +105,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Calculate average rating
-        const totalRating = reviews.reduce((sum, review) => sum + review.rating, 0);
+        const totalRating = reviews.reduce((sum, review) => sum + parseFloat(review.rating), 0);
         const averageRating = totalRating / reviews.length;
         const roundedRating = Math.round(averageRating * 10) / 10; // Round to 1 decimal place
+
+        console.log("Average rating calculated:", averageRating, "Rounded:", roundedRating);
 
         // Update the star display
         averageStars.forEach((star, index) => {
