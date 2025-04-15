@@ -217,15 +217,14 @@ figcaption {
   font-size: 14px;
 }
 h2 {
+  padding-top: 50px;
+  border-radius: 10px 10px 0px 0px;
   text-align: center;
-  background-color: #281e34;
-  color: white;
-  padding: 15px;
-  margin: 0;
-  font-family: Inter;
   font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 1px;
+  margin: 0px;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 20px;
 }
 ol {
   font-size: 18px;
@@ -254,43 +253,41 @@ a {
 }
 
 .stack {
-  flex: 1;
+  background: radial-gradient(#402e56db, #cab0b0c5);
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  background-color: #c1b1d55e;
+  align-items: center;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  max-width: 400px;
 }
+
 
 /* Right sidebar for What's New and Recommendations */
-.newRec {
-  flex: 4;
-  display: flex;
-  flex-direction: column;
-  background: radial-gradient(#402e56db, #cab0b0c5);
-  min-width: 450px;
+.newRecWrapper {
+  background: radial-gradient(#cab0b090, #281e34ee);
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  gap: 15px;
+  padding: 15px;
 }
 
-.trending {
+.newRecContainer {
+  background-color: #c1b1d55e;
+  padding: 15px;
+  margin: 0.25px;
+  margin-bottom: 0.25px;
+  border-radius: 9px;
+  width: calc(100% - 0.5px);
+  height: calc(100% - 0.5px);
   display: flex;
   flex-direction: column;
-  padding: 30px 40px;
-  margin: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-  flex-grow: 1;
 }
 
 .whatsNew {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   position: relative;
   width: 100%;
 }
@@ -298,7 +295,6 @@ a {
 .recommendations {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   position: relative;
   width: 100%;
 }
