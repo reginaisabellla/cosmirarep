@@ -365,10 +365,7 @@ body {
 }
 
 .create-review-container {
-  background: radial-gradient(
-    #cab0b090,
-    #281e34ee
-  ); /* Gradient background moved here */
+  background: radial-gradient(#cab0b090, #281e34ee); /* Gradient background moved here */
   overflow-y: auto;
   flex-grow: 1;
   display: flex;
