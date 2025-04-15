@@ -138,9 +138,7 @@
                 </div>
               </div>
             </div>
-            <div class="selected-tags"></div>
-
-            <!-- photo upload -->
+            <div class="selected-tags"></div>            <!-- photo upload -->
             <div class="photo-upload">
               <label for="photo-input" class="photo-label">Insert Photo</label>
               <input
@@ -149,6 +147,10 @@
                 accept="image/*"
                 style="display: none"
               />
+              <!-- image preview container -->
+              <div class="image-preview-container" style="display: none; margin: 10px 0;">
+                <img id="image-preview" src="#" alt="Preview" style="max-width: 100%; max-height: 200px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+              </div>
               <!-- post button -->
               <button class="post-button">Post</button>
             </div>

@@ -1,17 +1,46 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {    
     // Star rating functionality
     const reviewStars = document.querySelectorAll('.create-review-container .star-rating .star');
     const postButton = document.querySelector('.post-button');
     const errorMessage = document.querySelector('.error-message');
     const reviewTextarea = document.querySelector('.review-textarea');
     const reviewsPageBtn = document.querySelector('.reviews-page');
+    const photoInput = document.getElementById('photo-input');
+    const photoLabel = document.querySelector('.photo-label');
+    const imagePreviewContainer = document.querySelector('.image-preview-container');
+    const imagePreview = document.getElementById('image-preview');
     let selectedRating = 0;
+    let uploadedPhoto = null;
 
     // Add click handler for Reviews Page button
     reviewsPageBtn.addEventListener('click', () => {
         window.location.href = 'review.html';
+    });    // Simple photo upload implementation
+    // Connect the label to the input for easier file selection
+    photoLabel.addEventListener('click', function(e) {
+        // Prevent any default action
+        e.preventDefault();
+        // Trigger the file input click
+        photoInput.click();
     });
-
+    
+    // We're adding a clean click handler directly to the input
+    photoInput.addEventListener('change', function(e) {
+        if (this.files && this.files[0]) {
+            uploadedPhoto = this.files[0];
+            
+            // Use FileReader to display the image
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                // Set the preview image source
+                imagePreview.src = e.target.result;
+                // Show the image container
+                imagePreviewContainer.style.display = 'block';
+            };
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+    
     // Handle star rating
     reviewStars.forEach((star, index) => {
         star.addEventListener('mousemove', (e) => {
@@ -150,9 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             closeDropdowns();
         });
-    });
-
-    // Handle post button click
+    });    // Handle post button click
     postButton.addEventListener('click', (e) => {
         e.preventDefault();
         
@@ -170,16 +197,35 @@ document.addEventListener('DOMContentLoaded', () => {
         // Get the review text
         const reviewText = reviewTextarea.value;
 
+        // Process the uploaded photo
+        let photoData = null;
+        if (uploadedPhoto) {
+            const reader = new FileReader();
+            reader.readAsDataURL(uploadedPhoto);
+            reader.onload = function() {
+                photoData = reader.result;
+                
+                // Create and save review with photo
+                saveReview(selectedRating, reviewText, selectedTags, photoData);
+            };
+        } else {
+            // Create and save review without photo
+            saveReview(selectedRating, reviewText, selectedTags, null);
+        }
+    });
+    
+    // Function to save the review
+    function saveReview(rating, text, tags, photoData) {
         // Create the review object
         const review = {
-            rating: selectedRating,
-            text: reviewText,
-            tags: selectedTags,
+            rating: rating,
+            text: text,
+            tags: tags,
+            photo: photoData,
             date: new Date().toISOString(),
             // In a real app, you would get these from the server
             username: 'Current User',
-            profilePic: '../assests/img/profilepicture1.jpg'
-        };
+            profilePic: '../assests/img/profilepicture1.jpg'        };
 
         // Store the review in localStorage (in a real app, this would be sent to a server)
         const reviews = JSON.parse(localStorage.getItem('productReviews') || '[]');
@@ -188,5 +234,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Redirect to reviews page
         window.location.href = 'review.html';
-    });
+    }
 });
