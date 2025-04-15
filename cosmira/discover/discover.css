@@ -1,10 +1,35 @@
+/*HEADER START*/
+
+/* @font-face import section start */
+
+/* Inter import */
+@font-face {
+  font-family: "Inter";
+  src: url("../assests/fonts/Inter/Inter-Regular.otf");
+}
+
+/* Lexend Deca import */
+@font-face {
+  font-family: "LexendDeca";
+  src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf");
+}
+
+/* Hanken Grotesk import */
 @font-face {
   font-family: "Hkreg";
-  src: url("../fonts/HankenGrotesk-Regular.ttf") format("truetype");
-  src: url("../fonts/HankenGrotesk-Bold.ttf") format("bold");
-  src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
+  src: url("../assests/fonts/HankenGrotesk-Regular.ttf") format("truetype");
+  src: url("../assests/fonts/HankenGrotesk-Bold.ttf") format("bold");
+  src: url("../assests/fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
   font-weight: normal;
   font-style: normal;
+}
+
+/* @font-face import section end */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,15 +65,23 @@ body {
   padding-left: 80px;
   padding-right: 60px;
   border-radius: 15px;
-  background:none;
+  background: none;
   border: none;
   outline: none;
   font-family: "Hkreg" format("truetype");
   font-size: 15px;
   text-align: center;
-  
 }
-input{
+
+input {
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.632);
+}
+
+.searchText {
   color: white;
 }
 
@@ -58,13 +91,15 @@ input{
   border-radius: 15px;
 }
 
-button{
+button {
   background: #8076af;
   border-radius: 15px;
   padding: 10px;
   border: solid 1px #8076af;
+  font-family: LexendDeca;
 }
-button :hover{
+
+button:hover {
   background-color: #8076afbc;
   cursor: pointer;
 }
@@ -77,11 +112,11 @@ i{
 nav {
   display: flex;
   background-color: #8076af;
-  height: 10px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  font-family: "Hkreg" format("bold");
+  font-family: Inter;
 }
 
 .nav-links {
@@ -105,45 +140,112 @@ nav {
   color: #e5d0ff;
 }
 
-/* starting display page content */
+/* applying fonts start */
 
+h1, h2 {
+  font-family: Inter;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: Inter;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+
+div, p, span, li {
+  font-family: LexendDeca;
+}
+
+button {
+  font-family: LexendDeca;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* applying fonts end */
+
+body {
+  background-image: radial-gradient(#7e573c, #280e31);
+  background-attachment: fixed;
+  margin: 0;
+  font-family: LexendDeca;
+  background-color: #0a0213;
+  color: white;
+  align-items: center;
+}
+
+/* all content on page */
 .container {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 5px;
-
-  padding: 5px;
+  display: flex;
+  height: calc(100vh - 142px);
+  gap: 25px;
+  margin: 25px;
 }
 .pagePic {
   max-width: 175px;
-  border: #280e31 solid 3px;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
 }
+
+.pagePic:hover {
+  transform: scale(1.05);
+}
+
 figure {
   position: relative;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  display: inline-block;
 }
 
 figcaption {
   position: absolute;
-  color: #f8e2ef;
-  backdrop-filter: blur(14px) brightness(75%);
-  margin-bottom: 5px;
-  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  background-color: rgba(40, 30, 52, 0.8);
+  padding: 8px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
 }
 h2 {
   text-align: center;
-  background-color: #60376c;
-  padding: 5px;
+  background-color: #281e34;
+  color: white;
+  padding: 15px;
   margin: 0;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 ol {
-  font-size: 30px;
-  margin-top: 0;
+  font-size: 18px;
+  margin-top: 15px;
   margin-left: 15px;
+  font-family: LexendDeca;
+  list-style-type: decimal;
+  color: white;
+  padding-left: 20px;
 }
-li {
-  padding: 5px;
+
+ol li {
+  padding: 8px 5px;
+  margin-bottom: 5px;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+ol li:hover {
+  color: #e5d0ff;
 }
 
 a {
@@ -152,34 +254,61 @@ a {
 }
 
 .stack {
+  flex: 1;
+  display: flex;
   flex-direction: column;
+  background-color: #c1b1d55e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-width: 400px;
 }
+
+/* Right sidebar for What's New and Recommendations */
 .newRec {
+  flex: 4;
+  display: flex;
   flex-direction: column;
+  background: radial-gradient(#402e56db, #cab0b0c5);
+  min-width: 450px;
+  border-radius: 10px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  gap: 15px;
 }
+
 .trending {
   display: flex;
-  flex-wrap: nowrap;
-
-  grid-row: 1/4;
-  background-color: #a495b8;
-  padding-bottom: 60.5px;
-  padding-top: 20px;
-  margin-top: 0;
+  flex-direction: column;
+  padding: 30px 40px;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  flex-grow: 1;
 }
 
 .whatsNew {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  background-color: #a495b8;
-  padding-bottom: 5px;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  width: 100%;
 }
 
 .recommendations {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  background-color: #a495b8;
-  padding-bottom: 10px;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+/* Image container for horizontal layout within sections */
+.image-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
 }

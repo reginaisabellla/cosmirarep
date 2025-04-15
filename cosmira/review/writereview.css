@@ -319,7 +319,9 @@ body {
 /* sidebar content end */
 
 /* create review content start */
-.create-review-page {
+
+/* reviews page button */
+.reviews-page {
   background-color: #281e34ae;
   margin: 0;
   padding: 12px 24px;
@@ -331,10 +333,14 @@ body {
   transition: background-color 0.3s;
   width: fit-content;
   align-self: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.create-review-page:hover {
+.reviews-page:hover {
   background-color: #5e4c75ae;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 /* reviews section */
@@ -497,10 +503,14 @@ body {
   cursor: pointer;
   font-weight: bold;
   font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .tag-btn:hover {
   background-color: #e1d6f1ef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .tag-options {
@@ -606,11 +616,13 @@ body {
   border-radius: 20px;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.2s ease-in-out;
 }
 
 .post-button:hover {
   background-color: #5e4c75ae;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 /* create review content end */
