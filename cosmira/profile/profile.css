@@ -6,118 +6,118 @@
 
 /* Inter import */
 
-  @font-face {
-    font-family: "Inter";
-    src: url("../assests/fonts/Inter/Inter-Regular.otf");
-    /* src: url("../assests/fonts/Inter/Inter-Bold.otf") format("bold");
-    src: url("../assests/fonts/Inter/Inter-Italic.otf") format("italic");
-    src: url("../assests/fonts/Inter/Inter-BoldItalic.otf") format("bolditalic");
-    font-weight: normal;
-    font-style: normal; */
-  }
+@font-face {
+  font-family: "Inter";
+  src: url("../assests/fonts/Inter/Inter-Regular.otf");
+  /* src: url("../assests/fonts/Inter/Inter-Bold.otf") format("bold");
+  src: url("../assests/fonts/Inter/Inter-Italic.otf") format("italic");
+  src: url("../assests/fonts/Inter/Inter-BoldItalic.otf") format("bolditalic");
+  font-weight: normal;
+  font-style: normal; */
+}
 
-  /* Lexend Deca import */
-  @font-face {
-    font-family: "LexendDeca";
-    src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf")
-  }
+/* Lexend Deca import */
+@font-face {
+  font-family: "LexendDeca";
+  src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf")
+}
 
 /* @font-face import section end */
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
 }
 
 .heading {
-  background-image: url("../assests/img/glitter.gif");
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: sticky;
-  top: 0;
-  height: 87px;
+background-image: url("../assests/img/glitter.gif");
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 0px;
+background-color: rgba(0, 0, 0, 0.8);
+position: sticky;
+top: 0;
+height: 87px;
 }
 
 .logo img {
-  height: 90px;
-  width: 300px;
+height: 90px;
+width: 300px;
 }
 
 /* Search Bar */
 .search input {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 80px;
-  padding-right: 60px;
-  border-radius: 15px;
-  background:none;
-  border: none;
-  outline: none;
-  font-family: "Hkreg" format("truetype");
-  font-size: 15px;
-  text-align: center;
-  
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 80px;
+padding-right: 60px;
+border-radius: 15px;
+background:none;
+border: none;
+outline: none;
+font-family: "Hkreg" format("truetype");
+font-size: 15px;
+text-align: center;
+
 }
 
 input::placeholder{ color: rgba(255, 255, 255, 0.632)  ; }
 
 .searchText{
-  color: white;
+color: white;
 }
 
 .search{
-  background: rgba(132, 139, 198, 0.555);
-  margin-right: 20px;
-  border-radius: 15px;
+background: rgba(132, 139, 198, 0.555);
+margin-right: 20px;
+border-radius: 15px;
 }
 
 button{
-  background: #8076af;
-  border-radius: 15px;
-  padding: 10px;
-  border: solid 1px #8076af;
+background: #8076af;
+border-radius: 15px;
+padding: 10px;
+border: solid 1px #8076af;
 }
 button :hover{
-  background-color: #8076afbc;
-  cursor: pointer;
+background-color: #8076afbc;
+cursor: pointer;
 }
 
 i{
-  color: white;
+color: white;
 }
 /* navigation bar */
 nav {
-  display: flex;
-  background-color: #8076af;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  font-family: "Hkreg" format("bold");
+display: flex;
+background-color: #8076af;
+height: 40px;
+justify-content: center;
+align-items: center;
+padding: 15px 30px;
+font-family: "Hkreg" format("bold");
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+list-style: none;
+display: flex;
+gap: 20px;
 }
 
 .nav-links li {
-  display: inline;
+display: inline;
 }
 
 .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  transition: color 0.3s;
+color: white;
+text-decoration: none;
+font-size: 25px;
+transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #e5d0ff;
+color: #e5d0ff;
 }
 
 /*HEADER END*/
@@ -134,22 +134,22 @@ background-color: #0a0213;
 color: white;
 }
 
-  /* applying fonts start */
+/* applying fonts start */
 
-    h3 {
-      font-family: Inter;
-      padding-bottom: 3px;
-    }
+  h3 {
+    font-family: Inter;
+    padding-bottom: 3px;
+  }
 
-    div {
-      font-family: LexendDeca;
-    }
+  div {
+    font-family: LexendDeca;
+  }
 
-    button {
-      font-family: LexendDeca;
-    }
+  button {
+    font-family: LexendDeca;
+  }
 
-    /* applying fonts end */
+  /* applying fonts end */
 
 /* GENERAL BODY STYLING END */
 
@@ -157,180 +157,191 @@ color: white;
 
 .big-profile-container {
 /* this makes it so content lines up next to sidebar instead of under */
-  display: flex;
-  margin: 20px;
+display: flex;
+margin: 20px;
 }
 
-  /* SIDEBAR STYLING (LEFT) START */
+/* SIDEBAR STYLING (LEFT) START */
 
-  .profile-sidebar {
-    background: radial-gradient(#402e56db, #cab0b0c5); /* Gradient background */
-    padding-left: 20px;
-    padding-right:20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    width: 25%;
-  }
+.profile-sidebar {
+  background: radial-gradient(#402e56db, #cab0b0c5); /* Gradient background */
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  width: 25%;
+}
 
-  .profile-sidebar img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    width: 65%;
-  }
+.profile-sidebar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 65%;
+}
 
-  .profile-pic {
-    border-radius: 50%;
-  }
+.profile-pic {
+  border-radius: 50%;
+}
 
-  .skin-color-swatch {
-    border-radius: 8px;
-    height: 30px;
-  }
+.skin-color-swatch {
+  border-radius: 8px;
+  height: 30px;
+}
 
-  .username {
-    text-align: center;
-    padding-top: 10px;
-  }
+.username {
+  text-align: center;
+  padding-top: 10px;
+}
 
-  .profile-stats {
-    text-align: center;
-    padding: 10px;
-  }
+.profile-stats {
+  text-align: center;
+  padding: 10px;
+}
 
-  .sidebar-button {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #c1b1d5ef;
-    border: none;
-    color: #281e34ff;
-    border-radius: 5px;
-  }
+.sidebar-button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
+}
 
-  .emphasized {
-    background: #281e34ae;
-    color: white;
-  }
+.emphasized {
+  background: #281e34ae;
+  color: white;
+}
 
-  .review-link {
-    color: white;
-    text-align: center;
-    padding-bottom: 20px;
-  }
+.review-link {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
-  .sidebar-skin-properties {
-    text-align: center;
-    padding-bottom: 15px;
-  }
+.sidebar-skin-properties {
+  text-align: center;
+  padding-bottom: 15px;
+}
 
-  .social-links {
-    text-align: center;
-    padding-bottom: 15px;
-  }
+.social-links {
+  text-align: center;
+  padding-bottom: 15px;
+}
 
 /* SIDEBAR STYLING (LEFT) END */
 
-  /* RIGHT SIDE OF SCREEN STYLING START */
+/* RIGHT SIDE OF SCREEN STYLING START */
 
-  .profile-content-container {
-    flex-grow: 1;
-    margin-left: 20px;
-    background: radial-gradient(#cab0b090, #281e34ee); /* Gradient background */
-    border-radius: 10px;
-    width: 60%;
+.profile-content-container {
+  flex-grow: 1;
+  margin-left: 20px;
+  background: radial-gradient(#cab0b090, #281e34ee); /* Gradient background */
+  border-radius: 10px;
+  width: 60%;
+}
+
+.content-section {
+  background-color: #c1b1d55e;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.content-button {
+  width: fit-content;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
+}
+
+.user-recent-review {
+  background-color: #bfafd2d2;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.product-reviewed {
+  color:#280e31;
+}
+
+.date-reviewed {
+  color:#431f4f;
+  font-size: 12pt;
+  padding-bottom: 7px;
+}
+
+.user-recent-review-text {
+  color:#431f4f;
+  font-size: 12pt;
+}
+
+.user-images {
+  width: 230px;
+  height: 250px;
+  margin: 7px;
+  border-radius: 5px;
   }
 
-  .content-section {
-    background-color: #c1b1d55e;
-    padding: 15px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-  }
+.profile-discussions{
+  display: flex;
+}
 
-  .content-button {
-    width: fit-content;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background: #c1b1d5ef;
-    border: none;
-    color: #281e34ff;
-    border-radius: 5px;
-  }
+.profile-discussions img {
+  width: 280px;
+  height: 200px;
+  margin: 7px;
+  border-radius: 5px;
+}
 
-  .user-recent-review {
-    background-color: #bfafd2d2;
-    padding: 15px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-  }
+.image-container {
+  position: relative;
+  color: white;
+  margin: 7px;
+}
 
-  .product-reviewed {
-    color:#280e31;
-  }
+.discussion-preview-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(76, 47, 99, 0.531);
+  color: white;
+  padding: 12px;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1.1em;
+  line-height: 1.4;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
-  .date-reviewed {
-    color:#431f4f;
-    font-size: 12pt;
-    padding-bottom: 7px;
-  }
+.profile-communities img {
+  width: 230px;
+  height: 250px;
+  margin: 7px;
+  border-radius: 5px;
+}
 
-  .user-recent-review-text {
-    color:#431f4f;
-    font-size: 12pt;
-  }
-
-  .user-images {
-    width: 230px;
-    height: 250px;
-    margin: 7px;
-    border-radius: 5px;
-    }
-
-  .profile-discussions{
-    display: flex;
-  }
-
-  .profile-discussions img {
-    width: 280px;
-    height: 200px;
-    margin: 7px;
-    border-radius: 5px;
-  }
-
-  .image-container {
-    position: relative;
-    color: white;
-  }
-
-  .discussion-preview-text {
-    position: absolute;
-    bottom: 30px;
-    left: 16px;
-  }
-
-  .profile-communities img {
-    width: 230px;
-    height: 250px;
-    margin: 7px;
-    border-radius: 5px;
-  }
-
-  /* RIGHT SIDE OF SCREEN STYLING END */
+/* RIGHT SIDE OF SCREEN STYLING END */
 
 /* PROFILE PAGE SPECIFIC STYLING END */
