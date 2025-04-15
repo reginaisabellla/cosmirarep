@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const postButton = document.querySelector('.post-button');
     const errorMessage = document.querySelector('.error-message');
     const reviewTextarea = document.querySelector('.review-textarea');
-    const reviewsPageBtn = document.querySelector('.create-review-page');
+    const reviewsPageBtn = document.querySelector('.reviews-page');
     let selectedRating = 0;
 
     // Add click handler for Reviews Page button
