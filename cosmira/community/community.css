@@ -109,11 +109,57 @@ nav {
 }
 /*HEADER END*/
 
+/* Font declarations start */
+@font-face {
+  font-family: "Inter";
+  src: url("../assests/fonts/Inter/Inter-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assests/fonts/Inter/Inter-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* applying fonts start */
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: "LexendDeca", sans-serif;
+}
+
+p {
+  font-family: "LexendDeca", sans-serif;
+}
+
+button {
+  font-family: "LexendDeca", sans-serif;
+}
+
+/* applying fonts end */
+
 body {
   background-image: radial-gradient(#7e573c, #280e31);
   background-attachment: fixed;
   margin: 0;
-  font-family: Arial, sans-serif;
   color: #280e31;
 }
 
@@ -127,12 +173,8 @@ body {
 }
 
 .section {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 20px;
   padding: 0;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,14 +182,12 @@ body {
 }
 
 .section h2 {
-  background: linear-gradient(135deg, rgba(40, 14, 49, 0.9), rgba(40, 14, 49, 0.8));
   color: #ffffff;
   padding: 20px;
   border-radius: 20px 20px 0 0;
   text-align: center;
   font-size: 1.8rem;
   margin: 0;
-  font-family: "Hkreg", Arial, sans-serif;
   letter-spacing: 1px;
 }
 
@@ -157,23 +197,61 @@ body {
   grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.discussions-container-wrapper {
+  background: radial-gradient(#cab0b090, #281e34ee);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.discussions-content-section {
+  background-color: #c1b1d55e;
+  padding: 15px;
+  margin: 0.25px;
+  margin-bottom: 0.25px;
+  border-radius: 9px;
+  width: calc(100% - 0.5px);
+  height: calc(100% - 0.5px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.discussions-content-section h2 {
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
 }
 
 .discussion-item {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-  backdrop-filter: blur(4px);
+  background: #c1b1d5ef;
   margin: 15px;
   padding: 15px;
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  transition: transform 0.3s ease;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .discussion-item:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+  background-color: #5e4c75ae;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #d0c2e1;
 }
 
 .discussion-item img {
@@ -189,14 +267,13 @@ body {
 }
 
 .discussion-item p {
-  color: #ffffff;
-  font-family: "Hkreg", Arial, sans-serif;
+  color: #281e34ff;
   margin: 0;
   font-size: 1.4rem;
 }
 
 .discussion-item span {
-  color: rgba(255, 255, 255, 0.8);
+  color: #281e34ff;
   font-size: 1.1rem;
 }
 
@@ -207,10 +284,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  padding-top: 0;
   width: 100%;
+  background: radial-gradient(#402e56db, #cab0b0c5);
+  border-radius: 10px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .reviews {
@@ -225,38 +302,59 @@ body {
 
 .reviews h2,
 .tutorials h2 {
-  margin-top: 0;
+  padding-top: 50px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0;
   width: 100%;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .content {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-  backdrop-filter: blur(4px);
-  margin: 15px;
+  color: white;
+  font-size: 1.1rem;
+  background: radial-gradient(#cab0b090, #281e34ee);;
+  margin: 0 15px 20px 15px;
   padding: 15px;
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  transition: transform 0.3s ease;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: calc(100% - 30px);
+  text-decoration: none; /* Added for anchor tags */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content:hover {
   transform: scale(1.02);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #b09fc7ef; /* Darker on hover */
 }
 
-.content img {
+.icon-container {
   width: 100%;
   height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 20px;
 }
 
-.content p {
+.review-icon, .tutorial-icon {
+  font-size: 80px;
   color: #ffffff;
-  font-family: "Hkreg", Arial, sans-serif;
-  font-size: 1.3rem;
-  margin: 10px 0;
-  text-align: center;
-  max-width: 80%;
+  padding: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.content:hover .review-icon, 
+.content:hover .tutorial-icon {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.3);
 }
