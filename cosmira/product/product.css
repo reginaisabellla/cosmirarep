@@ -11,7 +11,7 @@
     background-image: radial-gradient(#7e573c, #280e31);
     background-attachment: fixed;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: LexendDeca;
     background-color: #0a0213;
     color: white;
   }
@@ -84,7 +84,7 @@ i{
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
-    font-family: "Hkreg" format("bold");
+    font-family: Arial, sans-serif;
   }
   
   .nav-links {
@@ -117,16 +117,25 @@ i{
   gap: 20px;
 }
 
+.productImg {
+  text-align: center;
+}
+
 img {
   width: 450px;
   border-radius: 10px;
   margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figcaption {
   font-family: LexendDeca;
   font-size: 20px;
   color: #fff;
+  text-align: center;
+  margin: 15px 0;
 }
 
 #viewOther {
@@ -138,19 +147,21 @@ figcaption {
 
 .pageButton {
   font-family: LexendDeca;
-  font-size: 20px;
+  width: fit-content;
   margin: 5px;
-  border-radius: 15px;
-  border: solid 1px #8076af;
-  background: #8076af;
-  color: white;
-  padding: 10px 20px;
-  transition: background-color 0.3s;
+  padding: 7px 15px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .pageButton:hover {
-  background-color: #8076afbc;
-  cursor: pointer;
+  background: #a794bcef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .star {
@@ -179,7 +190,24 @@ figcaption {
    ); 
 }
 
+.productDesc {
+  background: radial-gradient(#402e56db, #cab0b0c5);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: LexendDeca;
+  margin-bottom: 15px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  gap: 20px;
+}
+
 .ratings {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -189,26 +217,18 @@ figcaption {
 }
 
 .buttonDisp {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
 
 .communityRev {
+  flex: 1;
   padding: 20px;
-  width: 600px;
+  width: auto;
   color: #fff;
-}
-
-.productDesc {
-  background: radial-gradient(#402e56db, #cab0b0c5);
-  color: #fff;
-  display: flex;
-  padding: 20px;
-  font-size: 20px;
-  border-radius: 10px;
-  font-family: LexendDeca;
-  margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .productName {
@@ -220,7 +240,7 @@ figcaption {
 }
 
 h1 {
-  font-family: Inter;
+  font-family: LexendDeca;
   font-size: 1.7rem;
   color: #fff;
   text-align: center;
@@ -238,6 +258,7 @@ h1 {
   color: #280E31;
   display: inline-block;
   transition: transform 0.2s;
+  font-size: 18px;
 }
 
 #longW { background-color: #B7C3FF; }
@@ -247,15 +268,52 @@ h1 {
 
 #seeAll {
   font-family: LexendDeca;
-  color: #FFFFFF;
-  background: #8076af;
-  padding: 8px 15px;
-  border-radius: 15px;
-  margin: 5px;
-  transition: background-color 0.3s;
+  width: fit-content;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
 }
 
 #seeAll:hover {
-  background-color: #8076afbc;
-  cursor: pointer;
+  background: #a794bcef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
+
+.shade-swatches {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shade-swatch {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.shade-swatch:hover {
+  transform: scale(1.1);
+  border-color: #fff;
+}
+
+/* Different foundation shades */
+.shade-1 { background-color: #FADEC9; }  /* Light shade */
+.shade-2 { background-color: #F3C9A9; }  /* Light-medium shade */
+.shade-3 { background-color: #E5B190; }  /* Medium shade */
+.shade-4 { background-color: #C68A63; }  /* Medium-deep shade */
+.shade-5 { background-color: #8C5A3C; }  /* Deep shade */
