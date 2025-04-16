@@ -19,104 +19,105 @@
 
 /* @font-face import section end */
 * {
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .heading {
-background-image: url("../assests/img/glitter.gif");
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 0px;
-background-color: rgba(0, 0, 0, 0.8);
-position: sticky;
-top: 0;
-height: 87px;
+  background-image: url("../assests/img/glitter.gif");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  height: 87px;
 }
 
 .logo img {
-height: 90px;
-width: 300px;
+  height: 90px;
+  width: 300px;
 }
 
 /* Search Bar */
-.search input {
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 80px;
-padding-right: 60px;
-border-radius: 15px;
-background:none;
-border: none;
-outline: none;
-font-family: "Hkreg" format("truetype");
-font-size: 15px;
-text-align: center;
-
+  .search input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 60px;
+  border-radius: 15px;
+  background:none;
+  border: none;
+  outline: none;
+  font-family: "Hkreg" format("truetype");
+  font-size: 15px;
+  text-align: center;
 }
 
-input::placeholder{ color: rgba(255, 255, 255, 0.632)  ; }
+input::placeholder { color: rgba(255, 255, 255, 0.632)  ; }
 
-.searchText{
+.searchText {
+  color: white;
+}
+
+.search {
+  background: rgba(132, 139, 198, 0.555);
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+button {
+  background: #8076af;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid 1px #8076af;
+}
+button :hover {
+  background-color: #8076afbc;
+  cursor: pointer;
+}
+
+i {
 color: white;
 }
 
-.search{
-background: rgba(132, 139, 198, 0.555);
-margin-right: 20px;
-border-radius: 15px;
-}
-
-button{
-background: #8076af;
-border-radius: 15px;
-padding: 10px;
-border: solid 1px #8076af;
-}
-button :hover{
-background-color: #8076afbc;
-cursor: pointer;
-}
-
-i{
-color: white;
-}
 /* navigation bar */
 nav {
-display: flex;
-background-color: #8076af;
-height: 40px;
-justify-content: center;
-align-items: center;
-padding: 15px 30px;
-font-family: "Hkreg" format("bold");
+  display: flex;
+  background-color: #8076af;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: "Hkreg" format("bold");
 }
 
 .nav-links {
-list-style: none;
-display: flex;
-gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links li {
-display: inline;
+  display: inline; 
 }
 
 .nav-links a {
-color: white;
-text-decoration: none;
-font-size: 25px;
-transition: color 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-color: #e5d0ff;
+  color: #e5d0ff;
 }
 .nav-links a.active {
   color: #402E56;
 }
+/* navigation bar styling end */
 
 /*HEADER END*/
 
@@ -130,7 +131,6 @@ body {
   color: white;
 }
 /* general body styling end */
-
 
 /* applying fonts start */
 
@@ -159,25 +159,16 @@ button {
 
 /* applying fonts end */
 
-/* body {
-  background-image: radial-gradient(#7e573c, #280e31);
-  background-attachment: fixed;
-  margin: 0;
-  font-family: LexendDeca;
-  background-color: #0a0213;
-  color: white;
-  align-items: center;
-} */
-
 /* all content on page */
 .container {
   display: flex;
-  height: calc(100vh - 142px);
+  height: fit-content;
   gap: 25px;
   margin: 25px;
 }
+
 .pagePic {
-  max-width: 175px;
+  max-width: 262px;  /* Changed from 175px (175 * 1.5 = 262.5) */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
@@ -202,7 +193,7 @@ figcaption {
   left: 0;
   width: 100%;
   color: #ffffff;
-  background-color: #4C2F6387;
+  background-color:  rgba(76, 47, 99, 0.531);
   padding: 8px;
   text-align: center;
   font-weight: 400;
@@ -210,7 +201,7 @@ figcaption {
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 35px;
   padding-top: 15px;
   border-radius: 10px 10px 0px 0px;
   text-align: center;
@@ -269,10 +260,17 @@ a {
   border-radius: 10px;
   position: relative;
   height: 100%;
+  padding-bottom: 50px;
 }
 
 
 /* Right sidebar for What's New and Recommendations */
+
+.h2RightSide {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .newRecWrapper {
   background: radial-gradient(#cab0b090, #281e34ee);
   width: 100%;
@@ -282,18 +280,20 @@ a {
   padding: 15px;
 }
 
-.newRecContainer {
+.contentSectionContainer {
   background-color: #c1b1d55e;
-  padding: 10px;
-  margin: 0;
+  padding: 15px;
+  margin: 0.25px;
+  margin-bottom: 10px;
   border-radius: 9px;
-  width: 100%;
+  width: calc(100% - 0.5px);
   height: calc(100% - 0.5px);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+}
+
+.secondContentContainer {
+  margin-top: 15px;
 }
 
 .whatsNew {
@@ -328,6 +328,7 @@ a {
   padding: 0;
   width: 100%;
   max-width: fit-content;
+  margin-bottom: 25px;
 }
 
 /* Username styling */
