@@ -147,6 +147,7 @@ body {
 .content h1 {
   font-size: 50px;
   text-shadow: 5px 8px 4px rgba(10, 19, 79, 0.847);
+  margin-bottom: 30px;
 }
 
 .btn {
