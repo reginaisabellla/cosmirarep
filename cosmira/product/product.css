@@ -5,18 +5,25 @@
     src: url("../fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
     font-weight: normal;
     font-style: normal;
-  }
-  
-  body {
+}
+
+@font-face {
+    font-family: "LexendDeca";
+    src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
     background-image: radial-gradient(#7e573c, #280e31);
     background-attachment: fixed;
     margin: 0;
     font-family: LexendDeca;
     background-color: #0a0213;
     color: white;
-  }
-  
-  .heading {
+}
+
+.heading {
     background-image: url("../assests/img/glitter.gif");
     display: flex;
     justify-content: space-between;
@@ -26,14 +33,14 @@
     position: sticky;
     top: 0;
     height: 87px;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     height: 90px;
     width: 300px;
-  }
-  
-  /* Search Bar */
+}
+
+/* Search Bar */
 .search input {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -75,9 +82,9 @@ button :hover{
 i{
   color: white;
 }
-  
-  /* Navigation Bar */
-  nav {
+
+/* Navigation Bar */
+nav {
     display: flex;
     background-color: #8076af;
     height: 10px;
@@ -85,29 +92,29 @@ i{
     align-items: center;
     padding: 15px 30px;
     font-family: Arial, sans-serif;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-  }
-  
-  .nav-links li {
+}
+
+.nav-links li {
     display: inline;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
     font-size: 25px;
     transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #e5d0ff;
-  }
-  
+}
+
 
 /* starting with product page */
 
@@ -234,9 +241,13 @@ figcaption {
 .productName {
   margin-top: 0px;
   padding-left: 8px;
-  font-family: Inter;
+  font-family: "LexendDeca", sans-serif;
   font-size: 1.5rem;
   color: #fff;
+}
+
+.productName h2, .productName h3 {
+  font-family: "LexendDeca", sans-serif;
 }
 
 h1 {
