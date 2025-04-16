@@ -577,7 +577,6 @@ body {
 }
 
 .selected-tag {
-  background-color: #8076af;
   color: white;
   padding: 5px 30px 5px 15px;
   border-radius: 15px;
@@ -585,6 +584,101 @@ body {
   position: relative;
   display: inline-flex;
   align-items: center;
+}
+
+/* Base skin type tags */
+.selected-tag[data-type="skin"] {
+  background-color: #8e6b9e; /* Purple for all skin types as default */
+}
+
+/* Base product tags */
+.selected-tag[data-type="product"] {
+  background-color: #6b819e; /* Blue-gray default for product tags */
+}
+
+/* Specific product tags by exact value match */
+/* Texture/finish tags - Blue family */
+.selected-tag[data-value="Lightweight"] {
+  background-color: #5c7fba;
+}
+
+.selected-tag[data-value="Full Coverage"] {
+  background-color: #4a6da1;
+}
+
+.selected-tag[data-value="Natural Finish"] {
+  background-color: #6187c7;
+}
+
+.selected-tag[data-value="Matte"] {
+  background-color: #3d6294;
+}
+
+.selected-tag[data-value="Dewy"] {
+  background-color: #5575b0;
+}
+
+/* Performance tags - Green family */
+.selected-tag[data-value="Long-lasting"] {
+  background-color: #4a9c7d;
+}
+
+.selected-tag[data-value="Hydrating"] {
+  background-color: #5cb094;
+}
+
+.selected-tag[data-value="Buildable"] {
+  background-color: #68bd9f;
+}
+
+.selected-tag[data-value="Cakey"] {
+  background-color: #a068bd; /* Purple */
+}
+
+.selected-tag[data-value="Wears Off"] {
+  background-color: #bd6992; /* Pink */
+}
+
+.selected-tag[data-value="Heavy"] {
+  background-color: #9568bd; /* Purple */
+}
+
+/* Problem tags - Red/Pink family */
+.selected-tag[data-value="Irritating"] {
+  background-color: #c06666;
+}
+
+.selected-tag[data-value="Breakout-Prone"] {
+  background-color: #bd6875;
+}
+
+.selected-tag[data-value="Contains Allergens"] {
+  background-color: #bd6068;
+}
+
+.selected-tag[data-value="Not Sweat-Proof"] {
+  background-color: #c77989;
+}
+
+/* Price tags - Teal family */
+.selected-tag[data-value="Expensive"] {
+  background-color: #5e9db1;
+}
+
+.selected-tag[data-value="Affordable"] {
+  background-color: #68acbe;
+}
+
+.selected-tag[data-value="Allergen-Free"] {
+  background-color: #4ab0a0;
+}
+
+.selected-tag::after {
+  content: "×";
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .selected-tag::after {
@@ -628,7 +722,10 @@ body {
   text-align: center;
   margin-top: 40px;
   padding: 10px;
-  width: 150px;
+  width: auto; /* Changed from fixed width to auto */
+  min-width: 150px; /* Added min-width to maintain minimum size */
+  padding-left: 20px; /* Added more horizontal padding */
+  padding-right: 20px;
   height: 50px;
   background-color: #281e34ae;
   border: none;
@@ -642,6 +739,37 @@ body {
   background-color: #5e4c75ae;
   transform: translateY(-2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Back arrow button styling */
+.back-button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.back-arrow-button {
+  background-color: transparent;
+  color: #fff; /* Changed from #8076af to white */
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-arrow-button:hover {
+  color: #d4c9d5; /* Changed from #6d4b77 to a lighter shade for better hover contrast on white */
+  transform: translateX(-3px);
+}
+
+.back-arrow-button i {
+  font-size: 1.2rem;
 }
 
 /* create review content end */

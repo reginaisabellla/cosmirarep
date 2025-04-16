@@ -552,12 +552,99 @@ body {
   color: #fff;
 }
 
+/* Base tag types */
 .skin-tag {
-  background-color: #8e6b9e;
+  background-color: #8e6b9e; /* Purple for skin types */
 }
 
 .product-tag {
-  background-color: #6b819e;
+  background-color: #6b819e; /* Blue-gray for product tags */
+}
+
+/* Specific product tags by exact value match - must target both by class and data-value */
+/* Texture/finish tags - Blue family */
+.tag[data-value="Lightweight"], .tag.product-tag:contains("Lightweight") {
+  background-color: #5c7fba !important;
+}
+
+.tag[data-value="Full Coverage"], .tag.product-tag:contains("Full Coverage") {
+  background-color: #4a6da1 !important;
+}
+
+.tag[data-value="Natural Finish"], .tag.product-tag:contains("Natural Finish") {
+  background-color: #6187c7 !important;
+}
+
+.tag[data-value="Matte"], .tag.product-tag:contains("Matte") {
+  background-color: #3d6294 !important;
+}
+
+.tag[data-value="Dewy"], .tag.product-tag:contains("Dewy") {
+  background-color: #5575b0 !important;
+}
+
+/* Performance tags - Green family */
+.tag[data-value="Long-lasting"], .tag.product-tag:contains("Long-lasting") {
+  background-color: #4a9c7d !important;
+}
+
+.tag[data-value="Hydrating"], .tag.product-tag:contains("Hydrating") {
+  background-color: #5cb094 !important;
+}
+
+.tag[data-value="Buildable"], .tag.product-tag:contains("Buildable") {
+  background-color: #68bd9f !important;
+}
+
+/* Problem tags - Purple/Pink family */
+.tag[data-value="Cakey"], .tag.product-tag:contains("Cakey") {
+  background-color: #a068bd !important; /* Purple */
+}
+
+.tag[data-value="Wears Off"], .tag.product-tag:contains("Wears Off") {
+  background-color: #bd6992 !important; /* Pink */
+}
+
+.tag[data-value="Heavy"], .tag.product-tag:contains("Heavy") {
+  background-color: #9568bd !important; /* Purple */
+}
+
+/* Problem tags - Red/Pink family */
+.tag[data-value="Irritating"], .tag.product-tag:contains("Irritating") {
+  background-color: #c06666 !important;
+}
+
+.tag[data-value="Breakout-Prone"], .tag.product-tag:contains("Breakout-Prone") {
+  background-color: #bd6875 !important;
+}
+
+.tag[data-value="Contains Allergens"], .tag.product-tag:contains("Contains Allergens") {
+  background-color: #bd6068 !important;
+}
+
+.tag[data-value="Not Sweat-Proof"], .tag.product-tag:contains("Not Sweat-Proof") {
+  background-color: #c77989 !important;
+}
+
+/* Price tags - Teal family */
+.tag[data-value="Expensive"], .tag.product-tag:contains("Expensive") {
+  background-color: #5e9db1 !important;
+}
+
+.tag[data-value="Affordable"], .tag.product-tag:contains("Affordable") {
+  background-color: #68acbe !important;
+}
+
+.tag[data-value="Allergen-Free"], .tag.product-tag:contains("Allergen-Free") {
+  background-color: #4ab0a0 !important;
+}
+
+/* Review action buttons container */
+.review-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 
 /* Delete button */
@@ -570,12 +657,28 @@ body {
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  margin-top: 20px; /* Increased from 10px */
-  align-self: flex-end;
+}
+
+/* Edit button */
+.edit-review {
+  padding: 4px 12px; /* Match delete button padding */
+  border-radius: 10px; /* Match delete button border-radius */
+  font-size: 1rem; /* Match delete button font size */
+  background-color: #6b819eae; /* Different color from delete button */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .delete-review:hover {
   background-color: #5e4c75ae;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.edit-review:hover {
+  background-color: #8ba6c7ae; /* Lighter blue-gray to match the edit button color */
   transform: translateY(-2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }

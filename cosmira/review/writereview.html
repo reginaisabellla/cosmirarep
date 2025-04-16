@@ -75,11 +75,16 @@
         <!-- create review button (that will take users to writereview.html page) -->
         <button class="reviews-page">Reviews Page</button>
       </aside>
-      <!-- reviews content start (next to sidebar) -->
-      <main class="create-review-section">
+      <!-- reviews content start (next to sidebar) -->      <main class="create-review-section">
         <div class="create-review-container">
           <!-- Single content section to match profile page structure -->
           <div class="review-content-section">
+            <!-- Back button (hidden by default, shown in edit mode) -->
+            <div class="back-button-container">
+              <button class="back-arrow-button" style="display: none;">
+                <i class="fas fa-arrow-left"></i> Back to Reviews
+              </button>
+            </div>
             <!-- create review heading -->
             <h1 class="create-review-heading">Create A Review</h1> 
             <!-- star rating start -->
