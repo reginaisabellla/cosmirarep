@@ -190,7 +190,7 @@ button {
 figure {
   position: relative;
   overflow: hidden;
-  margin: 10px;
+  margin: 5px;
   border-radius: 10px;
   transition: all 0.2s ease;
   display: inline-block;
@@ -202,21 +202,21 @@ figcaption {
   left: 0;
   width: 100%;
   color: #ffffff;
-  background-color: rgba(40, 30, 52, 0.8);
+  background-color: #4C2F6387;
   padding: 8px;
   text-align: center;
   font-weight: 400;
   font-size: 14px;
 }
 h2 {
-  padding-top: 50px;
+  padding-top: 15px;
   border-radius: 10px 10px 0px 0px;
   text-align: center;
   font-size: 1.8rem;
   margin: 0px;
   width: 100%;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 ol {
   font-size: 18px;
@@ -267,14 +267,15 @@ a {
 
 .newRecContainer {
   background-color: #c1b1d55e;
-  padding: 15px;
-  margin: 0.25px;
-  margin-bottom: 0.25px;
+  padding: 10px;
+  margin: 0;
   border-radius: 9px;
-  width: calc(100% - 0.5px);
+  width: 100%;
   height: calc(100% - 0.5px);
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  justify-content: center;
 }
 
 .whatsNew {
@@ -282,6 +283,8 @@ a {
   flex-direction: column;
   position: relative;
   width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
 .recommendations {
@@ -289,6 +292,8 @@ a {
   flex-direction: column;
   position: relative;
   width: 100%;
+  margin-top: 10px;
+  align-items: center;
 }
 
 /* Image container for horizontal layout within sections */
@@ -296,7 +301,22 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 5px 0;
+  gap: 10px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+/* Username styling */
+.username {
+  font-weight: 600;
+  color: #e5d0ff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 3px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: Inter;
 }
