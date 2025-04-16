@@ -334,9 +334,10 @@ margin: 20px;
 
 .discussion-preview-text {
   position: absolute;
+  position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 7px;  /* Added margin to match image margin */
+  right: 7px; /* Added margin to match image margin */
   background-color: rgba(76, 47, 99, 0.531);
   color: white;
   padding: 12px;
@@ -346,6 +347,7 @@ margin: 20px;
   line-height: 1.4;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  width: 280px; /* Added to match image width */
 }
 
 .profile-communities img {
