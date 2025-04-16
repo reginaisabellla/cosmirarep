@@ -119,7 +119,9 @@ transition: color 0.3s;
 .nav-links a:hover {
 color: #e5d0ff;
 }
-
+.nav-links a.active {
+  color: #402E56;
+}
 /*HEADER END*/
 
 

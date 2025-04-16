@@ -104,7 +104,7 @@ nav {
 .nav-links a:hover {
   color: #e5d0ff;
 }
-.nav-link-ACTIVE{
+.nav-links a.active {
   color: #402E56;
 }
 /*HEADER END*/
