@@ -1,4 +1,3 @@
-// filepath: c:\Users\linds\OneDrive\Documents\GitHub\cosmirarep\cosmira\review\writereview.js
 document.addEventListener('DOMContentLoaded', () => {    
     // Star rating functionality
     const reviewStars = document.querySelectorAll('.create-review-container .star-rating .star');
@@ -10,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const photoLabel = document.querySelector('.photo-label');
     const imagePreviewContainer = document.querySelector('.image-preview-container');
     const imagePreview = document.getElementById('image-preview');
+    const averageStars = document.querySelectorAll('.average-stars .star');
+    const averageRatingValue = document.querySelector('.average-rating-value');
     let selectedRating = 0;
     let uploadedPhoto = null;
     let isEditMode = false;
@@ -18,6 +19,42 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check if we're in edit mode by looking for URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     isEditMode = urlParams.get('edit') === 'true';
+
+    // Function to update average rating display
+    function updateAverageRating() {
+        const reviews = JSON.parse(localStorage.getItem('productReviews') || '[]');
+        
+        // Reset all stars first
+        averageStars.forEach(star => {
+            star.classList.remove('filled', 'half-filled');
+        });
+
+        if (reviews.length === 0) {
+            averageRatingValue.textContent = 'No reviews yet';
+            return;
+        }
+
+        // Calculate average rating
+        const totalRating = reviews.reduce((sum, review) => sum + parseFloat(review.rating), 0);
+        const averageRating = totalRating / reviews.length;
+        const roundedRating = Math.round(averageRating * 10) / 10; // Round to 1 decimal place
+
+        // Update the star display
+        averageStars.forEach((star, index) => {
+            const starValue = index + 1;
+            if (starValue <= averageRating) {
+                star.classList.add('filled');
+            } else if (starValue - 0.5 <= averageRating) {
+                star.classList.add('half-filled');
+            }
+        });
+
+        // Update the numeric rating display
+        averageRatingValue.textContent = `${roundedRating.toFixed(1)} out of 5`;
+    }
+
+    // Call updateAverageRating on page load
+    updateAverageRating();
 
     // Tag system functionality
     const skinTypeBtn = document.getElementById('skinTypeBtn');
