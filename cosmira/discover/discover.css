@@ -168,7 +168,7 @@ button {
 }
 
 .pagePic {
-  max-width: 175px;
+  max-width: 262px;  /* Changed from 175px (175 * 1.5 = 262.5) */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
@@ -201,7 +201,7 @@ figcaption {
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 35px;
   padding-top: 15px;
   border-radius: 10px 10px 0px 0px;
   text-align: center;
@@ -260,10 +260,17 @@ a {
   border-radius: 10px;
   position: relative;
   height: 100%;
+  padding-bottom: 50px;
 }
 
 
 /* Right sidebar for What's New and Recommendations */
+
+.h2RightSide {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .newRecWrapper {
   background: radial-gradient(#cab0b090, #281e34ee);
   width: 100%;
@@ -277,7 +284,7 @@ a {
   background-color: #c1b1d55e;
   padding: 15px;
   margin: 0.25px;
-  margin-bottom: 0.25px;
+  margin-bottom: 10px;
   border-radius: 9px;
   width: calc(100% - 0.5px);
   height: calc(100% - 0.5px);
@@ -286,7 +293,7 @@ a {
 }
 
 .secondContentContainer {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .whatsNew {
@@ -321,6 +328,7 @@ a {
   padding: 0;
   width: 100%;
   max-width: fit-content;
+  margin-bottom: 25px;
 }
 
 /* Username styling */
