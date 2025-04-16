@@ -293,6 +293,7 @@ a {
   flex-direction: column;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 .whatsNew {
@@ -302,6 +303,7 @@ a {
   width: 100%;
   margin-bottom: 10px;
   align-items: center;
+  justify-content: center;
 }
 
 .recommendations {
@@ -311,6 +313,7 @@ a {
   width: 100%;
   margin-top: 10px;
   align-items: center;
+  justify-content: center;
 }
 
 /* Image container for horizontal layout within sections */
@@ -320,10 +323,11 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 5px 0;
+  margin: 5px auto;
   gap: 10px;
-  padding: 0 10px;
+  padding: 0;
   width: 100%;
+  max-width: fit-content;
 }
 
 /* Username styling */
