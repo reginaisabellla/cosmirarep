@@ -200,6 +200,10 @@ body {
   background-image: url("./cosmira/assests/img/gal2.jpg");
 }
 
+.slide-3 {
+  background-image: url("./cosmira/assests/img/gal3.jpg");
+}
+
 /* gallery dots */
 .carousel-dots {
   position: absolute;
