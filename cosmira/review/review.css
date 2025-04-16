@@ -571,7 +571,7 @@ body {
 }
 
 .review-content p {
-  font-size: 1.3rem; /* Decreased to match text entry size */
+  font-size: 1.2rem; /* Decreased to match text entry size */
   line-height: 1.6;
   margin-bottom: 20px; /* Added margin below the review text */
 }

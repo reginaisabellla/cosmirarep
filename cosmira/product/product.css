@@ -11,7 +11,7 @@
     background-image: radial-gradient(#7e573c, #280e31);
     background-attachment: fixed;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: LexendDeca;
     background-color: #0a0213;
     color: white;
   }
@@ -84,7 +84,7 @@ i{
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
-    font-family: "Hkreg" format("bold");
+    font-family: Arial, sans-serif;
   }
   
   .nav-links {
@@ -113,122 +113,207 @@ i{
 
 .fullPage {
   display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+.productImg {
+  text-align: center;
 }
 
 img {
   width: 450px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-figcaption{
-    font-size: 20px;
+figcaption {
+  font-family: LexendDeca;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin: 15px 0;
 }
 
-#viewOther{
-    cursor: pointer;
-    text-decoration: underline;
+#viewOther {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #e5d0ff;
+  font-family: LexendDeca;
 }
 
-.pageButton{
-    font-size: 25px;
-    margin: 3px;
-    border-radius: 8px;
-    border: none;
+.pageButton {
+  font-family: LexendDeca;
+  width: fit-content;
+  margin: 5px;
+  padding: 7px 15px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-/* code credited to https://css-shape.com/star/ , will redo stars to correlate with actual ratings system */
+.pageButton:hover {
+  background: #a794bcef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
 .star {
-    width: 50px;  
-    height: 50px;
-    aspect-ratio: 1;
-    background: #F7E8E1;
-    clip-path: polygon(50% 0,
-      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-     ); 
-    
-  }
-
-  .emptyStar {
-    width: 50px;  
-    height: 50px;
-    aspect-ratio: 1;
-    background: #7D708D;
-    clip-path: polygon(50% 0,
-      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-     ); 
-    
-  }
-
-  .ratings{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-left: 10px;
-    padding-top: 15px;
-  }
-
-.buttonDisp{
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border-right: #60376C solid 2px;   
-}
-.communityRev{
-    padding-left: 10px;
-    width: 600px;
-    
+  width: 30px;  
+  height: 30px;
+  aspect-ratio: 1;
+  background: #f5c518;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
 }
 
-.productDesc{
-    color: #280E31;
-    background-color: #A495B8 ;
-    display: flex;
-    height: 308px;
-    font-size: 25px;
-    
+.emptyStar {
+  width: 30px;  
+  height: 30px;
+  aspect-ratio: 1;
+  background: #d3c1c1;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
 }
 
-.productName{
-   
-   margin-top: 0px;
-   padding-left: 8px;
+.productDesc {
+  background: radial-gradient(#402e56db, #cab0b0c5);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: LexendDeca;
+  margin-bottom: 15px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  gap: 20px;
 }
 
-h1{
-    background-image: url("../assests/img/header.png");
-    color: #F8E2EF;
-    text-align: center;
-    padding: 5px;
-    margin-bottom: 0px;
+.ratings {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  font-family: LexendDeca;
+  color: #fff;
 }
 
-#longW{
-    background-color: #B7C3FF;
-    width: fit-content;
+.buttonDisp {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-#medCov{
-    background-color: #B7DBFF;
-    width: fit-content;
+.communityRev {
+  flex: 1;
+  padding: 20px;
+  width: auto;
+  color: #fff;
+  font-size: 18px;
 }
 
-#natFin{
-    background-color: #DEFDC7;
-    width: fit-content;
+.productName {
+  margin-top: 0px;
+  padding-left: 8px;
+  font-family: Inter;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-#veg{
-    background-color: #F3B7FF;
-    width: fit-content;
+h1 {
+  font-family: LexendDeca;
+  font-size: 1.7rem;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0px;
+  background: rgba(59, 42, 77, 0.9);
 }
 
-#seeAll{
-    color: #FFFFFF;
-    background-color: #60376C;
-    padding: 2px;
+/* Tag styling */
+#longW, #medCov, #natFin, #veg {
+  font-family: LexendDeca;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  color: #280E31;
+  display: inline-block;
+  transition: transform 0.2s;
+  font-size: 18px;
 }
+
+#longW { background-color: #B7C3FF; }
+#medCov { background-color: #B7DBFF; }
+#natFin { background-color: #DEFDC7; }
+#veg { background-color: #F3B7FF; }
+
+#seeAll {
+  font-family: LexendDeca;
+  width: fit-content;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background: #c1b1d5ef;
+  border: none;
+  color: #281e34ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
+}
+
+#seeAll:hover {
+  background: #a794bcef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.shade-swatches {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shade-swatch {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.shade-swatch:hover {
+  transform: scale(1.1);
+  border-color: #fff;
+}
+
+/* Different foundation shades */
+.shade-1 { background-color: #FADEC9; }  /* Light shade */
+.shade-2 { background-color: #F3C9A9; }  /* Light-medium shade */
+.shade-3 { background-color: #E5B190; }  /* Medium shade */
+.shade-4 { background-color: #C68A63; }  /* Medium-deep shade */
+.shade-5 { background-color: #8C5A3C; }  /* Deep shade */
