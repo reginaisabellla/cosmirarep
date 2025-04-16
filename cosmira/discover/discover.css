@@ -1,8 +1,11 @@
+/* COSMIRA DIG4172C JAN 2025 to APR 2025 */
+
 /*HEADER START*/
 
 /* @font-face import section start */
 
 /* Inter import */
+
 @font-face {
   font-family: "Inter";
   src: url("../assests/fonts/Inter/Inter-Regular.otf");
@@ -11,27 +14,110 @@
 /* Lexend Deca import */
 @font-face {
   font-family: "LexendDeca";
-  src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf");
-}
-
-/* Hanken Grotesk import */
-@font-face {
-  font-family: "Hkreg";
-  src: url("../assests/fonts/HankenGrotesk-Regular.ttf") format("truetype");
-  src: url("../assests/fonts/HankenGrotesk-Bold.ttf") format("bold");
-  src: url("../assests/fonts/HankenGrotesk-SemiBoldItalic.ttf") format("bolditalic");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../assests/fonts/LexendDeca/LexendDecaRegular.ttf")
 }
 
 /* @font-face import section end */
-
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
 }
 
+.heading {
+background-image: url("../assests/img/glitter.gif");
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 0px;
+background-color: rgba(0, 0, 0, 0.8);
+position: sticky;
+top: 0;
+height: 87px;
+}
+
+.logo img {
+height: 90px;
+width: 300px;
+}
+
+/* Search Bar */
+.search input {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 80px;
+padding-right: 60px;
+border-radius: 15px;
+background:none;
+border: none;
+outline: none;
+font-family: "Hkreg" format("truetype");
+font-size: 15px;
+text-align: center;
+
+}
+
+input::placeholder{ color: rgba(255, 255, 255, 0.632)  ; }
+
+.searchText{
+color: white;
+}
+
+.search{
+background: rgba(132, 139, 198, 0.555);
+margin-right: 20px;
+border-radius: 15px;
+}
+
+button{
+background: #8076af;
+border-radius: 15px;
+padding: 10px;
+border: solid 1px #8076af;
+}
+button :hover{
+background-color: #8076afbc;
+cursor: pointer;
+}
+
+i{
+color: white;
+}
+/* navigation bar */
+nav {
+display: flex;
+background-color: #8076af;
+height: 40px;
+justify-content: center;
+align-items: center;
+padding: 15px 30px;
+font-family: "Hkreg" format("bold");
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+.nav-links li {
+display: inline;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+font-size: 25px;
+transition: color 0.3s;
+}
+
+.nav-links a:hover {
+color: #e5d0ff;
+}
+
+/*HEADER END*/
+
+/* general body styling start */
 body {
   background-image: radial-gradient(#7e573c, #280e31);
   background-attachment: fixed;
@@ -40,105 +126,7 @@ body {
   background-color: #0a0213;
   color: white;
 }
-
-.heading {
-  background-image: url("../assests/img/glitter.gif");
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: sticky;
-  top: 0;
-  height: 87px;
-}
-
-.logo img {
-  height: 90px;
-  width: 300px;
-}
-
-/* Search Bar */
-.search input {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 80px;
-  padding-right: 60px;
-  border-radius: 15px;
-  background: none;
-  border: none;
-  outline: none;
-  font-family: "Hkreg" format("truetype");
-  font-size: 15px;
-  text-align: center;
-}
-
-input {
-  color: white;
-}
-
-input::placeholder {
-  color: rgba(255, 255, 255, 0.632);
-}
-
-.searchText {
-  color: white;
-}
-
-.search{
-  background: rgba(132, 139, 198, 0.555);
-  margin-right: 20px;
-  border-radius: 15px;
-}
-
-button {
-  background: #8076af;
-  border-radius: 15px;
-  padding: 10px;
-  border: solid 1px #8076af;
-  font-family: LexendDeca;
-}
-
-button:hover {
-  background-color: #8076afbc;
-  cursor: pointer;
-}
-
-i{
-  color: white;
-}
-
-/* Navigation Bar */
-nav {
-  display: flex;
-  background-color: #8076af;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  font-family: Inter;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #e5d0ff;
-}
+/* general body styling end */
 
 /* applying fonts start */
 
@@ -155,7 +143,7 @@ h3 {
   font-weight: 500;
 }
 
-div, p, span, li {
+div, p, span {
   font-family: LexendDeca;
 }
 
@@ -167,7 +155,7 @@ button {
 
 /* applying fonts end */
 
-body {
+/* body {
   background-image: radial-gradient(#7e573c, #280e31);
   background-attachment: fixed;
   margin: 0;
@@ -175,7 +163,7 @@ body {
   background-color: #0a0213;
   color: white;
   align-items: center;
-}
+} */
 
 /* all content on page */
 .container {
