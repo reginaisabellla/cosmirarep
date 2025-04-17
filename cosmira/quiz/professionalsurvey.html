@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz-ProfessionalSurvey</title>
-    <script src="../quiz/quiz.js"></script>
-    <link rel="stylesheet" href="../quiz/quiz.css" />
+    <title>Quiz-ProfessionalSurvey</title>    <link rel="stylesheet" href="../quiz/quiz.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -46,15 +44,16 @@
         </ul>
       </nav>
     </header>
-    <div class="container">
-      <div class="pop-up">
-        <h1>PROFESSIONAL QUIZ</h1>
-        <form>
+    <div class="outer-container">
+      <div class="container">
+        <div class="content-wrapper">          <div class="pop-up">
+            <h1>PROFESSIONAL QUIZ</h1>
+            <form id="quiz-form" action="../results/result.html" method="post">
           <div class="bq-question">
-            <h2>Question 1.</h2>
-            <div class="quiz-text">
+            <h2>Question 1.</h2>            <div class="quiz-text">
               <p>Select the skin color range MOST accurate to yours:</p>
-            </div>            <div class="color-buttons">
+              <span id="skin-color-error"></span>
+            </div><div class="color-buttons">
               <div class="color-column">
                 <!-- Left column: first half of skin tones (lightest to middle) -->
                 <label class="skin-color">
@@ -174,9 +173,9 @@
             </div>
           </div>
           <div class="bq-question">
-            <h2>Question 2.</h2>
-            <div class="quiz-text">
+            <h2>Question 2.</h2>            <div class="quiz-text">
               <p>What color are your veins?</p>
+              <span id="vein-color-error"></span>
             </div>
             <div class="vein-buttons">
               <label>
@@ -198,18 +197,17 @@
             </div>
           </div>
           <div class="bq-question">
-            <h2>Question 3.</h2>
-            <div class="quiz-text">
+            <h2>Question 3.</h2>            <div class="quiz-text">
               <p>
                 What is your skin type and texture, how does your foundation
                 respond after a few hours without reapplication? <br />
                 Choose all that apply.
               </p>
-            </div>
-            <div class="skin-type">
-              <label for="skin-type">
+              <span id="skin-type-error"></span>
+            </div>            <div class="skin-type">
+              <label for="skin-type-select">
                 Skin Type:
-                <select id="selectbox" name="selectbox">
+                <select id="skin-type-select" name="skin-type">
                   <option value="Normal">Normal</option>
                   <option value="Dry">Dry</option>
                   <option value="Oily">Oily</option>
@@ -217,9 +215,9 @@
                 </select>
               </label>
               <br />
-              <label for="skin-type">
+              <label for="texture-select">
                 Texture:
-                <select id="selectbox" name="selectbox">
+                <select id="texture-select" name="texture">
                   <option value="bump">Bumpy/Rough</option>
                   <option value="smooth">Smooth/Soft</option>
                   <option value="flak">Flaky</option>
@@ -237,17 +235,16 @@
               <label>
                 <input type="checkbox" name="reactions" value="freqpimples" />
                 Frequent Pimples </label
-              ><br />
-              <label>
-                <input type="checkbox" name="reactions" value="lift" /> Makeup
+              ><br />              <label>
+                <input type="checkbox" name="reactions" value="lift-transfer" /> Makeup
                 lifts & transfers easily </label
               ><br />
               <label>
-                <input type="checkbox" name="reactions" value="lift" /> Makeup
+                <input type="checkbox" name="reactions" value="cakey" /> Makeup
                 seperates, looks cakey or patchy </label
               ><br />
               <label>
-                <input type="checkbox" name="reactions" value="smooth" /> Smooth
+                <input type="checkbox" name="reactions" value="smooth-texture" /> Smooth
                 Texture </label
               ><br />
               <label>
@@ -269,16 +266,15 @@
             </div>
           </div>
           <div class="bq-question">
-            <h2>Question 4.</h2>
-            <div class="quiz-text">
+            <h2>Question 4.</h2>            <div class="quiz-text">
               <p>
                 Do you have any skin conditions that affect your foundation
                 choice? <br />
                 If so, what type of formulas often cause it and how severe are
                 the reactions?
               </p>
-            </div>
-            <div class="skin-issue">
+              <span id="skin-condition-error"></span>
+            </div>            <div class="vein-buttons">
               <label>
                 <input
                   type="checkbox"
@@ -320,18 +316,17 @@
                   name="skin-issue"
                   value="psoriasis"
                 />Psoriasis </label
-              ><br />
-              <label for="skin-issue">
+              ><br />              <label for="formula-type">
                 Formula Type:
-                <select id="selectbox" name="selectbox">
+                <select id="formula-type" name="formula-type">
                   <option value="liquid">Liquid</option>
                   <option value="cream">Cream</option>
                   <option value="powder">Powder</option>
                 </select> </label
               ><br />
-              <label for="skin-issue">
+              <label for="severity">
                 Severity:
-                <select id="selectbox" name="selectbox">
+                <select id="severity" name="severity">
                   <option value="none">None</option>
                   <option value="mild">Mild</option>
                   <option value="moderate">Moderate</option>
@@ -342,27 +337,27 @@
             </div>
           </div>
           <div class="bq-question">
-            <h2>Question 5.</h2>
-            <div class="quiz-text">
+            <h2>Question 5.</h2>            <div class="quiz-text">
               <p>
                 Are there any specific ingredients you avoid in your foundation?
                 <br />
                 What benefits do you look for in a formula?
               </p>
-            </div>
-            <div class="ingredients">
-              <label for="avoid-ingredients">
+              <span id="ingredients-error"></span>
+            </div>            <div class="vein-buttons">              <label for="avoid-ingredients-input">
                 Ingredients to Avoid:
                 <input
                   type="text"
+                  id="avoid-ingredients-input"
                   name="avoid-ingredients"
                   placeholder="e.g. Parabens, Sulfates, Fragrances, etc."
                 /> </label
               ><br />
-              <label for="desired-benefits">
+              <label for="desired-benefits-input">
                 Desired Benefits:
                 <input
                   type="text"
+                  id="desired-benefits-input"
                   name="desired-benefits"
                   placeholder="e.g. Hydration, Anti-aging, Brightness, etc."
                 /> </label
@@ -370,15 +365,14 @@
             </div>
           </div>
           <div class="bq-question">
-            <h2>Question 6.</h2>
-            <div class="quiz-text">
+            <h2>Question 6.</h2>            <div class="quiz-text">
               <p>
                 In your skincare routine, do you often use any topical
                 medication, AHA, BHA, or Retinoid products? <br />
                 If so, describe your skin's elasticity and firmness.
               </p>
-            </div>
-            <div class="medication">
+              <span id="medication-error"></span>            </div>
+            <div class="vein-buttons">
               <label>
                 <input type="checkbox" name="medication" value="retinoid" />
                 Retinoid </label
@@ -394,10 +388,9 @@
               <label>
                 <input type="checkbox" name="medication" value="medication" />
                 Topical Medication </label
-              ><br />
-              <label for="skin-elasticity">
+              ><br />              <label for="skin-elasticity-select">
                 Skin Elasticity:
-                <select id="selectbox" name="selectbox">
+                <select id="skin-elasticity-select" name="skin-elasticity">
                   <option value="elastic">Elastic/Stretchy</option>
                   <option value="firm">Firm/Tight</option>
                   <option value="sagging">Sagging/Loose</option>
@@ -406,11 +399,10 @@
             </div>
           </div>
           <div class="bq-question">
-            <h2>Question 7.</h2>
-            <div class="quiz-text">
+            <h2>Question 7.</h2>            <div class="quiz-text">
               <p>Do you prefer a specific foundation formula type?</p>
-            </div>
-            <div class="formula-type">
+              <span id="formula-error"></span>            </div>
+            <div class="vein-buttons">
               <label>
                 <input type="radio" name="formula-type" value="mineral" />
                 Mineral </label
@@ -430,17 +422,15 @@
             </div>
           </div>
           <div class="bq-question">
-            <h2>Question 8.</h2>
-            <div class="quiz-text">
+            <h2>Question 8.</h2>            <div class="quiz-text">
               <p>
                 How often do you wear makeup, and what is your makeup prep
                 routine? (Including Skincare)
               </p>
-            </div>
-            <div class="routine">
-              <label for="routine">
+              <span id="routine-error"></span>            </div>            <div class="vein-buttons">
+              <label for="makeup-routine">
                 Makeup Routine:
-                <select id="selectbox" name="selectbox">
+                <select id="makeup-routine" name="makeup-routine">
                   <option value="daily">Daily</option>
                   <option value="occasionally">Occasionally</option>
                   <option value="specialoccasions">
@@ -477,39 +467,41 @@
               <p>
                 How do you feel about wearing foundation in different lighting
                 conditions? Please explain.
-              </p>
-            </div>
-            <!--revise answer choices for shaded light or other opt-->
-            <div class="light">
-              <label for="natural">
+              </p>            </div>
+            <!--revise answer choices for shaded light or other opt-->            <div class="vein-buttons">
+              <label for="natural-light">
                 Natural Light:
                 <input
                   type="text"
+                  id="natural-light"
                   name="natural"
                   placeholder="e.g. My foundation looks natural"
                 /> </label
               ><br />
-              <label for="direct">
+              <label for="direct-light">
                 Direct Sunlight:
                 <input
                   type="text"
+                  id="direct-light"
                   name="direct"
                   placeholder="e.g. My foundation looks bright"
                 /> </label
               ><br />
-              <label for="flash">
+              <label for="flash-light">
                 Flash Photography:
                 <input
                   type="text"
+                  id="flash-light"
                   name="flash"
                   placeholder="e.g. My foundation looks washed out"
                 /> </label
               ><br />
-              <label for="artificial">
+              <label for="artificial-light">
                 Artifical Lighting:
                 <input
                   type="text"
-                  name="artifical"
+                  id="artificial-light"
+                  name="artificial"
                   placeholder="e.g. My foundation looks dull"
                 /> </label
               ><br />
@@ -522,9 +514,8 @@
                 Have you noticed any changes in your skin tone or undertones
                 over time, such as during different seasons, climates, or
                 hormonal fluctuations?
-              </p>
-            </div>
-            <div class="changes">
+              </p>            </div>
+            <div class="vein-buttons">
               <label>
                 <input type="radio" name="skin-changes" value="yes" /> Yes
                 <input
