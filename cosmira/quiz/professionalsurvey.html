@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz-ProfessionalSurvey</title>    <link rel="stylesheet" href="../quiz/quiz.css" />
+    <title>Quiz-ProfessionalSurvey</title>
+    <script src="../quiz/quiz.js"></script>
+    <link rel="stylesheet" href="../quiz/quiz.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- header Section -->
     <header>
       <div class="heading">
         <div class="logo">
@@ -19,7 +22,7 @@
         </div>
         <div class="search">
           <form action="../search/search.php" method="post" name="searchBar">
-            <input class="searchText" type="text" placeholder="S E A R C H" />
+            <input type="text" placeholder="S E A R C H" />
             <button type="submit" name="search">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -31,7 +34,7 @@
           <li>
             <a class="nav-link" href="../about/about.html">ABOUT</a>
           </li>
-          <li><a class="active" href="../quiz/quiz.html">QUIZ</a></li>
+          <li><a class="nav-link" href="../quiz/quiz.html">QUIZ</a></li>
           <li>
             <a class="nav-link" href="../discover/discover.html">DISCOVER</a>
           </li>
@@ -53,8 +56,7 @@
             <h2>Question 1.</h2>            <div class="quiz-text">
               <p>Select the skin color range MOST accurate to yours:</p>
               <span id="skin-color-error"></span>
-            </div><div class="color-buttons">
-              <div class="color-column">
+            </div><div class="color-buttons">              <div class="color-column">
                 <!-- Left column: first half of skin tones (lightest to middle) -->
                 <label class="skin-color">
                   <input
@@ -74,7 +76,7 @@
                     name="skin-colortest"
                     value="2"
                   />
-                  <span class="color-box" id="color6">
+                  <span class="color-box" id="color2">
                     <div class="textcolor">2</div>
                   </span>
                 </label>
@@ -85,7 +87,7 @@
                     name="skin-colortest"
                     value="3"
                   />
-                  <span class="color-box" id="color2">
+                  <span class="color-box" id="color3">
                     <div class="textcolor">3</div>
                   </span>
                 </label>
@@ -96,7 +98,7 @@
                     name="skin-colortest"
                     value="4"
                   />
-                  <span class="color-box" id="color3">
+                  <span class="color-box" id="color4">
                     <div class="textcolor">4</div>
                   </span>
                 </label>
@@ -107,12 +109,11 @@
                     name="skin-colortest"
                     value="5"
                   />
-                  <span class="color-box" id="color7">
+                  <span class="color-box" id="color5">
                     <div class="textcolor">5</div>
                   </span>
                 </label>
-              </div>
-              <div class="color-column">
+              </div>              <div class="color-column">
                 <!-- Right column: second half of skin tones (middle to darkest) -->
                 <label class="skin-color">
                   <input
@@ -121,29 +122,27 @@
                     name="skin-colortest"
                     value="6"
                   />
-                  <span class="color-box" id="color4">
+                  <span class="color-box" id="color6">
                     <div class="textcolor">6</div>
                   </span>
-                </label>
-                <label class="skin-color">
+                </label>                <label class="skin-color">
                   <input
                     type="radio"
                     class="skin-color"
                     name="skin-colortest"
                     value="7"
                   />
-                  <span class="color-box" id="color8">
+                  <span class="color-box" id="color7">
                     <div class="textcolor">7</div>
                   </span>
-                </label>
-                <label class="skin-color">
+                </label>                <label class="skin-color">
                   <input
                     type="radio"
                     class="skin-color"
                     name="skin-colortest"
                     value="8"
                   />
-                  <span class="color-box" id="color5">
+                  <span class="color-box" id="color8">
                     <div class="textcolor">8</div>
                   </span>
                 </label>
@@ -171,29 +170,28 @@
                 </label>
               </div>
             </div>
-          </div>
-          <div class="bq-question">
+          </div>          <div class="bq-question">
             <h2>Question 2.</h2>            <div class="quiz-text">
               <p>What color are your veins?</p>
               <span id="vein-color-error"></span>
             </div>
-            <div class="vein-buttons">
+            <div class="undertone">
               <label>
                 <input type="radio" name="vein-color" value="blue" />
                 Blue </label
-              ><br />
+              >
               <label>
                 <input type="radio" name="vein-color" value="bluish-green" />
                 Bluish-Green </label
-              ><br />
+              >
               <label>
                 <input type="radio" name="vein-color" value="green" />
                 Green </label
-              ><br />
+              >
               <label>
                 <input type="radio" name="vein-color" value="purple" />
                 Purple </label
-              ><br />
+              >
             </div>
           </div>
           <div class="bq-question">
@@ -264,8 +262,7 @@
                 or Irritation after </label
               ><br />
             </div>
-          </div>
-          <div class="bq-question">
+          </div>          <div class="bq-question">
             <h2>Question 4.</h2>            <div class="quiz-text">
               <p>
                 Do you have any skin conditions that affect your foundation
@@ -274,69 +271,70 @@
                 the reactions?
               </p>
               <span id="skin-condition-error"></span>
-            </div>            <div class="vein-buttons">
+            </div>            <div class="skin-issue">
               <label>
                 <input
                   type="checkbox"
                   name="skin-issue"
                   value="acne"
                 />Cystic/Severe/Mild Acne </label
-              ><br />
+              >
               <label>
                 <input
                   type="checkbox"
                   name="skin-issue"
                   value="hyperpig"
                 />Hyperpigmentation </label
-              ><br />
+              >
               <label>
                 <input
                   type="checkbox"
                   name="skin-issue"
                   value="finelines"
                 />Fine-Lines or Wrinkles </label
-              ><br />
+              >
               <label>
                 <input
                   type="checkbox"
                   name="skin-issue"
                   value="rosa"
                 />Rosacea </label
-              ><br />
+              >
               <label>
                 <input
                   type="checkbox"
                   name="skin-issue"
                   value="eczema"
                 />Eczema </label
-              ><br />
+              >
               <label>
                 <input
                   type="checkbox"
                   name="skin-issue"
                   value="psoriasis"
                 />Psoriasis </label
-              ><br />              <label for="formula-type">
-                Formula Type:
-                <select id="formula-type" name="formula-type">
-                  <option value="liquid">Liquid</option>
-                  <option value="cream">Cream</option>
-                  <option value="powder">Powder</option>
-                </select> </label
-              ><br />
-              <label for="severity">
-                Severity:
-                <select id="severity" name="severity">
-                  <option value="none">None</option>
-                  <option value="mild">Mild</option>
-                  <option value="moderate">Moderate</option>
-                  <option value="severe">Severe</option>
-                  <option value="extreme">Extremely Severe</option>
-                </select> </label
-              ><br />
+              >              <div class="foundation-type">
+                <label for="formula-type">
+                  Formula Type:
+                  <select id="formula-type" name="formula-type">
+                    <option value="liquid">Liquid</option>
+                    <option value="cream">Cream</option>
+                    <option value="powder">Powder</option>
+                  </select>
+                </label>
+                <label for="severity">
+                  Severity:
+                  <select id="severity" name="severity">
+                    <option value="none">None</option>
+                    <option value="mild">Mild</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="severe">Severe</option>
+                    <option value="extreme">Extremely Severe</option>
+                  </select>
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="bq-question">
+          </div>          <div class="bq-question">
             <h2>Question 5.</h2>            <div class="quiz-text">
               <p>
                 Are there any specific ingredients you avoid in your foundation?
@@ -344,15 +342,16 @@
                 What benefits do you look for in a formula?
               </p>
               <span id="ingredients-error"></span>
-            </div>            <div class="vein-buttons">              <label for="avoid-ingredients-input">
+            </div>            <div class="features">              
+              <label for="avoid-ingredients-input">
                 Ingredients to Avoid:
                 <input
                   type="text"
                   id="avoid-ingredients-input"
                   name="avoid-ingredients"
                   placeholder="e.g. Parabens, Sulfates, Fragrances, etc."
-                /> </label
-              ><br />
+                /> 
+              </label>
               <label for="desired-benefits-input">
                 Desired Benefits:
                 <input
@@ -360,11 +359,10 @@
                   id="desired-benefits-input"
                   name="desired-benefits"
                   placeholder="e.g. Hydration, Anti-aging, Brightness, etc."
-                /> </label
-              ><br />
+                /> 
+              </label>
             </div>
-          </div>
-          <div class="bq-question">
+          </div>          <div class="bq-question">
             <h2>Question 6.</h2>            <div class="quiz-text">
               <p>
                 In your skincare routine, do you often use any topical
@@ -372,62 +370,63 @@
                 If so, describe your skin's elasticity and firmness.
               </p>
               <span id="medication-error"></span>            </div>
-            <div class="vein-buttons">
+            <div class="skin-issue">
               <label>
                 <input type="checkbox" name="medication" value="retinoid" />
                 Retinoid </label
-              ><br />
+              >
               <label>
                 <input type="checkbox" name="medication" value="aha" />
                 AHA </label
-              ><br />
+              >
               <label>
                 <input type="checkbox" name="medication" value="bha" />
                 BHA </label
-              ><br />
+              >
               <label>
                 <input type="checkbox" name="medication" value="medication" />
                 Topical Medication </label
-              ><br />              <label for="skin-elasticity-select">
-                Skin Elasticity:
-                <select id="skin-elasticity-select" name="skin-elasticity">
-                  <option value="elastic">Elastic/Stretchy</option>
-                  <option value="firm">Firm/Tight</option>
-                  <option value="sagging">Sagging/Loose</option>
-                </select> </label
-              ><br />
+              >              <div class="foundation-type">
+                <label for="skin-elasticity-select">
+                  Skin Elasticity:
+                  <select id="skin-elasticity-select" name="skin-elasticity">
+                    <option value="elastic">Elastic/Stretchy</option>
+                    <option value="firm">Firm/Tight</option>
+                    <option value="sagging">Sagging/Loose</option>
+                  </select>
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="bq-question">
+          </div>          <div class="bq-question">
             <h2>Question 7.</h2>            <div class="quiz-text">
               <p>Do you prefer a specific foundation formula type?</p>
               <span id="formula-error"></span>            </div>
-            <div class="vein-buttons">
+            <div class="foundation-type">
               <label>
                 <input type="radio" name="formula-type" value="mineral" />
                 Mineral </label
-              ><br />
+              >
               <label>
                 <input type="radio" name="formula-type" value="oil-based" />
                 Oil-Based </label
-              ><br />
+              >
               <label>
                 <input type="radio" name="formula-type" value="water-based" />
                 Water-Based </label
-              ><br />
+              >
               <label>
                 <input type="radio" name="formula-type" value="custom" />
                 Silicone-Based </label
-              ><br />
+              >
             </div>
-          </div>
-          <div class="bq-question">
+          </div>          <div class="bq-question">
             <h2>Question 8.</h2>            <div class="quiz-text">
               <p>
                 How often do you wear makeup, and what is your makeup prep
                 routine? (Including Skincare)
               </p>
-              <span id="routine-error"></span>            </div>            <div class="vein-buttons">
+              <span id="routine-error"></span>            </div>            
+            <div class="foundation-type">
               <label for="makeup-routine">
                 Makeup Routine:
                 <select id="makeup-routine" name="makeup-routine">
@@ -437,38 +436,40 @@
                     Special Occasions/Events
                   </option>
                   <option value="never">Rarely/Never</option>
-                </select> </label
-              ><br />
+                </select>
+              </label>
+            </div>
+            <div class="apply">
               <label>
                 <input type="checkbox" name="routine" value="skincare" />
-                Cleansing & Exfoliating </label
-              ><br />
+                Cleansing & Exfoliating
+              </label>
               <label>
                 <input type="checkbox" name="routine" value="primer" />
-                Primer </label
-              ><br />
+                Primer
+              </label>
               <label>
                 <input type="checkbox" name="routine" value="sunscreen" />
-                Sunscreen </label
-              ><br />
+                Sunscreen
+              </label>
               <label>
                 <input type="checkbox" name="routine" value="moisturizer" />
-                Moisturizer </label
-              ><br />
+                Moisturizer
+              </label>
               <label>
                 <input type="checkbox" name="routine" value="illuminating" />
-                Illuminating Cream, Serums, & Oils </label
-              ><br />
+                Illuminating Cream, Serums, & Oils
+              </label>
             </div>
-          </div>
-          <div class="bq-question">
+          </div>          <div class="bq-question">
             <h2>Question 9.</h2>
             <div class="quiz-text">
               <p>
                 How do you feel about wearing foundation in different lighting
                 conditions? Please explain.
               </p>            </div>
-            <!--revise answer choices for shaded light or other opt-->            <div class="vein-buttons">
+            <!--revise answer choices for shaded light or other opt-->            
+            <div class="features">
               <label for="natural-light">
                 Natural Light:
                 <input
@@ -476,8 +477,8 @@
                   id="natural-light"
                   name="natural"
                   placeholder="e.g. My foundation looks natural"
-                /> </label
-              ><br />
+                />
+              </label>
               <label for="direct-light">
                 Direct Sunlight:
                 <input
@@ -485,8 +486,8 @@
                   id="direct-light"
                   name="direct"
                   placeholder="e.g. My foundation looks bright"
-                /> </label
-              ><br />
+                />
+              </label>
               <label for="flash-light">
                 Flash Photography:
                 <input
@@ -494,8 +495,8 @@
                   id="flash-light"
                   name="flash"
                   placeholder="e.g. My foundation looks washed out"
-                /> </label
-              ><br />
+                />
+              </label>
               <label for="artificial-light">
                 Artifical Lighting:
                 <input
@@ -503,11 +504,10 @@
                   id="artificial-light"
                   name="artificial"
                   placeholder="e.g. My foundation looks dull"
-                /> </label
-              ><br />
+                />
+              </label>
             </div>
-          </div>
-          <div class="bq-question">
+          </div>          <div class="bq-question">
             <h2>Question 10.</h2>
             <div class="quiz-text">
               <p>
@@ -515,26 +515,28 @@
                 over time, such as during different seasons, climates, or
                 hormonal fluctuations?
               </p>            </div>
-            <div class="vein-buttons">
+            <div class="undertone">
               <label>
                 <input type="radio" name="skin-changes" value="yes" /> Yes
+              </label>
+              <div class="features">
                 <input
                   type="text"
                   name="other-undertone"
                   placeholder="Please explain..."
-                /> </label
-              ><br />
+                />
+              </div>
               <label>
-                <input type="radio" name="skin-changes" value="no" /> No </label
-              ><br />
+                <input type="radio" name="skin-changes" value="no" /> No
+              </label>
               <label>
                 <input type="radio" name="skin-changes" value="sometimes" />
-                Sometimes </label
-              ><br />
+                Sometimes
+              </label>
               <label>
                 <input type="radio" name="skin-changes" value="unsure" />
-                Unsure </label
-              ><br />
+                Unsure
+              </label>
             </div>
           </div>
           <div class="button-single">
